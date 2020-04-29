@@ -55,18 +55,18 @@
   <ItemGroup>
      <Compile Include="Assets\Prefabs\AngleChecker.cs" />
      <Compile Include="Assets\Scenes\MainManuScene\ButtonControl.cs" />
+     <Compile Include="Assets\Scenes\MinigameScene\Scripts\BackgroundTile.cs" />
+     <Compile Include="Assets\Scenes\MinigameScene\Scripts\Board.cs" />
+     <Compile Include="Assets\Scenes\MinigameScene\Scripts\CameraScalar.cs" />
+     <Compile Include="Assets\Scenes\MinigameScene\Scripts\DestroyParticle.cs" />
+     <Compile Include="Assets\Scenes\MinigameScene\Scripts\Dot.cs" />
+     <Compile Include="Assets\Scenes\MinigameScene\Scripts\FindMatches.cs" />
+     <Compile Include="Assets\Scenes\MinigameScene\Scripts\HintManager.cs" />
+     <Compile Include="Assets\Scenes\MinigameScene\Scripts\ScoreManager.cs" />
+     <Compile Include="Assets\Scenes\MinigameScene\Scripts\SoundManager.cs" />
+     <Compile Include="Assets\Scenes\MinigameScene\Scripts\SwipeController.cs" />
      <Compile Include="Assets\Scenes\SettingScene\EffectSet.cs" />
      <Compile Include="Assets\Scenes\SettingScene\MusicSet.cs" />
-     <Compile Include="Assets\Scripts\BackgroundTile.cs" />
-     <Compile Include="Assets\Scripts\Board.cs" />
-     <Compile Include="Assets\Scripts\CameraScalar.cs" />
-     <Compile Include="Assets\Scripts\DestroyParticle.cs" />
-     <Compile Include="Assets\Scripts\Dot.cs" />
-     <Compile Include="Assets\Scripts\FindMatches.cs" />
-     <Compile Include="Assets\Scripts\HintManager.cs" />
-     <Compile Include="Assets\Scripts\ScoreManager.cs" />
-     <Compile Include="Assets\Scripts\SoundManager.cs" />
-     <Compile Include="Assets\Scripts\SwipeController.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/pipomk/Documents/GitHub/scigame/Match 3 Clone/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
