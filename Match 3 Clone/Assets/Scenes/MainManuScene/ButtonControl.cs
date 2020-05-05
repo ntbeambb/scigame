@@ -21,5 +21,9 @@ public class ButtonControl : MonoBehaviour
         SceneManager.LoadScene("workshop");
 
     }
+    public void mainmanuScene(){
+        SceneManager.LoadScene("mainmanu");
+
+    }
 
 }
