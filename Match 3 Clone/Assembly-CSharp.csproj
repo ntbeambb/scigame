@@ -67,6 +67,10 @@
      <Compile Include="Assets\Scenes\MinigameScene\Scripts\SwipeController.cs" />
      <Compile Include="Assets\Scenes\SettingScene\EffectSet.cs" />
      <Compile Include="Assets\Scenes\SettingScene\MusicSet.cs" />
+     <Compile Include="Assets\Scriptable_object\Inventory\script\InventoryObject.cs" />
+     <Compile Include="Assets\Scriptable_object\Item\script\CompoundObject.cs" />
+     <Compile Include="Assets\Scriptable_object\Item\script\ElementObject.cs" />
+     <Compile Include="Assets\Scriptable_object\Item\script\ItemObject.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/pipomk/Documents/GitHub/scigame/Match 3 Clone/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
