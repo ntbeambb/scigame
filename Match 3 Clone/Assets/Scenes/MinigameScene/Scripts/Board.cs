@@ -40,7 +40,7 @@ public class Board : MonoBehaviour {
 	private FindMatches findMatches;
 	public int basePieceValue = 20;
 	private int streakValue = 1;
-	private ScoreManager scoreManager;
+//	private ScoreManager scoreManager;
 	private SoundManager soundManager;
 	public float refillDelay = 0.5f;
 	public int[] scoreGoals;
@@ -49,7 +49,7 @@ public class Board : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		soundManager = FindObjectOfType<SoundManager>();
-		scoreManager = FindObjectOfType<ScoreManager>();
+	//	scoreManager = FindObjectOfType<ScoreManager>();
 		breakableTiles = new BackgroundTile[width, height];
         findMatches = FindObjectOfType<FindMatches>();
 		blankSpaces = new bool[width, height];
@@ -273,7 +273,7 @@ public class Board : MonoBehaviour {
                                               Quaternion.identity);
             Destroy(particle, .5f);
             Destroy(allDots[column, row]);
-			scoreManager.IncreaseScore(basePieceValue * streakValue);
+			//scoreManager.IncreaseScore(basePieceValue * streakValue);
             allDots[column, row] = null;
         }
     }
