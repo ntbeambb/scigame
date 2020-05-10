@@ -23,6 +23,7 @@ public class TileType{
 
 public class Board : MonoBehaviour {
    
+	public InventorySystem inventory;//Add on
 
     public GameState currentState = GameState.move;
     public int width;
@@ -182,6 +183,7 @@ public class Board : MonoBehaviour {
                 }
             }
         }
+		//check 5 item combo
         return (numberVertical == 5 || numberHorizontal == 5);
 
     }
@@ -251,7 +253,6 @@ public class Board : MonoBehaviour {
             if(findMatches.currentMatches.Count >= 4){
                 CheckToMakeBombs();
             }
-
             //Does a tile need to break?
 			if(breakableTiles[column, row]!=null)
 			{
@@ -279,6 +280,17 @@ public class Board : MonoBehaviour {
     }
 
     public void DestroyMatches(){
+		//work here
+		Dot Nowdot = findMatches.currentMatches[0].GetComponent<Dot>();
+		int combo = findMatches.currentMatches.Count;
+		if( combo == 3){
+            inventory.AddItem(Nowdot.id,1);
+        }else if(combo == 4){
+			inventory.AddItem(Nowdot.id,2);
+		}else if(combo == 5){
+			inventory.AddItem(Nowdot.id,3);
+		}
+		//
         for (int i = 0; i < width; i ++){
             for (int j = 0; j < height; j++){
                 if (allDots[i, j] != null){

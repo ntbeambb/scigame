@@ -34,7 +34,8 @@ public class Dot : MonoBehaviour {
     public GameObject rowArrow;
     public GameObject columnArrow;
     public GameObject colorBomb;
-
+    [Header("Scibeam info")]
+    public int id;
 
 	// Use this for initialization
 	void Start () {

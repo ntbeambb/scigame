@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 58297821808731276}
   - component: {fileID: 114791952139037290}
   m_Layer: 0
-  m_Name: Salmon Dot
+  m_Name: oxygen dot
   m_TagString: Salmon Dot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -129,3 +129,4 @@ MonoBehaviour:
   columnArrow: {fileID: 1629322208613970, guid: 36f4acc9beec24301a6fe1acfc05a567,
     type: 3}
   colorBomb: {fileID: 1942758963516802, guid: 127ce63b5911c45abae4b1dde87e05da, type: 3}
+  id: 4
