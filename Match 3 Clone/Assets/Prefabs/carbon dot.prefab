@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 114575871356542674}
   m_Layer: 0
   m_Name: carbon dot
-  m_TagString: Dark Green Dot
+  m_TagString: Carbon dot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

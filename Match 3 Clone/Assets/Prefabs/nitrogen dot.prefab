@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 114603129089748102}
   m_Layer: 0
   m_Name: nitrogen dot
-  m_TagString: Orange Dot
+  m_TagString: Nitrogen dot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

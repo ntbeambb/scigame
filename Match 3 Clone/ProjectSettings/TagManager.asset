@@ -4,16 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Dark Green Dot
-  - Green Dot
-  - Indigo Dot
-  - Orange Dot
-  - Red Dot
-  - Salmon Dot
   - Teal Dot
   - Yellow Dot
   - Puice Dot
   - Color
+  - Carbon dot
+  - Hydrogen dot
+  - Nitrogen dot
+  - Oxygen dot
   layers:
   - Default
   - TransparentFX

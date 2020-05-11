@@ -279,17 +279,33 @@ public class Board : MonoBehaviour {
         }
     }
 
-    public void DestroyMatches(){
-		//work here
-		Dot Nowdot = findMatches.currentMatches[0].GetComponent<Dot>();
+	//Scibeam function;
+	public void CheckCombo(){
 		int combo = findMatches.currentMatches.Count;
-		if( combo == 3){
-            inventory.AddItem(Nowdot.id,1);
-        }else if(combo == 4){
-			inventory.AddItem(Nowdot.id,2);
-		}else if(combo == 5){
-			inventory.AddItem(Nowdot.id,3);
+		List<int> AllId = new List<int>();
+		int[] Tem = new int[50];
+		string[] Name = new string[50];
+		for(int i=0;i<combo;i++){
+			int _id = findMatches.currentMatches[i].GetComponent<Dot>().id;
+			if(AllId.Contains(_id)){
+				Tem[_id]++;
+			}else{
+				AllId.Add(_id);
+				Tem[_id]++;
+				Name[_id] = findMatches.currentMatches[i].tag;
+			}
 		}
+		int m = AllId.Count;
+		for(int i=0; i<m; i++){
+			if(Tem[AllId[i]]>2){
+				inventory.AddItem(AllId[i],Name[AllId[i]],Tem[AllId[i]]-2);
+			}
+		}
+
+	}
+    public void DestroyMatches(){
+		//Scibeam
+		CheckCombo();
 		//
         for (int i = 0; i < width; i ++){
             for (int j = 0; j < height; j++){

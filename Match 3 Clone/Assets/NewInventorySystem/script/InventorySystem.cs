@@ -5,6 +5,7 @@ using UnityEngine;
 public class InventorySystem : ScriptableObject
 {
     private int[] Backpack = new int[100];
+    private string[] AllName = new string[100];
     private int count = 0;
     //start Debug
     public List<slot> container = new List<slot>();
@@ -12,7 +13,7 @@ public class InventorySystem : ScriptableObject
         container.Clear();
         for(int i=0;i<100;i++){
             if(Backpack[i]>0){
-                container.Add(new slot(i,Backpack[i]));
+                container.Add(new slot(i,AllName[i],Backpack[i]));
             }
         }
     }
@@ -32,10 +33,11 @@ public class InventorySystem : ScriptableObject
         
         display();
     }
-    public void AddItem(int _id, int _amount){
+    public void AddItem(int _id,string _name, int _amount){
         if(!IdCheck(_id))return;
         if(Backpack[_id] == 0 && _amount == 0)count++;
         Backpack[_id]+=_amount;
+        AllName[_id]=_name;
         
         display();
     }
@@ -60,9 +62,11 @@ public class InventorySystem : ScriptableObject
 [System.Serializable]
 public class slot{
     public int id;
+    public string name;
     public int amount;
-    public slot(int _id,int _amount){
+    public slot(int _id,string _name,int _amount){
         id=_id;
         amount=_amount;
+        name=_name;
     }
 }
