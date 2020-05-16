@@ -35,7 +35,7 @@ public class InventorySystem : ScriptableObject
     }
     public void AddItem(int _id,string _name, int _amount){
         if(!IdCheck(_id))return;
-        if(Backpack[_id] == 0 && _amount == 0)count++;
+        if(Backpack[_id] == 0 && _amount > 0)count++;
         Backpack[_id]+=_amount;
         AllName[_id]=_name;
         

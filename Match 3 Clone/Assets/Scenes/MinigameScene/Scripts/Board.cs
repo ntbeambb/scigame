@@ -24,6 +24,7 @@ public class TileType{
 public class Board : MonoBehaviour {
    
 	public InventorySystem inventory;//Add on
+	public GameObject inventorybar;
 
     public GameState currentState = GameState.move;
     public int width;
@@ -56,6 +57,7 @@ public class Board : MonoBehaviour {
 		blankSpaces = new bool[width, height];
         allDots = new GameObject[width, height];
         SetUp();
+		inventorybar.GetComponent<InventoryMinigame>().display();
 	}
     
 
@@ -301,6 +303,7 @@ public class Board : MonoBehaviour {
 				inventory.AddItem(AllId[i],Name[AllId[i]],Tem[AllId[i]]-2);
 			}
 		}
+		inventorybar.GetComponent<InventoryMinigame>().display();
 
 	}
     public void DestroyMatches(){

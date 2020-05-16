@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 212689551674333364}
   - component: {fileID: 58129924806264550}
   - component: {fileID: 114603129089748102}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: nitrogen dot
   m_TagString: Nitrogen dot
   m_Icon: {fileID: 0}
