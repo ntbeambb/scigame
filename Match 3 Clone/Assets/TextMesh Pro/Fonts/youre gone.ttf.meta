@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 3d3c04d320647ad4aaf448c740ce7f91
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: You're Gone
+  fontNames:
+  - You're Gone
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2e32340b3fd454d47a73abe7f84a9438, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
