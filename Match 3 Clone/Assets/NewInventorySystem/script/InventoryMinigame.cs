@@ -47,11 +47,11 @@ public class InventoryMinigame : MonoBehaviour
             int num=backpack.container[i+StartPo].amount;
             DisplaySlot[i] = AddInventory(i,tempgameobject);
             //Show Volume of Item
-            if(num>1){
+            
                 GameObject ItemAmount =DisplaySlot[i].GetComponent<InventoryDot>().Number;
                textmesh = ItemAmount.GetComponent<TextMeshPro>();
-               textmesh.text = num.ToString();
-            }
+               textmesh.text = "X "+num.ToString();
+            
             //Debug.Log("Show element "+tempgameobject.name+" with "+num);
 
         }
