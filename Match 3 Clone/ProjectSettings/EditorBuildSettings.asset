@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SettingScene/setting.unity
     guid: 50aa6571c23c4fc479bce964ad65ac7e
   - enabled: 1
-    path: Assets/Scenes/workshop.unity
+    path: Assets/Scenes/WorkshopScene/workshop.unity
     guid: f49e6719c3caf5f4f938583ded35f3a3
   - enabled: 1
     path: Assets/Scenes/MainManuScene/mainmanu.unity

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 212576393096195698}
   - component: {fileID: 58462037190504506}
   - component: {fileID: 114575871356542674}
+  - component: {fileID: 114457845052623708}
   m_Layer: 0
   m_Name: carbon dot
   m_TagString: Carbon dot
@@ -129,4 +130,17 @@ MonoBehaviour:
   columnArrow: {fileID: 1629322208613970, guid: 36f4acc9beec24301a6fe1acfc05a567,
     type: 3}
   colorBomb: {fileID: 1942758963516802, guid: 127ce63b5911c45abae4b1dde87e05da, type: 3}
+--- !u!114 &114457845052623708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364587841334750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf0c92cdc8116840912dd1f0397854d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   id: 1
+  SciName: C

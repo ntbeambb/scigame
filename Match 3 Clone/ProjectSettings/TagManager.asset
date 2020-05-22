@@ -13,6 +13,7 @@ TagManager:
   - Nitrogen dot
   - Oxygen dot
   - Indigo Dot
+  - Green Dot
   layers:
   - Default
   - TransparentFX
@@ -52,4 +53,7 @@ TagManager:
     locked: 0
   - name: Particles
     uniqueID: 1701559851
+    locked: 0
+  - name: item
+    uniqueID: 3913138593
     locked: 0

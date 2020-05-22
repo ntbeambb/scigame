@@ -11,12 +11,15 @@ public class InventoryMinigame : MonoBehaviour
     public int Slot;
     private int StartPo;
     private GameObject[] DisplaySlot;
+    private GameObject[] NumSlot;
     private Vector2 BarPo;
     public float StartX;
     private TextMeshPro textmesh;
-    void Start(){
+    public GameObject ShowNum;
+    void Awake(){
         StartPo = 0;
         DisplaySlot = new GameObject[Slot];
+        NumSlot = new GameObject[Slot];
     }
     private GameObject AddInventory(int po,GameObject gob)
     {
@@ -26,11 +29,23 @@ public class InventoryMinigame : MonoBehaviour
         tile.name = "Inventory "+po;
         return tile;
     }
+    private GameObject AddNumber(int num){
+        int ck = 0;
+        if(num>9)ck++;
+        if(num>99)ck++;
+        Vector2 tilepo = new Vector2(transform.position.x + 2.5f - 0.4f*ck,transform.position.y);
+		GameObject NumDis = Instantiate(ShowNum,tilepo, Quaternion.identity,this.transform) as GameObject;
+        textmesh = NumDis.GetComponent<TextMeshPro>();
+        textmesh.text = "X "+ num.ToString();
+       // NumDis.transform.parent = this.transform;
+        NumDis.name = "Item Amount";
+        return NumDis;
+    }
     private GameObject findgameobject(int _id){
         int co = ItemList.Count;
         int i;
         for(i=0;i<co;i++){
-            if(ItemList[i].GetComponent<InventoryDot>().id == _id){
+            if(ItemList[i].GetComponent<ScibeamData>().ID() == _id){
                 return ItemList[i];
             }
         }
@@ -38,19 +53,18 @@ public class InventoryMinigame : MonoBehaviour
     }
     public void display(){
         int count = backpack.Count();
-        for(int i=0;i<Slot;i++){
+        for(int i=0; i<Slot; i++){
             if(DisplaySlot[i]!=null)Destroy(DisplaySlot[i]);
+            if(NumSlot[i]!=null)Destroy(NumSlot[i]);
         }
         for(int i=0; i < Slot && i+StartPo < count; i++){
+            
             //Debug.Log("BUG "+i);
             GameObject tempgameobject = findgameobject(backpack.container[i+StartPo].id);
             int num=backpack.container[i+StartPo].amount;
             DisplaySlot[i] = AddInventory(i,tempgameobject);
             //Show Volume of Item
-            
-                GameObject ItemAmount =DisplaySlot[i].GetComponent<InventoryDot>().Number;
-               textmesh = ItemAmount.GetComponent<TextMeshPro>();
-               textmesh.text = "X "+num.ToString();
+            NumSlot[i] = AddNumber(num);
             
             //Debug.Log("Show element "+tempgameobject.name+" with "+num);
 
