@@ -122,6 +122,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   return_origin_position: 1
   origin_position: {x: 0, y: 0}
+  backpack: {fileID: 11400000, guid: 787243cc33ae1e949a5eca7c5b11f0c5, type: 2}
+  Inbox: 1
+  InboxName: tree
 --- !u!114 &4064088939373323807
 MonoBehaviour:
   m_ObjectHideFlags: 0

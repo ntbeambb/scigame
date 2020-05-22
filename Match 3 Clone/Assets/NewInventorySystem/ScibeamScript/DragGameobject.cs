@@ -6,7 +6,11 @@ public class DragGameobject : MonoBehaviour
 {
     public bool return_origin_position;
     public Vector2 origin_position;
+    public InventorySystem backpack;
     private Vector2 temp;
+    [SerializeField] private bool Inbox;
+    [SerializeField] private string InboxName;
+    private GameObject InboxObject;
     void Start(){
         origin_position = transform.position;
     }
@@ -15,10 +19,17 @@ public class DragGameobject : MonoBehaviour
     }
     private void OnMouseUp(){
        // Debug.Log("mouse up");
-        if(false){
-
-
-        }else if(return_origin_position){
+       bool ck = true;
+        if(Inbox){
+            InboxObject = GameObject.Find(InboxName);
+            if(InboxObject.GetComponent<BoxCollider2D>().OverlapPoint(transform.position)){
+                int id = GetComponent<ScibeamData>().ID();
+                backpack.RemoveItem(id,1);
+                transform.parent.GetComponent<InventoryMinigame>().display();
+                //Debug.Log("Workk");
+            }
+        }
+        if(return_origin_position && ck){
             transform.position = origin_position;
         }
     }
