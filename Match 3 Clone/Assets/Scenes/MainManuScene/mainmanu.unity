@@ -138,9 +138,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 192693969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acafbd57b10e8e244b05a790c5efa195, type: 3}
+  m_Script: {fileID: 11500000, guid: b7c5bca440ecab3499bcc30fafa1b366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SceneData: {fileID: 11400000, guid: 38dccfb8906752047934ca24bec4c160, type: 2}
 --- !u!4 &192693971
 Transform:
   m_ObjectHideFlags: 0
@@ -645,7 +646,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 192693970}
-        m_MethodName: workshopScene
+        m_MethodName: WorkshopScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -846,7 +847,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 192693970}
-        m_MethodName: settingScene
+        m_MethodName: SettingScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -970,7 +971,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 192693970}
-        m_MethodName: minigameScene
+        m_MethodName: MinigameScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

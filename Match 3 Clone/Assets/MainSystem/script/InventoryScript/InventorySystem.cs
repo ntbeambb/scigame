@@ -69,4 +69,8 @@ public class slot{
         amount=_amount;
         name=_name;
     }
+    public slot Copy(){
+        slot ret = new slot(this.id,this.name,this.amount);
+        return ret;
+    }
 }

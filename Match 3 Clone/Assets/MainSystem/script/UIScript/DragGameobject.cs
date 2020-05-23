@@ -24,7 +24,7 @@ public class DragGameobject : MonoBehaviour
             InboxObject = GameObject.Find(InboxName);
             if(InboxObject.GetComponent<BoxCollider2D>().OverlapPoint(transform.position)){
                 int id = GetComponent<ScibeamData>().ID();
-                backpack.RemoveItem(id,1);
+                InboxObject.GetComponent<InboxGameobject>().GetItem(id);
                 transform.parent.GetComponent<InventoryMinigame>().display();
                 //Debug.Log("Workk");
             }
