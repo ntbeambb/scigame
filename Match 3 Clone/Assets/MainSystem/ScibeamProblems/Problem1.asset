@@ -16,10 +16,11 @@ MonoBehaviour:
   - Item:
     - id: 1
       name: 
-      amount: 4
+      amount: 2
+  - Item:
     - id: 2
       name: 
-      amount: 4
+      amount: 2
     - id: 3
       name: 
-      amount: 4
+      amount: 2

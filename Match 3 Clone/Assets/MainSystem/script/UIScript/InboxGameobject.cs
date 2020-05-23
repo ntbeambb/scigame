@@ -39,6 +39,7 @@ public class InboxGameobject : MonoBehaviour
                 data.SendSub(subtask);
                 progressbar.GetComponent<Slider>().value = data.GetProgress();
                 //Debug.Log("Progress "+data.GetProgress());
+                subtask = data.GetSub();
             }
         }
         
