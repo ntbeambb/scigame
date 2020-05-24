@@ -62,6 +62,7 @@
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ScibeamData.cs" />
      <Compile Include="Assets\MainSystem\script\UIScript\DragGameobject.cs" />
      <Compile Include="Assets\MainSystem\script\UIScript\InboxGameobject.cs" />
+     <Compile Include="Assets\MainSystem\script\UIScript\InboxManager.cs" />
      <Compile Include="Assets\Prefabs\AngleChecker.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\InventoryDot.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\InventoryMinigame.cs" />

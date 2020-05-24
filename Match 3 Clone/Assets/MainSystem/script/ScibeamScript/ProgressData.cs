@@ -34,7 +34,7 @@ public class ProgressData : ScriptableObject
     private void CalProgress(int input){
         if(level == OriginProblem.SubNum())return;
         float LevelValue =0.99f/OriginProblem.SubNum();
-        Debug.Log("Level "+level+" LevelValue "+LevelValue);
+        //Debug.Log("Level "+level+" LevelValue "+LevelValue);
         ProgressValue = LevelValue*level + LevelValue*(mav-input)/mav;
         
 
@@ -60,6 +60,6 @@ public class ProgressData : ScriptableObject
             sum = mav;
         }
         CalProgress(sum);
-        Debug.Log("Progress "+ProgressValue);
+        //Debug.Log("Progress "+ProgressValue);
     }
 }

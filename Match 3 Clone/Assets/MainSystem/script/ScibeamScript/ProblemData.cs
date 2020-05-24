@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "New Problem", menuName = "Problem/Problem")]
 public class ProblemData : ScriptableObject
-{
+{   
+    public string ProblemText;
     [SerializeField] private static int SubtaskAmount = 1;
     [SerializeField] private Subtask[] problem = new Subtask[SubtaskAmount];
+    
     public int SubNum(){
         return problem.Length;
     }

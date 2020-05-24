@@ -5,14 +5,14 @@ using UnityEngine;
 public class DragGameobject : MonoBehaviour
 {
     public bool return_origin_position;
-    public Vector2 origin_position;
+    private Vector2 origin_position;
     public InventorySystem backpack;
     private Vector2 temp;
-    [SerializeField] private bool Inbox;
-    [SerializeField] private string InboxName;
+    private GameObject InboxManager;
     private GameObject InboxObject;
     void Start(){
         origin_position = transform.position;
+        InboxManager = GameObject.Find("InboxManager");
     }
     private void OnMouseDown(){
        // Debug.Log("mouse down");
@@ -20,14 +20,14 @@ public class DragGameobject : MonoBehaviour
     private void OnMouseUp(){
        // Debug.Log("mouse up");
        bool ck = true;
-        if(Inbox){
-            InboxObject = GameObject.Find(InboxName);
-            if(InboxObject.GetComponent<BoxCollider2D>().OverlapPoint(transform.position)){
-                int id = GetComponent<ScibeamData>().ID();
-                InboxObject.GetComponent<InboxGameobject>().GetItem(id);
-                transform.parent.GetComponent<InventoryMinigame>().display();
-                //Debug.Log("Workk");
-            }
+        if(InboxManager.GetComponent<InboxManager>().GetInbox(transform.position) != null){
+
+            InboxObject = InboxManager.GetComponent<InboxManager>().GetInbox(transform.position);
+            int id = GetComponent<ScibeamData>().ID();
+            InboxObject.GetComponent<InboxGameobject>().GetItem(id);
+            transform.parent.GetComponent<InventoryMinigame>().display();
+            //Debug.Log("Workk");
+            
         }
         if(return_origin_position && ck){
             transform.position = origin_position;
@@ -38,8 +38,10 @@ public class DragGameobject : MonoBehaviour
         temp.x = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
         temp.y = Camera.main.ScreenToWorldPoint(Input.mousePosition).y;
         transform.position = temp;
-    }
-    void OnCollisionEnter2D(Collision2D other){
-        Debug.Log("Inbox");
+
+        /*if(true){//optional effect
+            
+
+        }*/
     }
 }

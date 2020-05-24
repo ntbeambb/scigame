@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76edd4fe4a853f4ba3153889e600e20, type: 3}
   m_Name: Problem1
   m_EditorClassIdentifier: 
+  ProblemText: 2C 2H/2O
   problem:
   - Item:
     - id: 1

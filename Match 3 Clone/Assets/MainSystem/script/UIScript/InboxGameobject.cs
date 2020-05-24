@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class InboxGameobject : MonoBehaviour
 {
@@ -10,12 +11,18 @@ public class InboxGameobject : MonoBehaviour
     public InventorySystem backpack;
     public Subtask subtask;
     public GameObject progressbar;
+    public GameObject Problemtext;
     private int nowsub;
     private float value;
+    public bool Copy;
     void Start(){
-        data.Copy(problem);
+        if(Copy)data.Copy(problem);
         subtask = data.GetSub();
         progressbar.GetComponent<Slider>().value = data.GetProgress();
+        
+        TextMeshProUGUI textmesh = Problemtext.GetComponent<TextMeshProUGUI>();
+        //Debug.Log(problem.ProblemText);
+        textmesh.text = problem.ProblemText;
 
     }
     private int CheckItem(int input){
@@ -44,4 +51,5 @@ public class InboxGameobject : MonoBehaviour
         }
         
     }
+
 }
