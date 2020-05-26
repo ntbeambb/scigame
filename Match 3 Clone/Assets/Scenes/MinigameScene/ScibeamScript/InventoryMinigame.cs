@@ -33,7 +33,7 @@ public class InventoryMinigame : MonoBehaviour
         int ck = 0;
         if(num>9)ck++;
         if(num>99)ck++;
-        Vector2 tilepo = new Vector2(transform.position.x + 2.5f - 0.4f*ck,transform.position.y);
+        Vector2 tilepo = new Vector2(transform.position.x + 1.1f - 0.4f*ck,transform.position.y);
 		GameObject NumDis = Instantiate(ShowNum,tilepo, Quaternion.identity,this.transform) as GameObject;
         textmesh = NumDis.GetComponent<TextMeshPro>();
         textmesh.text = "X "+ num.ToString();
