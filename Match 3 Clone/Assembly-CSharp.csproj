@@ -67,6 +67,7 @@
      <Compile Include="Assets\Prefabs\AngleChecker.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\InventoryDot.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\InventoryMinigame.cs" />
+     <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\ProlemInbox.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\Scripts\BackgroundTile.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\Scripts\Board.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\Scripts\CameraScalar.cs" />

@@ -53,6 +53,7 @@ public class InventoryMinigame : MonoBehaviour
     }
     public void display(){
         int count = backpack.Count();
+        //Debug.Log("Count = "+count);
         for(int i=0; i<Slot; i++){
             if(DisplaySlot[i]!=null)Destroy(DisplaySlot[i]);
             if(NumSlot[i]!=null)Destroy(NumSlot[i]);
@@ -61,6 +62,7 @@ public class InventoryMinigame : MonoBehaviour
             
             //Debug.Log("BUG "+i);
             GameObject tempgameobject = findgameobject(backpack.container[i+StartPo].id);
+            //if(tempgameobject == null)Debug.Log("Bug Null");
             int num=backpack.container[i+StartPo].amount;
             DisplaySlot[i] = AddInventory(i,tempgameobject);
             //Show Volume of Item

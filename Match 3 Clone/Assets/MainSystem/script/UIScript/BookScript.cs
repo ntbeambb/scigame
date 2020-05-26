@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BookScript : MonoBehaviour
+public class BookScript : InboxGameobject
 {   
     public GameObject book;
     public void OpenBook(int page){
@@ -13,5 +13,8 @@ public class BookScript : MonoBehaviour
     }
     private void OnMouseDown(){
        OpenBook(0);
+    }
+    public override void GetItem(int _id){
+        OpenBook(_id);
     }
 }
