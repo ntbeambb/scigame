@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainManuScene/mainmanu.unity
     guid: e83ee63b853fac649a9fb6661dd43dc1
+  - enabled: 1
+    path: Assets/Scenes/graph/TreeGraph.unity
+    guid: cc6a2b8ff9ceeb5458c9bd43a7900016
+  - enabled: 1
+    path: Assets/Scenes/CoffeeBreak/CoffeeBreak.unity
+    guid: c182b474ab191ab488b5a9fd81414451
   m_configObjects: {}

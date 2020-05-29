@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/graph/TreeGraph.unity
+- path: Assets/Scenes/CoffeeBreak/CoffeeBreak.unity
   isLoaded: 1
   isActive: 1
