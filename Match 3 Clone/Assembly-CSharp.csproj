@@ -58,6 +58,7 @@
      <Compile Include="Assets\MainSystem\script\SceneScript\SceneDataScript.cs" />
      <Compile Include="Assets\MainSystem\script\SceneScript\SceneManagerScript.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ChemData.cs" />
+     <Compile Include="Assets\MainSystem\script\ScibeamScript\GraphData.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ProblemData.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ProgressData.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ScibeamData.cs" />
@@ -66,6 +67,8 @@
      <Compile Include="Assets\MainSystem\script\UIScript\InboxGameobject.cs" />
      <Compile Include="Assets\MainSystem\script\UIScript\InboxManager.cs" />
      <Compile Include="Assets\Prefabs\AngleChecker.cs" />
+     <Compile Include="Assets\Scenes\graph\MissionManager.cs" />
+     <Compile Include="Assets\Scenes\graph\MissionScript.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\InventoryDot.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\InventoryMinigame.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\ProlemInbox.cs" />

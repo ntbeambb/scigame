@@ -51,4 +51,7 @@ public class SceneManagerScript : MonoBehaviour
     public void Reset(){
         SceneData.ResetScene();
     }
+    public void SendMission(int _id){
+        SceneData.IdMission = _id;
+    }
 }
