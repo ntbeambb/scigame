@@ -15,7 +15,7 @@ public class EffectSet : MonoBehaviour
     private RectTransform toggle;
     private RectTransform handle;
 
-    public void Awake(){
+    public void Start(){
             toggle = indicator.GetComponent<RectTransform>();
     }
 

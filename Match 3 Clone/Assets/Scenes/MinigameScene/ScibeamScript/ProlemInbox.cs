@@ -12,6 +12,7 @@ public class ProlemInbox : InboxGameobject
     public Subtask subtask;
     public GameObject progressbar;
     public GameObject Problemtext;
+    public GameObject Popup;
     private int nowsub;
     private float value;
     public bool Copy;
@@ -44,9 +45,14 @@ public class ProlemInbox : InboxGameobject
                 subtask.Item[po].amount--;
 
                 data.SendSub(subtask);
-                progressbar.GetComponent<Slider>().value = data.GetProgress();
+                var pro = data.GetProgress();
+                progressbar.GetComponent<Slider>().value = pro;
                 //Debug.Log("Progress "+data.GetProgress());
                 subtask = data.GetSub();
+
+                if(pro == 1){
+                    Popup.SetActive(true);
+                }
             }
         }
         

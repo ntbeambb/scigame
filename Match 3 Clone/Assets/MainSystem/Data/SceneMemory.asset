@@ -12,3 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b550679fd39884e9bd849f9987f0ed, type: 3}
   m_Name: SceneMemory
   m_EditorClassIdentifier: 
+  SceneStack:
+  - mainmanu
+  - TreeGraph
+  - minigame
+  - mainmanu
+  - TreeGraph
+  - minigame
+  - mainmanu
+  - TreeGraph
+  - minigame
+  - 
+  NumScene: 9
+  IdMission: 1

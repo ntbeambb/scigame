@@ -8,6 +8,7 @@ public class WorshopScript : InboxGameobject
     public List<int> inputAmount;
     public ChemData chemdata;
     public int numchem;
+    public GameObject InputWindow;
     public InventorySystem backpack;
     void Start(){
         inputID = new List<int>();
@@ -25,6 +26,19 @@ public class WorshopScript : InboxGameobject
         inputID.Add(_id);
         inputAmount.Add(1);
     }
+
+    //Open/Close inputWindow
+    public void OpenInWin(){
+        InputWindow.SetActive(true);
+    }
+    public void CloseInWin(){
+        InputWindow.SetActive(false);
+    }
+    private void OnMouseDown(){
+       OpenInWin();
+    }
+
+
     public void Remove(int _id){
         int l=inputID.Count;
         for(int i=0;i<l;i++){

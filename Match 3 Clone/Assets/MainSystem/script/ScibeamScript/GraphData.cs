@@ -13,6 +13,7 @@ public class GraphData : ScriptableObject
 [System.Serializable]
 public class mission{
     public int id_mission;
+    public string Goal;
     public List<int> unlock = new List<int>();
     public mission copy(){
         mission ret = new mission();
