@@ -34,9 +34,9 @@ public class WorshopScript : InboxGameobject
     public void CloseInWin(){
         InputWindow.SetActive(false);
     }
-    private void OnMouseDown(){
+    /*private void OnMouseDown(){
        OpenInWin();
-    }
+    }*/
 
 
     public void Remove(int _id){

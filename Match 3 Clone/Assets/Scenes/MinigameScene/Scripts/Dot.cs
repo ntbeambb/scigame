@@ -144,7 +144,7 @@ public class Dot : MonoBehaviour {
         }
 
     }
-
+///////************************************************************* move
     private void OnMouseDown()
     {
 		//Destroy the hint
@@ -181,7 +181,7 @@ public class Dot : MonoBehaviour {
 
         }
     }
-
+////////////////////////////////////////////////////////////////////////////////////// move
     void MovePiecesActual(Vector2 direction){
         otherDot = board.allDots[column + (int)direction.x, row + (int)direction.y];
         previousRow = row;

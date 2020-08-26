@@ -11,9 +11,9 @@ public class BookScript : InboxGameobject
     public void CloseBook(){
         book.SetActive(false);
     }
-    private void OnMouseDown(){
+    /*private void OnMouseDown(){
        OpenBook(0);
-    }
+    }*/
     public override void GetItem(int _id){
         OpenBook(_id);
     }
