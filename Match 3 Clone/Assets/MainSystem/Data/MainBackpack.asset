@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: MainBackpack
   m_EditorClassIdentifier: 
   container:
-  - id: 1
-    name: Carbon dot
-    amount: 7
-  - id: 2
-    name: Hydrogen dot
-    amount: 3
   - id: 3
     name: Oxygen dot
-    amount: 5
+    amount: 123
   - id: 4
     name: Nitrogen dot
-    amount: 7
+    amount: 106
+  - id: 2
+    name: Hydrogen dot
+    amount: 104
+  - id: 1
+    name: Carbon dot
+    amount: 3

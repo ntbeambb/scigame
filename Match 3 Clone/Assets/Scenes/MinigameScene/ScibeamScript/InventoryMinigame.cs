@@ -33,7 +33,7 @@ public class InventoryMinigame : MonoBehaviour
         int ck = 0;
         if(num>9)ck++;
         if(num>99)ck++;
-        Vector2 tilepo = new Vector2(transform.position.x + 1.1f - 0.4f*ck,transform.position.y);
+        Vector2 tilepo = new Vector2(transform.position.x + 1.1f - 0.6f*ck,transform.position.y);
 		GameObject NumDis = Instantiate(ShowNum,tilepo, Quaternion.identity,this.transform) as GameObject;
         textmesh = NumDis.GetComponent<TextMeshPro>();
         textmesh.text = "X "+ num.ToString();
@@ -52,7 +52,7 @@ public class InventoryMinigame : MonoBehaviour
         return null;
     }
     public void display(){
-        int count = backpack.Count();
+        int count = backpack.container.Count;
         //Debug.Log("Count = "+count);
         for(int i=0; i<Slot; i++){
             if(DisplaySlot[i]!=null)Destroy(DisplaySlot[i]);
@@ -76,7 +76,7 @@ public class InventoryMinigame : MonoBehaviour
         if(inp == 0){
             if(StartPo>0)StartPo--;
         }else if(inp == 1){
-            if(StartPo+Slot<backpack.Count())StartPo++;
+            if(StartPo+Slot<backpack.container.Count)StartPo++;
         }
         display();
     }
