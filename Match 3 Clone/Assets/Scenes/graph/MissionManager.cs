@@ -21,7 +21,7 @@ public class MissionManager : MonoBehaviour
     }
     public void startwindow(int id){
         TextMeshProUGUI textmesh = Goalwin.GetComponent<TextMeshProUGUI>();
-        //textmesh.text = 'เป้าหมาย :';
+        textmesh.text = "เป้าหมาย :"+Graphdata.CanPlay[id-1].Goal;
         StartWindow.SetActive(true);
     }
 }
