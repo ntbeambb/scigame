@@ -2168,13 +2168,14 @@ GameObject:
   - component: {fileID: 1403206982}
   - component: {fileID: 1403206984}
   - component: {fileID: 1403206983}
+  - component: {fileID: 1403206985}
   m_Layer: 5
   m_Name: InputWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1403206982
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2230,6 +2231,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403206981}
   m_CullTransparentMesh: 0
+--- !u!114 &1403206985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403206981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfee4fcad43eb1b41b29a2b0c2c020da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 1351754123}
+  button: {fileID: 1987840708}
 --- !u!1 &1449718991
 GameObject:
   m_ObjectHideFlags: 0
