@@ -11,6 +11,7 @@ public class InputWindowScript : MonoBehaviour
     float sty;
     float stx;
     float bty;
+    public float offset;
     RectTransform rt;
     RectTransform bt;
     void Start()
@@ -28,7 +29,7 @@ public class InputWindowScript : MonoBehaviour
     void Update()
     {
         float temp = inventory.GetComponent<RectTransform>().offsetMax.y;
-        temp = 415-temp;
+        temp = offset-temp;
         rt.sizeDelta = new Vector2(rt.sizeDelta.x,height + temp);
         rt.localPosition = new Vector2(stx,sty - temp/2);
         bt.localPosition = new Vector2(bt.localPosition.x,bty + temp/2);

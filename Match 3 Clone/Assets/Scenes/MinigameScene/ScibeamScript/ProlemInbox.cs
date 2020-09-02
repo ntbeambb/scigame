@@ -22,7 +22,7 @@ public class ProlemInbox : InboxGameobject
     public bool Copy;
     void Start(){
         IDmission = SceneData.SendIdMission();
-        problem = ProList.Plist[IDmission-1];
+        problem = ProList.Plist[IDmission];
         if(Copy)data.Copy(problem);
         subtask = data.GetSub();
         progressbar.GetComponent<Slider>().value = data.GetProgress();
