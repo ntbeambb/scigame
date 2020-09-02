@@ -6,17 +6,23 @@ using TMPro;
 
 public class ProlemInbox : InboxGameobject
 {
-    public ProblemData problem;
+    private ProblemData problem;
+    public ProblemList ProList;
     public ProgressData data;
     public InventorySystem backpack;
     public Subtask subtask;
     public GameObject progressbar;
     public GameObject Problemtext;
     public GameObject Popup;
+    public SceneDataScript SceneData;
+    public GraphData graphdata;
     private int nowsub;
     private float value;
+    private int IDmission;
     public bool Copy;
     void Start(){
+        IDmission = SceneData.SendIdMission();
+        problem = ProList.Plist[IDmission-1];
         if(Copy)data.Copy(problem);
         subtask = data.GetSub();
         progressbar.GetComponent<Slider>().value = data.GetProgress();
@@ -52,6 +58,8 @@ public class ProlemInbox : InboxGameobject
 
                 if(pro == 1){
                     Popup.SetActive(true);
+                    graphdata.Finish(IDmission);
+                    Time.timeScale=0;
                 }
             }
         }

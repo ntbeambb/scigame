@@ -35,4 +35,7 @@ public class SceneDataScript : ScriptableObject
         }
         return null;
     }
+    public int SendIdMission(){
+        return IdMission;
+    }
 }

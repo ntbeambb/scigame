@@ -1355,7 +1355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ee86975c886e7f47a23259602c730ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  problem: {fileID: 11400000, guid: 8ed371c9b163a4c43a60f795ac9c06f7, type: 2}
+  ProList: {fileID: 11400000, guid: e91fb027e30abc04dbb472ad3b906458, type: 2}
   data: {fileID: 11400000, guid: eccc4cd27c57d9b479989d14027d0fdd, type: 2}
   backpack: {fileID: 11400000, guid: 787243cc33ae1e949a5eca7c5b11f0c5, type: 2}
   subtask:
@@ -1363,6 +1363,8 @@ MonoBehaviour:
   progressbar: {fileID: 1469082706}
   Problemtext: {fileID: 1102012793}
   Popup: {fileID: 1342739200}
+  SceneData: {fileID: 11400000, guid: 38dccfb8906752047934ca24bec4c160, type: 2}
+  graphdata: {fileID: 11400000, guid: d0dbb96e5264bab42aa9f6ff0fc11dcb, type: 2}
   Copy: 1
 --- !u!1 &1028552992
 GameObject:

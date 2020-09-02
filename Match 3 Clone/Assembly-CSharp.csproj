@@ -60,6 +60,7 @@
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ChemData.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\GraphData.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ProblemData.cs" />
+     <Compile Include="Assets\MainSystem\script\ScibeamScript\ProblemList.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ProgressData.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ScibeamData.cs" />
      <Compile Include="Assets\MainSystem\script\UIScript\BookScript.cs" />
