@@ -85,6 +85,7 @@
      <Compile Include="Assets\Scenes\SettingScene\EffectSet.cs" />
      <Compile Include="Assets\Scenes\SettingScene\MusicSet.cs" />
      <Compile Include="Assets\Scenes\workshop\InputWindowScript.cs" />
+     <Compile Include="Assets\Scenes\workshop\inventoryScript.cs" />
      <Compile Include="Assets\Scenes\workshop\WorshopScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
