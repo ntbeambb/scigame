@@ -9,7 +9,7 @@ public class InventoryMinigame : MonoBehaviour
     public InventorySystem backpack;
     public List<GameObject> ItemList = new List<GameObject>();
     public int Slot;
-    private int StartPo;
+    public int StartPo;
     private GameObject[] DisplaySlot;
     private GameObject[] NumSlot;
     private Vector2 BarPo;
@@ -54,6 +54,7 @@ public class InventoryMinigame : MonoBehaviour
     public void display(){
         int count = backpack.container.Count;
         //Debug.Log("Count = "+count);
+        Slot = DisplaySlot.Length;
         for(int i=0; i<Slot; i++){
             if(DisplaySlot[i]!=null)Destroy(DisplaySlot[i]);
             if(NumSlot[i]!=null)Destroy(NumSlot[i]);

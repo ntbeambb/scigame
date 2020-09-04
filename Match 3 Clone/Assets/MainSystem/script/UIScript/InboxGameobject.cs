@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class InboxGameobject : MonoBehaviour
 {
-    public virtual void GetItem(int _id){
+    public virtual void GetItem(int _id,int _amount){
     }
 
 }

@@ -14,7 +14,7 @@ public class WorshopScript : InboxGameobject
         inputID = new List<int>();
         inputAmount = new List<int>();
     }
-    public override void GetItem(int _id){
+    public override void GetItem(int _id,int _amount){
         Debug.Log("Sir gut");
         int l=inputID.Count;
         for(int i = 0;i<l ;i++){

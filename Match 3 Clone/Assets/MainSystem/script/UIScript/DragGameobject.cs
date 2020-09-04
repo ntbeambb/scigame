@@ -25,7 +25,7 @@ public class DragGameobject : MonoBehaviour
             InboxObject = InboxManager.GetComponent<InboxManager>().GetInbox(transform.position);
             int id = GetComponent<ScibeamData>().ID();
 
-            InboxObject.GetComponent<InboxGameobject>().GetItem(id);
+            InboxObject.GetComponent<InboxGameobject>().GetItem(id,1);
 
             transform.parent.GetComponent<InventoryMinigame>().display();
             //Debug.Log("Workk");

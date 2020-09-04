@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: SceneMemory
   m_EditorClassIdentifier: 
   SceneStack:
-  - mainmanu
   - TreeGraph
-  - minigame
-  - mainmanu
-  - TreeGraph
-  - minigame
-  - mainmanu
-  - TreeGraph
-  - minigame
   - 
-  NumScene: 9
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  NumScene: 1
   IdMission: 1

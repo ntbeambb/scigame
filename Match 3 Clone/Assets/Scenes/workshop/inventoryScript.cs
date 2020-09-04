@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class inventoryScript : MonoBehaviour
 {
@@ -9,9 +10,11 @@ public class inventoryScript : MonoBehaviour
     public GameObject prefab;
     public List<GameObject> AllItem;
     public InventorySystem Backpack;
+    public GameObject workshop;
 
-    public float sty;
-    public float muly;
+    private float st_y;
+    public float size_y;
+    public float diff_y;
     private GameObject CreateItem(int _id){
         Vector2 po = new Vector2(0,0);
         GameObject ret = Instantiate(prefab,po,Quaternion.identity,parent.transform) as GameObject;
@@ -20,20 +23,44 @@ public class inventoryScript : MonoBehaviour
         return ret;
 
     }
+    private void ReNum(GameObject inp,int num){
+        inp.GetComponent<ItemWorkshopScript>().text.GetComponent<TextMeshProUGUI>().text = "X "+num.ToString();
+    }
     void Start()
     {
-        int i;
         int l = Backpack.container.Count;
-        for(i=0;i<l;i++){
+        //resize
+        var k = parent.GetComponent<RectTransform>().sizeDelta;
+        k.y = l*size_y+(l+1)*diff_y;
+        parent.GetComponent<RectTransform>().sizeDelta = k;
+        st_y = parent.GetComponent<RectTransform>().sizeDelta.y/2-diff_y;
+        //additem
+        for(int i=0;i<l;i++){
             AllItem.Add(CreateItem(Backpack.container[i].id));
-            AllItem[i].transform.position = new Vector2(0,i*muly+sty);
-            // change number
+        }
+        Display(0);
+    }
+    public void Display(int i){
+        int l = Backpack.container.Count;
+        if(i>=l)i=l-1;
+        if(i<0)i=0;
+        for(;i<l;i++){
+            AllItem[i].GetComponent<RectTransform>().localPosition = new Vector2(0,st_y-i*(diff_y+size_y));
+            ReNum(AllItem[i],Backpack.container[i].amount);
         }
     }
+    public void RemoveItem(int _id,GameObject element){
+        int _amount = 1;
+        int inp = Backpack.RemoveItem(_id,_amount);
+        if(inp==2){
+            //Debug.Log("destroy");
+            AllItem.Remove(element);
+            if(element!=null)Destroy(element);
+        }
+        workshop.GetComponent<WorshopScript>().GetItem(_id,_amount);
+        Display(0);
 
-
-    void Update()
-    {
-        
     }
+
+
 }

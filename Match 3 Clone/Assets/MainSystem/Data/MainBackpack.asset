@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   container:
   - id: 1
-    name: Carbon dot
-    amount: 5
-  - id: 3
-    name: Oxygen dot
-    amount: 3
-  - id: 4
-    name: Nitrogen dot
-    amount: 4
+    name: 
+    amount: 8
   - id: 2
-    name: Hydrogen dot
-    amount: 0
+    name: 
+    amount: 9
+  - id: 3
+    name: 
+    amount: 9
+  - id: 4
+    name: 
+    amount: 8

@@ -14,6 +14,7 @@ public class ProlemInbox : InboxGameobject
     public GameObject progressbar;
     public GameObject Problemtext;
     public GameObject Popup;
+    public GameObject inventory;
     public SceneDataScript SceneData;
     public GraphData graphdata;
     private int nowsub;
@@ -42,14 +43,18 @@ public class ProlemInbox : InboxGameobject
         }
         return -1;
     }
-    public override void GetItem(int _id){
+    public override void GetItem(int _id,int _amount){
         int po = CheckItem(_id);
         if(po != -1 ){
             if(subtask.Item[po].amount>0){
                 //Debug.Log("Remove Item amount->"+subtask.Item[po].amount);
-                backpack.RemoveItem(_id,1);
+                int c = backpack.RemoveItem(_id,1);
                 subtask.Item[po].amount--;
-
+                if(c==2){
+                    var invent = inventory.GetComponent<InventoryMinigame>();
+                    if(invent.StartPo >= backpack.container.Count)invent.StartPo = backpack.container.Count-1;
+                    inventory.GetComponent<InventoryMinigame>().display();
+                }
                 data.SendSub(subtask);
                 var pro = data.GetProgress();
                 progressbar.GetComponent<Slider>().value = pro;

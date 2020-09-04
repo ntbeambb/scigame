@@ -24,11 +24,15 @@ public class InventorySystem : ScriptableObject
             container[inp].amount += _amount;
         }
     }
-    public bool RemoveItem(int _id, int _amount){
+    public int RemoveItem(int _id, int _amount){
         int inp = IdCheck(_id);
-        if(inp==-1 || container[inp].amount<_amount)return false;
+        if(inp==-1 || container[inp].amount<_amount)return 0;
         container[inp].amount -= _amount;
-        return true;
+        if(container[inp].amount == 0){
+            container.Remove(container[inp]);
+            return 2;
+        }
+        return 1;
     }
 
 }

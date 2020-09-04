@@ -5,11 +5,13 @@ using UnityEngine;
 public class ItemWorkshopScript : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject text;
+    public GameObject image;
     public void SendId()
     {
-        GameObject workshop = GameObject.Find("workshop");
+        GameObject inventory = GameObject.Find("Slot");
         int id = GetComponent<ScibeamData>().ID();
-        workshop.GetComponent<WorshopScript>().GetItem(id);
+        inventory.GetComponent<inventoryScript>().RemoveItem(id,this.gameObject);
 
     }
 }

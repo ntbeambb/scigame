@@ -35,7 +35,7 @@ public class SceneManagerScript : MonoBehaviour
             SceneData.PushScene(SceneManager.GetActiveScene().name);
             SceneManager.LoadScene("mainmanu");
         }
-        
+        SceneData.ResetScene();
     }
     public void GraphScene(){
         if(SceneData.NumScene>0 && SceneData.PreScene()=="TreeGraph")BackScene();

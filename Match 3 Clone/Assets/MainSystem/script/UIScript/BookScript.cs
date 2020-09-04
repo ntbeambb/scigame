@@ -14,7 +14,7 @@ public class BookScript : InboxGameobject
     /*private void OnMouseDown(){
        OpenBook(0);
     }*/
-    public override void GetItem(int _id){
+    public override void GetItem(int _id,int _amount){
         OpenBook(_id);
     }
 }
