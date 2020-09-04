@@ -21,3 +21,209 @@ MonoBehaviour:
     - id: 22
       name: O2
       amount: 1
+  - input:
+    - id: 2
+      name: H
+      amount: 2
+    output:
+    - id: 37
+      name: H2
+      amount: 1
+  - input:
+    - id: 2
+      name: H
+      amount: 2
+    - id: 3
+      name: O
+      amount: 1
+    output:
+    - id: 21
+      name: H2O
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 1
+    - id: 2
+      name: O
+      amount: 2
+    output:
+    - id: 22
+      name: CO2
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 12
+    - id: 2
+      name: H
+      amount: 22
+    - id: 3
+      name: O
+      amount: 11
+    output:
+    - id: 22
+      name: C12H22O11
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 1
+    - id: 2
+      name: H
+      amount: 4
+    - id: 3
+      name: O
+      amount: 1
+    output:
+    - id: 24
+      name: CH3OH
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 3
+    - id: 2
+      name: H
+      amount: 6
+    - id: 4
+      name: N
+      amount: 6
+    output:
+    - id: 25
+      name: C3H6N6
+      amount: 1
+  - input:
+    - id: 5
+      name: Ca
+      amount: 1
+    - id: 1
+      name: C
+      amount: 1
+    - id: 3
+      name: O
+      amount: 3
+    output:
+    - id: 26
+      name: CaCO3
+      amount: 1
+  - input:
+    - id: 6
+      name: Ti
+      amount: 1
+    - id: 3
+      name: O
+      amount: 2
+    output:
+    - id: 27
+      name: TiO2
+      amount: 1
+  - input:
+    - id: 7
+      name: Cr
+      amount: 2
+    - id: 3
+      name: O
+      amount: 3
+    output:
+    - id: 28
+      name: Cr2O3
+      amount: 1
+  - input:
+    - id: 8
+      name: Cd
+      amount: 1
+    - id: 9
+      name: S
+      amount: 1
+    - id: 3
+      name: O
+      amount: 4
+    output:
+    - id: 29
+      name: CdSO4
+      amount: 1
+  - input:
+    - id: 10
+      name: Na
+      amount: 1
+    - id: 11
+      name: Cl
+      amount: 1
+    output:
+    - id: 30
+      name: NaCl
+      amount: 1
+  - input:
+    - id: 14
+      name: K
+      amount: 1
+    - id: 13
+      name: Au
+      amount: 1
+    - id: 1
+      name: C
+      amount: 2
+    - id: 4
+      name: N
+      amount: 2
+    output:
+    - id: 22
+      name: K(Au(CN)2)
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 8
+    - id: 2
+      name: H
+      amount: 9
+    - id: 4
+      name: N
+      amount: 1
+    - id: 3
+      name: O
+      amount: 2
+    output:
+    - id: 22
+      name: C8H9NO2
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 7
+    - id: 2
+      name: H
+      amount: 5
+    - id: 10
+      name: Na
+      amount: 1
+    - id: 3
+      name: O
+      amount: 2
+    output:
+    - id: 33
+      name: C7H5NaO2
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 5
+    - id: 2
+      name: H
+      amount: 8
+    output:
+    - id: 34
+      name: C5H8
+      amount: 1
+  - input:
+    - id: 2
+      name: H
+      amount: 1
+    - id: 11
+      name: Cl
+      amount: 1
+    output:
+    - id: 35
+      name: HCl
+      amount: 1
