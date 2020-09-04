@@ -5,9 +5,9 @@ using UnityEngine;
 public class ScibeamData : MonoBehaviour
 {
     [SerializeField] 
-    private int id;
+    public int id;
     [SerializeField] 
-    private string SciName;
+    public string SciName;
 
     public int ID(){
         return id;
