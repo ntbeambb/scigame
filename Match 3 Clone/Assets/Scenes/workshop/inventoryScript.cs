@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class inventoryScript : MonoBehaviour
@@ -20,6 +21,7 @@ public class inventoryScript : MonoBehaviour
         GameObject ret = Instantiate(prefab,po,Quaternion.identity,parent.transform) as GameObject;
         ret.GetComponent<ScibeamData>().id = _id;
         //add image
+        ret.GetComponent<ItemWorkshopScript>().image.GetComponent<Image>().sprite = Allpic.ID[_id];
         return ret;
 
     }
