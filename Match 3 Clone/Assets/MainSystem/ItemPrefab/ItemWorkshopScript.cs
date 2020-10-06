@@ -8,10 +8,17 @@ public class ItemWorkshopScript : MonoBehaviour
     public GameObject text;
     public GameObject image;
     public void SendId()
-    {
-        GameObject inventory = GameObject.Find("Slot");
-        int id = GetComponent<ScibeamData>().ID();
-        inventory.GetComponent<inventoryScript>().RemoveItem(id,this.gameObject);
+    {   
+        if(transform.parent.name == "Slot"){
+            GameObject inventory = GameObject.Find("Slot");
+            int id = GetComponent<ScibeamData>().ID();
+            inventory.GetComponent<inventoryScript>().RemoveItem(id,this.gameObject);
+        }else{
+            GameObject inventory = GameObject.Find("Content");
+            int id = GetComponent<ScibeamData>().ID();
+            inventory.GetComponent<InputMix>().RemoveItem(id,this.gameObject);
+
+        }
 
     }
 }

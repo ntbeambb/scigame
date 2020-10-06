@@ -14,56 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chemdata:
   - input:
-    - id: 3
-      name: O
-      amount: 2
-    output:
-    - id: 22
-      name: O2
-      amount: 1
-  - input:
-    - id: 2
-      name: H
-      amount: 2
-    output:
-    - id: 37
-      name: H2
-      amount: 1
-  - input:
-    - id: 2
-      name: H
-      amount: 2
-    - id: 3
-      name: O
-      amount: 1
-    output:
-    - id: 21
-      name: H2O
-      amount: 1
-  - input:
     - id: 1
       name: C
       amount: 1
-    - id: 2
+    - id: 3
       name: O
       amount: 2
     output:
     - id: 22
       name: CO2
-      amount: 1
-  - input:
-    - id: 1
-      name: C
-      amount: 12
-    - id: 2
-      name: H
-      amount: 22
-    - id: 3
-      name: O
-      amount: 11
-    output:
-    - id: 22
-      name: C12H22O11
       amount: 1
   - input:
     - id: 1
@@ -92,6 +51,103 @@ MonoBehaviour:
     output:
     - id: 25
       name: C3H6N6
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 5
+    - id: 2
+      name: H
+      amount: 8
+    output:
+    - id: 34
+      name: C5H8
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 7
+    - id: 2
+      name: H
+      amount: 5
+    - id: 10
+      name: Na
+      amount: 1
+    - id: 3
+      name: O
+      amount: 2
+    output:
+    - id: 33
+      name: C7H5NaO2
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 8
+    - id: 2
+      name: H
+      amount: 9
+    - id: 4
+      name: N
+      amount: 1
+    - id: 3
+      name: O
+      amount: 2
+    output:
+    - id: 22
+      name: C8H9NO2
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 12
+    - id: 2
+      name: H
+      amount: 22
+    - id: 3
+      name: O
+      amount: 11
+    output:
+    - id: 22
+      name: C12H22O11
+      amount: 1
+  - input:
+    - id: 2
+      name: H
+      amount: 1
+    - id: 11
+      name: Cl
+      amount: 1
+    output:
+    - id: 35
+      name: HCl
+      amount: 1
+  - input:
+    - id: 2
+      name: H
+      amount: 2
+    output:
+    - id: 37
+      name: H2
+      amount: 1
+  - input:
+    - id: 2
+      name: H
+      amount: 2
+    - id: 3
+      name: O
+      amount: 1
+    output:
+    - id: 21
+      name: H2O
+      amount: 1
+  - input:
+    - id: 3
+      name: O
+      amount: 2
+    output:
+    - id: 22
+      name: O2
       amount: 1
   - input:
     - id: 5
@@ -170,60 +226,4 @@ MonoBehaviour:
     output:
     - id: 22
       name: K(Au(CN)2)
-      amount: 1
-  - input:
-    - id: 1
-      name: C
-      amount: 8
-    - id: 2
-      name: H
-      amount: 9
-    - id: 4
-      name: N
-      amount: 1
-    - id: 3
-      name: O
-      amount: 2
-    output:
-    - id: 22
-      name: C8H9NO2
-      amount: 1
-  - input:
-    - id: 1
-      name: C
-      amount: 7
-    - id: 2
-      name: H
-      amount: 5
-    - id: 10
-      name: Na
-      amount: 1
-    - id: 3
-      name: O
-      amount: 2
-    output:
-    - id: 33
-      name: C7H5NaO2
-      amount: 1
-  - input:
-    - id: 1
-      name: C
-      amount: 5
-    - id: 2
-      name: H
-      amount: 8
-    output:
-    - id: 34
-      name: C5H8
-      amount: 1
-  - input:
-    - id: 2
-      name: H
-      amount: 1
-    - id: 11
-      name: Cl
-      amount: 1
-    output:
-    - id: 35
-      name: HCl
       amount: 1

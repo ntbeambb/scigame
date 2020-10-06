@@ -87,6 +87,7 @@
      <Compile Include="Assets\Scenes\MinigameScene\Scripts\SwipeController.cs" />
      <Compile Include="Assets\Scenes\SettingScene\EffectSet.cs" />
      <Compile Include="Assets\Scenes\SettingScene\MusicSet.cs" />
+     <Compile Include="Assets\Scenes\workshop\InputMix.cs" />
      <Compile Include="Assets\Scenes\workshop\InputWindowScript.cs" />
      <Compile Include="Assets\Scenes\workshop\inventoryScript.cs" />
      <Compile Include="Assets\Scenes\workshop\WorshopScript.cs" />
