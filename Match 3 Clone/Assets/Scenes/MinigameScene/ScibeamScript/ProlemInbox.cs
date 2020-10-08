@@ -29,8 +29,8 @@ public class ProlemInbox : InboxGameobject
         progressbar.GetComponent<Slider>().value = data.GetProgress();
         
         TextMeshProUGUI textmesh = Problemtext.GetComponent<TextMeshProUGUI>();
-        //Debug.Log(problem.ProblemText);
-        textmesh.text = problem.ProblemText;
+       //Debug.Log("Start "+subtask.SubText);
+        textmesh.text = subtask.SubText;
 
     }
     private int CheckItem(int input){
@@ -61,8 +61,14 @@ public class ProlemInbox : InboxGameobject
                 //Debug.Log("Progress "+data.GetProgress());
                 subtask = data.GetSub();
 
+                //upgate text
+                TextMeshProUGUI textmesh = Problemtext.GetComponent<TextMeshProUGUI>();
+                textmesh.text = subtask.SubText;
+                //Debug.Log("GetItem "+subtask.SubText);
+                
                 if(pro == 1){
                     Popup.SetActive(true);
+                    SceneData.PreIdMission = IDmission;
                     graphdata.Finish(IDmission);
                     Time.timeScale=0;
                 }

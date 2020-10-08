@@ -8,6 +8,7 @@ public class SceneDataScript : ScriptableObject
     [SerializeField]private string[] SceneStack = new string[MaxScene];
     public int NumScene = 0;
     public int IdMission;
+    public int PreIdMission;
     public void ResetScene(){
         for(int i=0;i<MaxScene;i++){
             SceneStack[i]=null;

@@ -5,6 +5,8 @@ using UnityEngine;
 public class ProblemData : ScriptableObject
 {   
     public string ProblemText;
+    public Sprite Background;
+    public Vector2 StartBackground;
     [SerializeField] private static int SubtaskAmount = 1;
     [SerializeField] private Subtask[] problem = new Subtask[SubtaskAmount];
     
@@ -19,10 +21,13 @@ public class ProblemData : ScriptableObject
 [System.Serializable]
 public class Subtask{
     public static int ItemType;
+    [SerializeField] public string SubText;
     public List<slot> Item = new List<slot>();
+
     public Subtask Copy(){
         Subtask copy = new Subtask();
         //Debug.Log("Num of Slot "+copy.Item.Count);
+        copy.SubText = this.SubText;
         for(int i=0; i<this.Item.Count; i++){
             copy.Item.Add(this.Item[i].Copy());
         }
