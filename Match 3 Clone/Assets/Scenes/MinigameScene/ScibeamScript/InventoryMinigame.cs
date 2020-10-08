@@ -15,12 +15,32 @@ public class InventoryMinigame : MonoBehaviour
     private Vector2 BarPo;
     public float StartX;
     private TextMeshPro textmesh;
+
     public GameObject ShowNum;
     void Awake(){
         StartPo = 0;
         DisplaySlot = new GameObject[Slot];
         NumSlot = new GameObject[Slot];
+        
+
     }
+    void Start(){
+        //Debug.Log("start");
+        //display();
+
+        //bug
+        var po = DisplaySlot[0].GetComponent<Transform>().position;
+        po.x = 2.121f;
+        po.z += 10;
+        DisplaySlot[0].GetComponent<Transform>().position = po;
+            //Debug.Log("item Po "+DisplaySlot[0].GetComponent<Transform>().position);
+        po = NumSlot[0].GetComponent<Transform>().position;
+        po.z += 10;
+        NumSlot[0].GetComponent<Transform>().position = po;
+
+    }
+
+
     private GameObject AddInventory(int po,GameObject gob)
     {
         Vector2 tilepo = new Vector2(transform.position.x + po*1.82f - StartX,transform.position.y);
@@ -52,6 +72,7 @@ public class InventoryMinigame : MonoBehaviour
         return null;
     }
     public void display(){
+        //Debug.Log("Display");
         int count = backpack.container.Count;
         //Debug.Log("Count = "+count);
         Slot = DisplaySlot.Length;
@@ -68,10 +89,12 @@ public class InventoryMinigame : MonoBehaviour
             DisplaySlot[i] = AddInventory(i,tempgameobject);
             //Show Volume of Item
             NumSlot[i] = AddNumber(num);
-            
+            //float zz = DisplaySlot[i].GetComponent<Transform>().position.x;
+            //Debug.Log("Po z "+zz);
             //Debug.Log("Show element "+tempgameobject.name+" with "+num);
 
         }
+
     }
     public void Slide(int inp){
         if(inp == 0){

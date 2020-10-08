@@ -5,7 +5,7 @@ using UnityEngine;
 public class DragGameobject : MonoBehaviour
 {
     public bool return_origin_position;
-    private Vector2 origin_position;
+    public Vector2 origin_position;
     public InventorySystem backpack;
     private Vector2 temp;
     private GameObject InboxManager;
@@ -33,6 +33,7 @@ public class DragGameobject : MonoBehaviour
         }
         if(return_origin_position && ck){
             transform.position = origin_position;
+            //Debug.Log("Origin "+transform.position);
         }
     }
     private void OnMouseDrag(){
