@@ -123,9 +123,9 @@ public class WorshopScript : InboxGameobject
         inputID.Clear();
         inputAmount.Clear();
         int n = chemdata.chemdata[index].output.Count;
-        Debug.Log(chemdata.chemdata.Count);
+        //Debug.Log(chemdata.chemdata.Count);
         for(int i=0;i<n;i++){
-            Debug.Log("index "+index+" i "+i);
+            //Debug.Log("index "+index+" i "+i);
             inputID.Add(chemdata.chemdata[index].output[i].id);
             inputAmount.Add(chemdata.chemdata[index].output[i].amount);
         }
