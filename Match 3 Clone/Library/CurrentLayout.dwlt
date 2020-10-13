@@ -117,7 +117,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 448}
   m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 68
+  controlID: 87
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 50
+  controlID: 69
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,8 +214,8 @@ MonoBehaviour:
     y: 0
     width: 306
     height: 947
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -266,8 +266,8 @@ MonoBehaviour:
     y: 0
     width: 416
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -462,9 +462,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f4290000
+      m_SelectedIDs: 282a0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 42adffff94adffffdaadffffe0aeffffe8b3ffff3ab4fffffce0ffff22e2ffff0ee4ffff86e4ffff3ce5ffff5ee8ffff1eebffffccfbffffc62c0000142d00006c2d0000ba2d0000
+      m_ExpandedIDs: dec0ffffdefbffff9a2d0000e02d00006c2e0000cc4c0000304d0000584d0000c84d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -526,20 +526,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MainSystem/Data
+    - Assets/Scenes/MinigameScene/ScibeamScript
   m_ViewMode: 1
   m_StartGridSize: 53
   m_LastFolders:
-  - Assets/MainSystem/Data
+  - Assets/Scenes/MinigameScene/ScibeamScript
   m_LastFoldersGridSize: 53
   m_LastProjectPath: C:\Users\pipomk\Documents\GitHub\scigame\Match 3 Clone
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fc2b0000
-    m_LastClickedID: 11260
-    m_ExpandedIDs: 00000000ce2600008a270000562800005a280000e4280000cc290000202a0000742a00007c2b0000fe2d0000002e0000022e0000042e000000ca9a3b
+    m_SelectedIDs: 3a2c0000
+    m_LastClickedID: 11322
+    m_ExpandedIDs: 0000000002270000be2700008a2800008e28000018290000002a0000542a0000a82a0000b02b0000c02f0000c22f0000c42f0000c62f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -567,7 +567,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ce2600008a270000562800005a280000e4280000cc290000202a0000742a00007c2b0000fe2d0000002e0000022e0000042e0000
+    m_ExpandedIDs: 0000000002270000be2700008a2800008e28000018290000002a0000542a0000a82a0000b02b0000c02f0000c22f0000c42f0000c62f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

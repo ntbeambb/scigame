@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: SceneMemory
   m_EditorClassIdentifier: 
   SceneStack:
-  - TreeGraph
-  - TreeGraph
+  - minigame
+  - minigame
+  - minigame
   - 
   - 
   - 
@@ -22,9 +23,10 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  NumScene: 2
+  NumScene: 3
   IdMission: 0
   PreIdMission: 0
-  Qprob: 0.6
-  StartQuizProb: 0.5
+  Qprob: 0.3
+  SkipCo: 1
+  StartQuizProb: 0.3
+  LockQ: 6

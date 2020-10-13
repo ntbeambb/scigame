@@ -15,12 +15,15 @@ public class QuizPlay : MonoBehaviour
     public List<GameObject> Ctext = new List<GameObject>();
     public void StartQuiz(){
 
-        if(Random.Range(0.0f,1.0f)>mem.Qprob){
+        if(Random.Range(0.00f,1.00f)>mem.Qprob){
             End();
-            mem.Qprob += 0.1f;
-            if(mem.Qprob>1.0f)mem.Qprob=1.0f;
+            mem.SkipCo++;
+            mem.Qprob += (1.00f-mem.Qprob)*((float)mem.SkipCo/(float)mem.LockQ);
+            if(mem.Qprob>1.00f)mem.Qprob=1.00f;
+            //Debug.Log((float)mem.SkipCo/(float)mem.LockQ);
             return;
         }
+        mem.SkipCo=0;
         mem.Qprob = mem.StartQuizProb;
         Qnow = quizList.Qlist[Gdata.Pass[Random.Range(0,Gdata.Pass.Count)]];
         for(var i=0;i<4;i++){
