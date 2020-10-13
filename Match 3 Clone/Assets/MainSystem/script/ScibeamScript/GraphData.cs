@@ -6,6 +6,7 @@ public class GraphData : ScriptableObject
 {
     public List<mission> CanPlay = new List<mission>();
     public List<mission> All = new List<mission>();
+    public List<int> Pass = new List<int>();
     private int PoMision(int id){
         int temp = CanPlay.Count;
         for(int i=0;i<temp;i++){
@@ -20,6 +21,7 @@ public class GraphData : ScriptableObject
         int po = PoMision(_IDmission);
         int l = CanPlay[po].unlock.Count;
         CanPlay[po].finish = true;
+        Pass.Add(po);
         for(int i=0;i<l;i++ ){
             Unlock(CanPlay[po].unlock[i]);
         }

@@ -26,6 +26,6 @@ MonoBehaviour:
     - id: 2
       name: 
       amount: 2
-    - id: 2
+    - id: 3
       name: 
-      amount: 3
+      amount: 2

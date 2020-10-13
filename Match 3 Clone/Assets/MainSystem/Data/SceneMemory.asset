@@ -25,4 +25,6 @@ MonoBehaviour:
   - 
   NumScene: 2
   IdMission: 0
-  PreIdMission: 1
+  PreIdMission: 0
+  Qprob: 0.6
+  StartQuizProb: 0.5

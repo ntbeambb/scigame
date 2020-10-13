@@ -64,6 +64,8 @@
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ProblemData.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ProblemList.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ProgressData.cs" />
+     <Compile Include="Assets\MainSystem\script\ScibeamScript\QiuzList.cs" />
+     <Compile Include="Assets\MainSystem\script\ScibeamScript\QuizProblem.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ScibeamData.cs" />
      <Compile Include="Assets\MainSystem\script\UIScript\BookScript.cs" />
      <Compile Include="Assets\MainSystem\script\UIScript\DragGameobject.cs" />
@@ -76,6 +78,7 @@
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\InventoryDot.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\InventoryMinigame.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\ProlemInbox.cs" />
+     <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\QuizPlay.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\Scripts\BackgroundTile.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\Scripts\Board.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\Scripts\CameraScalar.cs" />

@@ -13,7 +13,7 @@ public class ProlemInbox : InboxGameobject
     public Subtask subtask;
     public GameObject progressbar;
     public GameObject Problemtext;
-    public GameObject Popup;
+    public GameObject quiz;
     public GameObject inventory;
     public SceneDataScript SceneData;
     public GraphData graphdata;
@@ -67,9 +67,11 @@ public class ProlemInbox : InboxGameobject
                 //Debug.Log("GetItem "+subtask.SubText);
                 
                 if(pro == 1){
-                    Popup.SetActive(true);
+                    //
+                    //Popup.SetActive(true);
                     SceneData.PreIdMission = IDmission;
                     graphdata.Finish(IDmission);
+                    quiz.GetComponent<QuizPlay>().StartQuiz();
                     Time.timeScale=0;
                 }
             }

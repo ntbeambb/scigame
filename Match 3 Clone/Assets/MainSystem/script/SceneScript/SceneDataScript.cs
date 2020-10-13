@@ -9,6 +9,8 @@ public class SceneDataScript : ScriptableObject
     public int NumScene = 0;
     public int IdMission;
     public int PreIdMission;
+    public float Qprob;
+    public float StartQuizProb;
     public void ResetScene(){
         for(int i=0;i<MaxScene;i++){
             SceneStack[i]=null;
