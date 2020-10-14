@@ -48,6 +48,7 @@ public class DragGameobject : MonoBehaviour
         }*/
         //codeee2
         //codeee11111111
-        // code bug1
+        //code bug1
+        //code bug2
     }
 }
