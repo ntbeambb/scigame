@@ -7,7 +7,7 @@ public class GraphData : ScriptableObject
     public List<mission> CanPlay = new List<mission>();
     public List<mission> All = new List<mission>();
     public List<int> Pass = new List<int>();
-    private int PoMision(int id){
+    public int PoMision(int id){
         int temp = CanPlay.Count;
         for(int i=0;i<temp;i++){
             if(CanPlay[i].id_mission==id)return i;

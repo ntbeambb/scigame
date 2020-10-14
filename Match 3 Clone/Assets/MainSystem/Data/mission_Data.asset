@@ -21,6 +21,18 @@ MonoBehaviour:
     Goal: 
     finish: 0
     unlock: 03000000
+  - id_mission: 1
+    Goal: 
+    finish: 0
+    unlock: 03000000
+  - id_mission: 1
+    Goal: 
+    finish: 0
+    unlock: 03000000
+  - id_mission: 1
+    Goal: 
+    finish: 0
+    unlock: 03000000
   All:
   - id_mission: 0
     Goal: 
@@ -50,3 +62,4 @@ MonoBehaviour:
     Goal: 
     finish: 0
     unlock: 
+  Pass: 000000000000000000000000
