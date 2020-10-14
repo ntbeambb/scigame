@@ -61,7 +61,7 @@ public class InventoryMinigame : MonoBehaviour
         tile.GetComponent<RectTransform>().localScale = new Vector2(sx,sy);
         //relocate
         var pox = tile.GetComponent<RectTransform>().position;
-        pox.x += (sx-1f)/2;
+        pox.x += (sx-1f)/2f;
         tile.GetComponent<RectTransform>().position = pox;
         //set parent
         tile.transform.SetParent(transform);
@@ -70,8 +70,8 @@ public class InventoryMinigame : MonoBehaviour
         return tile;
     }
     private GameObject AddNumber(int num){
-        int ck = (int)Mathf.Log10(num);
-        Vector2 tilepo = new Vector2(transform.position.x + 1.1f - 0.6f*ck,transform.position.y);
+        //int ck = (int)Mathf.Log10(num);
+        Vector2 tilepo = new Vector2(transform.position.x,transform.position.y);
 		GameObject NumDis = Instantiate(ShowNum,tilepo, Quaternion.identity,this.transform) as GameObject;
         textmesh = NumDis.GetComponent<TextMeshPro>();
         textmesh.text = "X "+ num.ToString();

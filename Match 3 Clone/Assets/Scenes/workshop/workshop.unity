@@ -1596,6 +1596,7 @@ MonoBehaviour:
   inventory: {fileID: 2043276647}
   size_y: 60
   diff_y: 20
+  Itemsize: 8
 --- !u!1 &1208213022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2988,6 +2989,7 @@ MonoBehaviour:
   workshop: {fileID: 630891695}
   size_y: 60
   diff_y: 20
+  Itemsize: 8
 --- !u!1 &2046682074
 GameObject:
   m_ObjectHideFlags: 0
