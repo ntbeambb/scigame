@@ -16,13 +16,23 @@ public class inventoryScript : MonoBehaviour
     private float st_y;
     public float size_y;
     public float diff_y;
+    public float Itemsize;
 
     private GameObject CreateItem(int _id){
         Vector2 po = new Vector2(0,0);
         GameObject ret = Instantiate(prefab,po,Quaternion.identity,parent.transform) as GameObject;
         ret.GetComponent<ScibeamData>().id = _id;
         //add image
-        ret.GetComponent<ItemWorkshopScript>().image.GetComponent<Image>().sprite = Allpic.ID[_id];
+        var pic = ret.GetComponent<ItemWorkshopScript>().image;
+        pic.GetComponent<Image>().sprite = Allpic.ID[_id];
+        //resize
+        var sx = Allpic.ID[_id].bounds.size.x / Itemsize;
+        var sy = Allpic.ID[_id].bounds.size.y / Itemsize;
+        pic.GetComponent<RectTransform>().localScale = new Vector2(sx,sy);
+        //relocate
+        var pox = pic.GetComponent<RectTransform>().position;
+        pox.x += (sx-1f)/4f*pic.GetComponent<RectTransform>().sizeDelta.x;
+        pic.GetComponent<RectTransform>().position = pox;
         return ret;
 
     }
