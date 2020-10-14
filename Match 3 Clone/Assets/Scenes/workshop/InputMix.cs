@@ -18,6 +18,8 @@ public class InputMix : MonoBehaviour
     public float size_y;
     public float diff_y;
     public float Itemsize;
+    public float stx_pic;
+    public float size;
     private GameObject CreateItem(int _id){
         Vector2 po = new Vector2(0,0);
         GameObject ret = Instantiate(prefab,po,Quaternion.identity,parent.transform) as GameObject;
@@ -31,8 +33,9 @@ public class InputMix : MonoBehaviour
         pic.GetComponent<RectTransform>().localScale = new Vector2(sx,sy);
         //relocate
         var pox = pic.GetComponent<RectTransform>().position;
-        pox.x += (sx-1f)/4f*pic.GetComponent<RectTransform>().sizeDelta.x;
+        pox.x += (sx-1f)/4f*55;//pic.GetComponent<RectTransform>().sizeDelta.x;
         pic.GetComponent<RectTransform>().position = pox;
+        //Debug.Log("in Po "+pox.x);
         return ret;
 
     }
@@ -64,11 +67,12 @@ public class InputMix : MonoBehaviour
         k = inp.GetComponent<ItemWorkshopScript>().text.GetComponent<RectTransform>().localPosition;
         k.x = 70;
         inp.GetComponent<ItemWorkshopScript>().text.GetComponent<RectTransform>().localPosition = k;
+        
 
         k = inp.GetComponent<ItemWorkshopScript>().image.GetComponent<RectTransform>().localPosition;
-        k.x = -110;
+        k.x += stx_pic;
         inp.GetComponent<ItemWorkshopScript>().image.GetComponent<RectTransform>().localPosition = k;
-
+        inp.GetComponent<ItemWorkshopScript>().image.GetComponent<RectTransform>().sizeDelta = new Vector2(55,55);
         return inp;
     }
     public void Display(int i){
