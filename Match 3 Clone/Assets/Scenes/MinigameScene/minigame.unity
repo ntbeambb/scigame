@@ -4481,15 +4481,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backpack: {fileID: 11400000, guid: 787243cc33ae1e949a5eca7c5b11f0c5, type: 2}
-  ItemList:
-  - {fileID: 6663653678901454983, guid: 813d9d82f267ffb4480c34e0bc396ec9, type: 3}
-  - {fileID: 5475920502155536684, guid: 61ce9b6af205d324ea3920376c076e39, type: 3}
-  - {fileID: 124076248426702817, guid: 7489eae24080aea4f93163569dc71ce1, type: 3}
-  - {fileID: 6529368607647749773, guid: 81412e67cba5f34429d55d4552399c12, type: 3}
   Slot: 1
   StartPo: 0
+  allpic: {fileID: 11400000, guid: feafa3ac7735fd847ba1902779e6efd3, type: 2}
   StartX: 3.2
+  gob: {fileID: 3251987334614508028, guid: 8df04fd5233235a428f57bcbc20a3fc0, type: 3}
   ShowNum: {fileID: 5174949561922603995, guid: 7cf57d42486989846b71ab04ec5db1da, type: 3}
+  Itemsize: 7.5
 --- !u!114 &1931494987
 MonoBehaviour:
   m_ObjectHideFlags: 0
