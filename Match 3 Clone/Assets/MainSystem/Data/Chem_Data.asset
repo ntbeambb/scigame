@@ -94,7 +94,7 @@ MonoBehaviour:
       name: O
       amount: 2
     output:
-    - id: 22
+    - id: 32
       name: C8H9NO2
       amount: 1
   - input:
@@ -108,7 +108,7 @@ MonoBehaviour:
       name: O
       amount: 11
     output:
-    - id: 22
+    - id: 23
       name: C12H22O11
       amount: 1
   - input:
@@ -146,7 +146,7 @@ MonoBehaviour:
       name: O
       amount: 2
     output:
-    - id: 22
+    - id: 41
       name: O2
       amount: 1
   - input:
@@ -224,6 +224,81 @@ MonoBehaviour:
       name: N
       amount: 2
     output:
-    - id: 22
+    - id: 31
       name: K(Au(CN)2)
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 1
+    - id: 2
+      name: H
+      amount: 4
+    output:
+    - id: 36
+      name: CH4
+      amount: 1
+  - input:
+    - id: 2
+      name: H
+      amount: 3
+    - id: 1
+      name: C
+      amount: 1
+    - id: 3
+      name: O
+      amount: 3
+    output:
+    - id: 38
+      name: H3CO3
+      amount: 1
+  - input:
+    - id: 15
+      name: Si
+      amount: 1
+    - id: 3
+      name: O
+      amount: 2
+    output:
+    - id: 39
+      name: SiO2
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 7
+    - id: 2
+      name: H
+      amount: 1
+    output:
+    - id: 40
+      name: C7H
+      amount: 1
+  - input:
+    - id: 10
+      name: Na
+      amount: 1
+    - id: 3
+      name: O
+      amount: 1
+    - id: 2
+      name: H
+      amount: 1
+    output:
+    - id: 42
+      name: NaOH
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 2
+    - id: 3
+      name: H
+      amount: 4
+    - id: 2
+      name: O
+      amount: 2
+    output:
+    - id: 43
+      name: CH3COOH
       amount: 1
