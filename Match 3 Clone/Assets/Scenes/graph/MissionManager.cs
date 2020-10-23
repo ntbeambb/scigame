@@ -31,4 +31,7 @@ public class MissionManager : MonoBehaviour
         textmesh.text = "เป้าหมาย :"+ Graphdata.CanPlay[id].Goal;
         StartWindow.SetActive(true);
     }
+    public void CloseWindow(){
+        StartWindow.SetActive(false);
+    }
 }
