@@ -9,6 +9,7 @@ public class MissionManager : MonoBehaviour
     public GraphData Graphdata;
     public GameObject StartWindow;
     public GameObject Goalwin;
+    public GameObject Level;
     public Sprite green;
     public Sprite blue;
     public List<GameObject> point = new List<GameObject>();
@@ -28,7 +29,9 @@ public class MissionManager : MonoBehaviour
     }
     public void startwindow(int id){
         TextMeshProUGUI textmesh = Goalwin.GetComponent<TextMeshProUGUI>();
-        textmesh.text = "เป้าหมาย :"+ Graphdata.CanPlay[id].Goal;
+        textmesh.text = Graphdata.CanPlay[id].Goal;
+        TextMeshProUGUI level = Level.GetComponent<TextMeshProUGUI>();
+        level.text = (id+1).ToString();
         StartWindow.SetActive(true);
     }
     public void CloseWindow(){
