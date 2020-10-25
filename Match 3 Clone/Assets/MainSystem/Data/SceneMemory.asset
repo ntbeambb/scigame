@@ -13,9 +13,6 @@ MonoBehaviour:
   m_Name: SceneMemory
   m_EditorClassIdentifier: 
   SceneStack:
-  - minigame
-  - minigame
-  - minigame
   - 
   - 
   - 
@@ -23,10 +20,13 @@ MonoBehaviour:
   - 
   - 
   - 
-  NumScene: 3
+  - 
+  - 
+  - 
+  NumScene: 0
   IdMission: 0
   PreIdMission: 0
-  Qprob: 0.3
+  Qprob: 0.4166667
   SkipCo: 1
   StartQuizProb: 0.3
   LockQ: 6

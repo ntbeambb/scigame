@@ -27,6 +27,7 @@ public class ChangeBackground : MonoBehaviour
          return;   
         }
         if(Plist.Plist[idnow].Background == Plist.Plist[preid].Background){
+            GetComponent<Image>().sprite = Plist.Plist[preid].Background;
             st = Plist.Plist[preid].StartBackground;
             fn = Plist.Plist[idnow].StartBackground;
             sp = 1;
@@ -47,7 +48,7 @@ public class ChangeBackground : MonoBehaviour
             per = (Time.time-sttime)/ChangeTime;
             //Debug.Log(Time.time);
             if(sp == 1){
-                GetComponent<RectTransform>().anchoredPosition = new Vector2(Mathf.Lerp(st.x,fn.x,per),Mathf.Lerp(st.y,fn.y,per));
+                GetComponent<RectTransform>().anchoredPosition = new Vector2(Mathf.Lerp(st.x,-fn.x,per),Mathf.Lerp(st.y,fn.y,per));
             }else if(sp==2){
                 if(per<0.5f){
                     if(alc){
@@ -75,6 +76,7 @@ public class ChangeBackground : MonoBehaviour
             }
             yield return new WaitForSeconds(0.01f);
         }
+
     }
 
 }

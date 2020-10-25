@@ -7,6 +7,7 @@ public class ProblemData : ScriptableObject
     public string ProblemText;
     public Sprite Background;
     public Vector2 StartBackground;
+    public List<QObject> InputObject = new List<QObject>();
     [SerializeField] private static int SubtaskAmount = 1;
     [SerializeField] private Subtask[] problem = new Subtask[SubtaskAmount];
     
@@ -21,6 +22,7 @@ public class ProblemData : ScriptableObject
 [System.Serializable]
 public class Subtask{
     public static int ItemType;
+    public int IDObject;
     [SerializeField] public string SubText;
     public List<slot> Item = new List<slot>();
 
@@ -33,4 +35,9 @@ public class Subtask{
         }
         return copy;
     }
+}
+[System.Serializable]
+public class QObject{
+    public Vector2 LoPo;
+    public Sprite Object;
 }
