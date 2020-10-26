@@ -148,6 +148,7 @@ public class Dot : MonoBehaviour {
     private void OnMouseDown()
     {
 		//Destroy the hint
+        if(Time.timeScale == 0)return;
 		if (hintManager != null)
 		{
 			hintManager.DestroyHint();
@@ -160,6 +161,7 @@ public class Dot : MonoBehaviour {
 
     private void OnMouseUp()
     {
+        if(Time.timeScale == 0)return;
         if (board.currentState == GameState.move)
         {
             finalTouchPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
