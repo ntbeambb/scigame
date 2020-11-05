@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: Problem5
   m_EditorClassIdentifier: 
   ProblemText: 
+  Background: {fileID: 0}
+  StartBackground: {x: 0, y: 1.96}
+  InputObject: []
   problem:
-  - Item:
+  - IDObject: 0
+    SubText: 
+    Item:
     - id: 23
       name: C12H22O11
       amount: 1

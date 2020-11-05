@@ -16,6 +16,7 @@ public class InventoryMinigame : MonoBehaviour
     private GameObject[] NumSlot;
     private Vector2 BarPo;
     public float StartX;
+    public float StNum;
     private TextMeshPro textmesh;
     public GameObject gob;
 
@@ -34,7 +35,7 @@ public class InventoryMinigame : MonoBehaviour
 
         //bug
         var po = DisplaySlot[0].GetComponent<Transform>().position;
-        po.x = 2.121f;
+        po.x = 2.43f;
         po.z += 10;
         DisplaySlot[0].GetComponent<Transform>().position = po;
             //Debug.Log("item Po "+DisplaySlot[0].GetComponent<Transform>().position);
@@ -71,7 +72,7 @@ public class InventoryMinigame : MonoBehaviour
     }
     private GameObject AddNumber(int num){
         //int ck = (int)Mathf.Log10(num);
-        Vector2 tilepo = new Vector2(transform.position.x,transform.position.y);
+        Vector2 tilepo = new Vector2(transform.position.x+StNum,transform.position.y);
 		GameObject NumDis = Instantiate(ShowNum,tilepo, Quaternion.identity,this.transform) as GameObject;
         textmesh = NumDis.GetComponent<TextMeshPro>();
         textmesh.text = "X "+ num.ToString();
