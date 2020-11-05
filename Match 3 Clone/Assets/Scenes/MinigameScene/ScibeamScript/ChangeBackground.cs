@@ -22,10 +22,9 @@ public class ChangeBackground : MonoBehaviour
         idnow = Scenedata.IdMission;
         preid = Scenedata.PreIdMission;
         sttime = Time.time;
-        if(idnow == preid){
-
+        /*if(idnow == preid){
          return;   
-        }
+        }*/
         if(Plist.Plist[idnow].Background == Plist.Plist[preid].Background){
             GetComponent<Image>().sprite = Plist.Plist[preid].Background;
             st = Plist.Plist[preid].StartBackground;
@@ -34,9 +33,7 @@ public class ChangeBackground : MonoBehaviour
         }
         else sp=2;
         
-        
         StartCoroutine(Change());
-
         
     }
 
@@ -48,7 +45,7 @@ public class ChangeBackground : MonoBehaviour
             per = (Time.time-sttime)/ChangeTime;
             //Debug.Log(Time.time);
             if(sp == 1){
-                GetComponent<RectTransform>().anchoredPosition = new Vector2(Mathf.Lerp(st.x,-fn.x,per),Mathf.Lerp(st.y,fn.y,per));
+                GetComponent<RectTransform>().anchoredPosition = new Vector2(Mathf.Lerp(st.x,fn.x,per),Mathf.Lerp(st.y,fn.y,per));
             }else if(sp==2){
                 if(per<0.5f){
                     if(alc){
