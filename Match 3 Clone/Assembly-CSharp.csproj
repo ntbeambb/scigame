@@ -78,7 +78,6 @@
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\InventoryDot.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\InventoryMinigame.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\minigamesave.cs" />
-     <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\PauseScript.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\ProlemInbox.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\QuizPlay.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\Scripts\BackgroundTile.cs" />

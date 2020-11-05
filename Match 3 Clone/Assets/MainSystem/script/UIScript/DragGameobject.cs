@@ -19,7 +19,6 @@ public class DragGameobject : MonoBehaviour
     }
     private void OnMouseUp(){
        // Debug.Log("mouse up");
-       if(Time.timeScale == 0)return;
        bool ck = true;
         if(InboxManager.GetComponent<InboxManager>().GetInbox(transform.position) != null){
 
@@ -39,7 +38,6 @@ public class DragGameobject : MonoBehaviour
     }
     private void OnMouseDrag(){
        // Debug.Log("mouse drag");
-       if(Time.timeScale == 0)return;
         temp.x = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
         temp.y = Camera.main.ScreenToWorldPoint(Input.mousePosition).y;
         transform.position = temp;
