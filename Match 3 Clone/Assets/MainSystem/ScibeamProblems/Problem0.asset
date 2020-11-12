@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Problem0
   m_EditorClassIdentifier: 
   ProblemText: 
-  Background: {fileID: 21300000, guid: d1183134b9a28074c9358fc8fa325fac, type: 3}
-  StartBackground: {x: -640, y: 250}
+  Background: {fileID: 21300000, guid: 9b4e78dae3de401498e4672bb7a4d525, type: 3}
+  StartBackground: {x: 600, y: 250}
   InputObject:
   - LoPo: {x: 0, y: 0}
     Object: {fileID: 0}

@@ -25,10 +25,11 @@ public class ChangeBackground : MonoBehaviour
         /*if(idnow == preid){
          return;   
         }*/
-        if(Plist.Plist[idnow].Background == Plist.Plist[preid].Background){
-            GetComponent<Image>().sprite = Plist.Plist[preid].Background;
+        GetComponent<Image>().sprite = Plist.Plist[preid].Background;
             st = Plist.Plist[preid].StartBackground;
             fn = Plist.Plist[idnow].StartBackground;
+            
+        if(Plist.Plist[idnow].Background == Plist.Plist[preid].Background){
             sp = 1;
         }
         else sp=2;
@@ -71,9 +72,12 @@ public class ChangeBackground : MonoBehaviour
                 sp=0;
                 GetComponent<Image>().color = new Color32(255,255,255,255);
             }
+
+            Vector2 tem = GetComponent<RectTransform>().anchoredPosition;
+            tem.y = st.y;
+            GetComponent<RectTransform>().anchoredPosition = tem;
+
             yield return new WaitForSeconds(0.01f);
         }
-
     }
-
 }
