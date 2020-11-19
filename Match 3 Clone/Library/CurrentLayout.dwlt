@@ -117,7 +117,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 448}
   m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 95
+  controlID: 33
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 96
+  controlID: 135
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -386,9 +386,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.7918317, y: 8.370138, z: 39.777344}
+    m_Target: {x: 1.326433, y: 7.229433, z: -10.132191}
     speed: 2
-    m_Value: {x: 2.7918317, y: 8.370138, z: 39.777344}
+    m_Value: {x: 1.326433, y: 7.229433, z: -10.132191}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -420,9 +420,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 26.747639
+    m_Target: 4.341843
     speed: 2
-    m_Value: 26.747639
+    m_Value: 4.341843
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -527,23 +527,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: da2f0000
-      m_LastClickedID: 12250
-      m_ExpandedIDs: d09cffffcefbffff7e2e00006a4c0000
+      m_SelectedIDs: 82c3feff
+      m_LastClickedID: 0
+      m_ExpandedIDs: 5ccffeff6205ffff0812ffff7226ffffbc32ffff82d5ffff7cd6ffff3cdcffffcceaffff84eeffffbeeeffff60f3ffffccfbffff40310000a43500009a38000094390000e23f00003e400000c640000042410000e06d0000f26d0000466f0000047c00006a7d00005c800000c28100002097000086980000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: InboxManager
+        m_OriginalName: InboxManager
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 38962
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -602,23 +602,23 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 38}
-    m_SelectedIDs: 1a2d0000
-    m_LastClickedID: 11546
-    m_ExpandedIDs: 000000000e270000f2270000ec280000f028000096290000942a0000f82a00004c2b0000642b00006c2c0000b6300000b8300000ba300000bc30000000ca9a3b
+    m_SelectedIDs: e02c0000
+    m_LastClickedID: 11488
+    m_ExpandedIDs: 00000000d4260000b8270000b2280000b62800005c2900005a2a0000be2a0000122b00002a2b0000322c0000782f00007a2f00007c2f00007e2f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: InventoryScript
+      m_OriginalName: InventoryScript
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 10274
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -632,7 +632,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000e270000f2270000ec280000f028000096290000942a0000f82a00004c2b0000642b00006c2c0000b6300000b8300000ba300000bc300000
+    m_ExpandedIDs: 00000000d4260000b8270000b2280000b62800005c2900005a2a0000be2a0000122b00002a2b0000322c0000782f00007a2f00007c2f00007e2f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

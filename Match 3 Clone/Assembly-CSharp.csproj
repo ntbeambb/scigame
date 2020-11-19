@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MainSystem\ItemPrefab\InputObjectScript.cs" />
      <Compile Include="Assets\MainSystem\ItemPrefab\ItemWorkshopScript.cs" />
      <Compile Include="Assets\MainSystem\script\InventoryScript\InventorySystem.cs" />
      <Compile Include="Assets\MainSystem\script\InventoryScript\SaveSystem.cs" />

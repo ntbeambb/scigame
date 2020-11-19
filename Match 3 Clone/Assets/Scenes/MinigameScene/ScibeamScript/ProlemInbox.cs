@@ -25,10 +25,10 @@ public class ProlemInbox : InboxGameobject
         IDmission = SceneData.SendIdMission();
         problem = ProList.Plist[IDmission];
         
-        if(graphdata.CanPlay[graphdata.PoMision(IDmission)].finish){
+        /*if(graphdata.CanPlay[graphdata.PoMision(IDmission)].finish){
             graphdata.CanPlay[graphdata.PoMision(IDmission)].finish = false;
             Copy=true;
-        }else Copy=false;
+        }else Copy=false;*/
         if(Copy)data.Copy(problem);
         subtask = data.GetSub();
         progressbar.GetComponent<Slider>().value = data.GetProgress();

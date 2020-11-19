@@ -16,6 +16,9 @@ public class ChangeBackground : MonoBehaviour
     private float sttime;
     private bool alc = true;
     private float dark;
+
+    public GameObject workshop;
+    public GameObject inventory;
     // Start is called before the first frame update
     void Start()
     {
@@ -79,5 +82,9 @@ public class ChangeBackground : MonoBehaviour
 
             yield return new WaitForSeconds(0.01f);
         }
+        //start lab/inventory button
+        workshop.SetActive(true);
+        inventory.SetActive(true);
+        //inventory.GetComponent<InventoryMinigame>().ManualStart();
     }
 }
