@@ -15,8 +15,10 @@ public class MissionScript : MonoBehaviour
             string id = name.Split(' ')[2];
             GameObject SceneManager = GameObject.Find("SceneManager");
             SceneManager.GetComponent<SceneManagerScript>().SendMission(System.Convert.ToInt32(id));
+            SceneManager.GetComponent<SceneManagerScript>().CopyProblem(true);
             GameObject MM = GameObject.Find("MissionManager");
             MM.GetComponent<MissionManager>().startwindow(System.Convert.ToInt32(id));
+            
         }
     }
 }

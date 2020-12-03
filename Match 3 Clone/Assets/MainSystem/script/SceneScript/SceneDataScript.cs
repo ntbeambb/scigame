@@ -13,6 +13,7 @@ public class SceneDataScript : ScriptableObject
     public int SkipCo;
     public float StartQuizProb;
     public int LockQ;
+    public bool CopyProblem;
     public void ResetScene(){
         for(int i=0;i<MaxScene;i++){
             SceneStack[i]=null;

@@ -19,6 +19,7 @@ public class ChangeBackground : MonoBehaviour
 
     public GameObject workshop;
     public GameObject inventory;
+    public GameObject Manager;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,11 +43,12 @@ public class ChangeBackground : MonoBehaviour
     }
 
     IEnumerator Change(){
-            
+        
         //new WaitForSeconds(ChangeTime + 0.1f);
         float per;
-        while(Time.time < ChangeTime + 0.1f){
+        while(Time.time < sttime + ChangeTime + 0.1f){
             per = (Time.time-sttime)/ChangeTime;
+            //Debug.Log("per "+per.ToString());
             //Debug.Log(Time.time);
             if(sp == 1){
                 GetComponent<RectTransform>().anchoredPosition = new Vector2(Mathf.Lerp(st.x,fn.x,per),Mathf.Lerp(st.y,fn.y,per));
@@ -86,5 +88,6 @@ public class ChangeBackground : MonoBehaviour
         workshop.SetActive(true);
         inventory.SetActive(true);
         //inventory.GetComponent<InventoryMinigame>().ManualStart();
+        Manager.GetComponent<ProblemManager>().ManualStart();
     }
 }

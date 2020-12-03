@@ -19,6 +19,7 @@ public class SceneManagerScript : MonoBehaviour
         else{
             SceneData.PushScene(SceneManager.GetActiveScene().name);
             SceneManager.LoadScene("minigame");
+            //Debug.Log("Bug "+Time.time.ToString());
         }
     }
     public void WorkshopScene(){
@@ -53,5 +54,8 @@ public class SceneManagerScript : MonoBehaviour
     }
     public void SendMission(int _id){
         SceneData.IdMission = _id;
+    }
+    public void CopyProblem(bool inp){
+        SceneData.CopyProblem = inp;
     }
 }
