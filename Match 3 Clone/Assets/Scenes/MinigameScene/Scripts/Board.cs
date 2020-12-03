@@ -57,7 +57,7 @@ public class Board : MonoBehaviour {
 		blankSpaces = new bool[width, height];
         allDots = new GameObject[width, height];
         SetUp();
-		inventorybar.GetComponent<InventoryMinigame>().display();
+		//inventorybar.GetComponent<InventoryMinigame>().display();
 	}
     
 

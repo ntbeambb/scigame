@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Problem0
   m_EditorClassIdentifier: 
   ProblemText: 
-  Background: {fileID: 21300000, guid: d1183134b9a28074c9358fc8fa325fac, type: 3}
-  StartBackground: {x: -640, y: 250}
+  Background: {fileID: 21300000, guid: 9b4e78dae3de401498e4672bb7a4d525, type: 3}
+  StartBackground: {x: 600, y: 250}
   InputObject:
+  - LoPo: {x: 20, y: 20}
+    Object: {fileID: 21300000, guid: e6b8c424401922f4db94c71884d01da3, type: 3}
   - LoPo: {x: 0, y: 0}
-    Object: {fileID: 0}
-  - LoPo: {x: 0, y: 0}
-    Object: {fileID: 0}
+    Object: {fileID: 21300000, guid: 1a998d6cf3bd4a44ea499eb804b9c143, type: 3}
   problem:
   - IDObject: 0
     SubText: 2C
