@@ -34,9 +34,7 @@ public class ProblemManager : InboxGameobject
     public bool Copy = false;
     
     /*Start(){
-        //link problem
-        IDmission = SceneData.SendIdMission();
-        problem = ProList.Plist[IDmission];
+        
         Board.GetComponent<Board>().dots.clear();
         for(i= 0;i<problem.FoundElement.Count;i++){
             Board.GetComponent<Board>().dots.Add();
@@ -47,7 +45,9 @@ public class ProblemManager : InboxGameobject
 
     }*/
     public void ManualStart(){
-        
+        //link problem
+        IDmission = SceneData.SendIdMission();
+        problem = ProList.Plist[IDmission];
         
         //set up problem
         Copy = SceneData.CopyProblem;
