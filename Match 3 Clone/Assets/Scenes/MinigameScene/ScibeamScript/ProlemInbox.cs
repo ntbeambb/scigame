@@ -21,15 +21,19 @@ public class ProlemInbox : InboxGameobject
     private float value;
     private int IDmission;
     public bool Copy;
-    void Start(){
+    /*void Start(){
         IDmission = SceneData.SendIdMission();
         problem = ProList.Plist[IDmission];
         
         /*if(graphdata.CanPlay[graphdata.PoMision(IDmission)].finish){
             graphdata.CanPlay[graphdata.PoMision(IDmission)].finish = false;
             Copy=true;
-        }else Copy=false;*/
-        if(Copy)data.Copy(problem);
+        }else Copy=false;
+        if(Copy)data.Reset(problem);
+        else{
+            data.Load();
+            data.Copy(problem);
+        }
         subtask = data.GetSub();
         progressbar.GetComponent<Slider>().value = data.GetProgress();
         
@@ -82,6 +86,6 @@ public class ProlemInbox : InboxGameobject
             }
         }
         
-    }
+    }*/
 
 }

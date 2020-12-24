@@ -26,6 +26,12 @@ public class GraphData : ScriptableObject
             Unlock(CanPlay[po].unlock[i]);
         }
     }
+    public void Save(){
+
+    }
+    public void Load(){
+        
+    }
 }
 [System.Serializable]
 public class mission{

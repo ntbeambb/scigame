@@ -33,6 +33,12 @@ public class InventorySystem : ScriptableObject
             return 2;
         }
         return 1;
+    }  
+    public void Save(){
+        SaveSystem.SaveInventory(this);
+    }
+    public void Load(){
+        SaveSystem.LoadInventory(this);
     }
 
 }

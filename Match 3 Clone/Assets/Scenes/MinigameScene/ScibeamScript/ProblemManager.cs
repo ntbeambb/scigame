@@ -41,8 +41,13 @@ public class ProblemManager : InboxGameobject
         //set up problem
         Copy = SceneData.CopyProblem;
         SceneData.CopyProblem = false;
-        if(Copy)data.Copy(problem);
-
+        if(Copy)data.Reset(problem);
+        else{
+            data.Load();
+            data.Copy(problem);
+            backpack.Load();
+        }
+        data.mission_id = IDmission;
         subtask = data.GetSub();
         progressbar.GetComponent<Slider>().value = data.GetProgress();
         

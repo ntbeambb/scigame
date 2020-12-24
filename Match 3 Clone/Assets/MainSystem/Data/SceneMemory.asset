@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SceneMemory
   m_EditorClassIdentifier: 
   SceneStack:
-  - 
+  - mainmanu
   - 
   - 
   - 
@@ -25,7 +25,7 @@ MonoBehaviour:
   - 
   NumScene: 1
   IdMission: 0
-  PreIdMission: 1
+  PreIdMission: 0
   Qprob: 0.3
   SkipCo: 0
   StartQuizProb: 0.3
