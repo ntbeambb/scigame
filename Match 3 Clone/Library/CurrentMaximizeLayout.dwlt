@@ -23,10 +23,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 909, y: 424}
-  m_MaxSize: {x: 22004, y: 10000}
+  m_MinSize: {x: 913, y: 424}
+  m_MaxSize: {x: 22008, y: 10024}
   vertical: 0
-  controlID: 1090
+  controlID: 131
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -63,10 +63,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -540
-    m_HBaseRangeMax: 540
-    m_VBaseRangeMin: -960
-    m_VBaseRangeMax: 960
+    m_HBaseRangeMin: -512
+    m_HBaseRangeMax: 512
+    m_VBaseRangeMin: -384
+    m_VBaseRangeMax: 384
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -86,7 +86,7 @@ MonoBehaviour:
       y: 17
       width: 677
       height: 424
-    m_Scale: {x: 0.22083333, y: 0.22083333}
+    m_Scale: {x: 0.5520833, y: 0.5520833}
     m_Translation: {x: 338.5, y: 212}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -94,12 +94,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1532.8302
-      y: -960
-      width: 3065.6604
-      height: 1920
+      x: -613.1321
+      y: -384
+      width: 1226.2642
+      height: 768
     m_MinimalGUI: 1
-  m_defaultScale: 0.22083333
+  m_defaultScale: 0.5520833
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 677, y: 441}
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 424}
   m_MaxSize: {x: 4002, y: 8024}
   vertical: 1
-  controlID: 949
+  controlID: 132
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -386,7 +386,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 66c5fffffedbffff12dcffff26fbffffdefbffff00300000
+      m_ExpandedIDs: 82faffffa0fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -429,8 +429,8 @@ MonoBehaviour:
     y: 0
     width: 602
     height: 947
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 234, y: 274}
+  m_MaxSize: {x: 10004, y: 10024}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -474,20 +474,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MainSystem/Data
+    - Assets/Scenes/MinigameScene
   m_ViewMode: 1
   m_StartGridSize: 53
   m_LastFolders:
-  - Assets/MainSystem/Data
+  - Assets/Scenes/MinigameScene
   m_LastFoldersGridSize: 53
   m_LastProjectPath: C:\Users\pipomk\Documents\GitHub\scigame\Match 3 Clone
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 38}
-    m_SelectedIDs: 142d0000
-    m_LastClickedID: 11540
-    m_ExpandedIDs: 000000000e270000f4270000ee280000f228000098290000962a0000fc2a0000502b0000682b0000702c0000ca2f0000cc2f0000ce2f0000d02f000000ca9a3b
+    m_SelectedIDs: 302b0000
+    m_LastClickedID: 11056
+    m_ExpandedIDs: 000000001e280000da280000b6290000ba290000582a0000302b0000842b0000d22b0000ea2b0000cc2c00005a2f00005c2f00005e2f0000602f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -515,7 +515,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000e270000f4270000ee280000f228000098290000962a0000fc2a0000502b0000682b0000702c0000ca2f0000cc2f0000ce2f0000d02f000000ca9a3b
+    m_ExpandedIDs: 000000001e280000da280000b6290000ba290000582a0000302b0000842b0000d22b0000ea2b0000cc2c00005a2f00005c2f00005e2f0000602f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -540,9 +540,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 2e2d0000
-    m_LastClickedInstanceID: 11566
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: dc2f0000
+    m_LastClickedInstanceID: 12252
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 86220000742a0000f02a0000742700000a28000000000000f8260000802d0000622c0000d02d00002e2a0000e028000088220000082a00003e270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

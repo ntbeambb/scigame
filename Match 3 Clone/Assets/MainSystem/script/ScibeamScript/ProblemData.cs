@@ -5,6 +5,7 @@ using UnityEngine;
 public class ProblemData : ScriptableObject
 {   
     public string ProblemText;
+    public List<int> FoundElement;
     public Sprite Background;
     public Vector2 StartBackground;
     public List<QObject> InputObject = new List<QObject>();

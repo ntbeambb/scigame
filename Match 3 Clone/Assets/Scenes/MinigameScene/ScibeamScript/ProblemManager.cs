@@ -33,10 +33,21 @@ public class ProblemManager : InboxGameobject
     private int IDmission;
     public bool Copy = false;
     
-    public void ManualStart(){
+    /*Start(){
         //link problem
         IDmission = SceneData.SendIdMission();
         problem = ProList.Plist[IDmission];
+        Board.GetComponent<Board>().dots.clear();
+        for(i= 0;i<problem.FoundElement.Count;i++){
+            Board.GetComponent<Board>().dots.Add();
+        }
+
+    }
+    private void CreateDot(int _id){
+
+    }*/
+    public void ManualStart(){
+        
         
         //set up problem
         Copy = SceneData.CopyProblem;
