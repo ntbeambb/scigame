@@ -1155,10 +1155,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 92986617}
     m_Modifications:
+    - target: {fileID: 7928995494555742545, guid: 4047ac02d2f156e4795724799d6c4e2f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bd4e8244329829941896e1b95086c85b,
+        type: 3}
+    - target: {fileID: 7928995494579115360, guid: 4047ac02d2f156e4795724799d6c4e2f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5541a67042bee044883d5eb35b5df18f,
+        type: 3}
+    - target: {fileID: 7928995494579115362, guid: 4047ac02d2f156e4795724799d6c4e2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928995495179604331, guid: 4047ac02d2f156e4795724799d6c4e2f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: eadc275992184644189df99ac102fab0,
+        type: 3}
+    - target: {fileID: 7928995495341375062, guid: 4047ac02d2f156e4795724799d6c4e2f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f6e07591689f0f749adf69d4df465313,
+        type: 3}
+    - target: {fileID: 7928995495717444493, guid: 4047ac02d2f156e4795724799d6c4e2f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: eadc275992184644189df99ac102fab0,
+        type: 3}
     - target: {fileID: 7928995495882113025, guid: 4047ac02d2f156e4795724799d6c4e2f,
         type: 3}
       propertyPath: m_Name
       value: book
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928995495882113025, guid: 4047ac02d2f156e4795724799d6c4e2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7928995495882113278, guid: 4047ac02d2f156e4795724799d6c4e2f,
         type: 3}
@@ -1218,12 +1258,12 @@ PrefabInstance:
     - target: {fileID: 7928995495882113278, guid: 4047ac02d2f156e4795724799d6c4e2f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 68.81832
+      value: -150.00003
       objectReference: {fileID: 0}
     - target: {fileID: 7928995495882113278, guid: 4047ac02d2f156e4795724799d6c4e2f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 410.64325
+      value: 180.84996
       objectReference: {fileID: 0}
     - target: {fileID: 7928995495882113278, guid: 4047ac02d2f156e4795724799d6c4e2f,
         type: 3}
@@ -1280,6 +1320,29 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.3052716
       objectReference: {fileID: 0}
+    - target: {fileID: 7928995496129103821, guid: 4047ac02d2f156e4795724799d6c4e2f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5541a67042bee044883d5eb35b5df18f,
+        type: 3}
+    - target: {fileID: 7928995496129103823, guid: 4047ac02d2f156e4795724799d6c4e2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928995496170311966, guid: 4047ac02d2f156e4795724799d6c4e2f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f6e07591689f0f749adf69d4df465313,
+        type: 3}
+    - target: {fileID: 7928995496192051809, guid: 4047ac02d2f156e4795724799d6c4e2f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bd4e8244329829941896e1b95086c85b,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4047ac02d2f156e4795724799d6c4e2f, type: 3}
 --- !u!224 &1192196869 stripped
@@ -1381,16 +1444,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1254340349}
-        m_MethodName: OpenBook
-        m_Mode: 3
+      - m_Target: {fileID: 1999455031}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1254340351
 MonoBehaviour:
@@ -2308,6 +2371,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987840708}
   m_CullTransparentMesh: 0
+--- !u!1 &1999455031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7928995495882113025, guid: 4047ac02d2f156e4795724799d6c4e2f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1192196868}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2043276647
 GameObject:
   m_ObjectHideFlags: 0
