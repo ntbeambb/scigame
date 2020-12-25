@@ -64,6 +64,7 @@ public class InventoryMinigame : MonoBehaviour
             if(DisplaySlot[i]!=null)Destroy(DisplaySlot[i]);
             if(NumSlot[i]!=null)Destroy(NumSlot[i]);
         }
+        if(StartPo < 0)return;
         for(int i=0; i < Slot && i+StartPo < count; i++){
             int num=backpack.container[i+StartPo].amount;
             DisplaySlot[i] = AddInventory(i,backpack.container[i+StartPo].id);

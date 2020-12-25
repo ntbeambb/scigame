@@ -2458,6 +2458,7 @@ GameObject:
   - component: {fileID: 1299177764}
   - component: {fileID: 1299177765}
   - component: {fileID: 1299177766}
+  - component: {fileID: 1299177767}
   m_Layer: 5
   m_Name: point graph 0
   m_TagString: Untagged
@@ -2600,6 +2601,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1299177767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299177760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 100, y: 100}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1335604194
 GameObject:
   m_ObjectHideFlags: 0
