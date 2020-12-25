@@ -1343,11 +1343,13 @@ MonoBehaviour:
   backpack: {fileID: 11400000, guid: 787243cc33ae1e949a5eca7c5b11f0c5, type: 2}
   SceneData: {fileID: 11400000, guid: 38dccfb8906752047934ca24bec4c160, type: 2}
   graphdata: {fileID: 11400000, guid: d0dbb96e5264bab42aa9f6ff0fc11dcb, type: 2}
+  Allpic: {fileID: 0}
   quiz: {fileID: 390836233}
   InputPrefab: {fileID: 8346909244326479681, guid: 90a3c5c84bd84fd4995a9a2c73e5158e,
     type: 3}
   input_group: {fileID: 196767311}
   InboxManager: {fileID: 1520944407}
+  DotsPrefab: {fileID: 0}
   Copy: 1
 --- !u!1 &780965210
 GameObject:
@@ -3987,6 +3989,12 @@ MonoBehaviour:
   basePieceValue: 20
   refillDelay: 0.5
   scoreGoals: 
+  SceneData: {fileID: 11400000, guid: 38dccfb8906752047934ca24bec4c160, type: 2}
+  ProList: {fileID: 11400000, guid: e91fb027e30abc04dbb472ad3b906458, type: 2}
+  DotsPrefab: {fileID: 1364587841334750, guid: f8bd37a7d383940dbbc740c1a5e917b3, type: 3}
+  Allpic: {fileID: 11400000, guid: feafa3ac7735fd847ba1902779e6efd3, type: 2}
+  IDmission: 0
+  problem: {fileID: 0}
 --- !u!4 &1505387036
 Transform:
   m_ObjectHideFlags: 0
@@ -5219,11 +5227,11 @@ MonoBehaviour:
   Slot: 1
   StartPo: 0
   allpic: {fileID: 11400000, guid: feafa3ac7735fd847ba1902779e6efd3, type: 2}
-  StartX: 1.71
+  StartX: -125
   StNum: 0.9
   gob: {fileID: 3251987334614508028, guid: 8df04fd5233235a428f57bcbc20a3fc0, type: 3}
   ShowNum: {fileID: 5174949561922603995, guid: 7cf57d42486989846b71ab04ec5db1da, type: 3}
-  Itemsize: 8
+  Itemsize: 7
 --- !u!114 &1931494987
 MonoBehaviour:
   m_ObjectHideFlags: 0

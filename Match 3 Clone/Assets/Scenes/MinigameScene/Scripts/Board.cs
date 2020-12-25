@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public enum GameState{
     wait,
@@ -32,7 +34,7 @@ public class Board : MonoBehaviour {
     public int offSet;
     public GameObject tilePrefab;
 	public GameObject breakableTilePrefab;
-    public GameObject[] dots;
+    public List<GameObject> dots;
     public GameObject destroyParticle;
 	public TileType[] boardLayout;
     private bool[,] blankSpaces;
@@ -46,10 +48,17 @@ public class Board : MonoBehaviour {
 	private SoundManager soundManager;
 	public float refillDelay = 0.5f;
 	public int[] scoreGoals;
-
+	//Scibeam
+	public SceneDataScript SceneData;
+	public ProblemList ProList;
+	public GameObject DotsPrefab;
+	public AllpicID Allpic;
+	public int IDmission;
+	public ProblemData problem;
 
 	// Use this for initialization
 	void Start () {
+		dots = SetScibeam();
 		soundManager = FindObjectOfType<SoundManager>();
 	//	scoreManager = FindObjectOfType<ScoreManager>();
 		breakableTiles = new BackgroundTile[width, height];
@@ -57,9 +66,36 @@ public class Board : MonoBehaviour {
 		blankSpaces = new bool[width, height];
         allDots = new GameObject[width, height];
         SetUp();
-		//inventorybar.GetComponent<InventoryMinigame>().display();
 	}
-    
+    public List<GameObject> SetScibeam(){
+        //link problem
+        IDmission = SceneData.SendIdMission();
+        problem = ProList.Plist[IDmission];
+        List<GameObject> ret = new List<GameObject>();
+        for(int i= 0;i<problem.FoundElement.Count;i++){
+            ret.Add(CreateDot(problem.FoundElement[i]));
+        }
+        return ret;
+    }
+	private GameObject CreateDot(int _id){
+		//Debug.Log("Id "+_id);
+        //create from prefab
+        GameObject ret = Instantiate(DotsPrefab,new Vector2(0f,0f), Quaternion.identity) as GameObject;
+        //change image
+		var pic = Allpic.ID[_id];
+
+        ret.GetComponent<SpriteRenderer>().sprite = pic;
+		//ret.GetComponent<Image>().sprite = pic;
+		ret.GetComponent<SpriteRenderer>().size = new Vector2(0.8f,0.8f);
+		//ret.transform.localPosition = new Vector2(0.2f,0.2f);
+        //set Data
+        ret.GetComponent<ScibeamData>().id = _id;
+		ret.transform.position = new Vector2(200f,200f);
+		ret.name = Allpic.ID[_id].name + " dot";
+        ret.tag = Allpic.ID[_id].name + " dot";
+		ret.SetActive(false);
+        return ret;
+    }
 
 	public void GenerateBlankSpaces(){
 		for (int i = 0; i < boardLayout.Length; i ++)
@@ -101,22 +137,22 @@ public class Board : MonoBehaviour {
 					backgroundTile.transform.parent = this.transform;
 					backgroundTile.name = "( " + i + ", " + j + " )";
 
-					int dotToUse = Random.Range(0, dots.Length);
-
+					int dotToUse = Random.Range(0, dots.Count);
 					int maxIterations = 0;
 
 					while (MatchesAt(i, j, dots[dotToUse]) && maxIterations < 100)
 					{
-						dotToUse = Random.Range(0, dots.Length);
+						dotToUse = Random.Range(0, dots.Count);
 						maxIterations++;
 					//	Debug.Log(maxIterations);
 					}
 					maxIterations = 0;
 
-					GameObject dot = Instantiate(dots[dotToUse], tempPosition, Quaternion.identity);
+					GameObject dot = Instantiate(dots[dotToUse], tempPosition, Quaternion.identity,this.transform);
 					dot.GetComponent<Dot>().row = j;
 					dot.GetComponent<Dot>().column = i;
-					dot.transform.parent = this.transform;
+					dot.SetActive(true);
+					//dot.transform.parent = ;
 					dot.name = "( " + i + ", " + j + " )";
 					allDots[i, j] = dot;
 				}
@@ -374,13 +410,13 @@ public class Board : MonoBehaviour {
             for (int j = 0; j < height; j ++){
 				if(allDots[i, j] == null && !blankSpaces[i,j]){
                     Vector2 tempPosition = new Vector2(i, j + offSet);
-                    int dotToUse = Random.Range(0, dots.Length);
+                    int dotToUse = Random.Range(0, dots.Count);
 					int maxIterations = 0;
 
 					while(MatchesAt(i, j, dots[dotToUse]) && maxIterations < 100)
 					{
 						maxIterations++;
-						dotToUse = Random.Range(0, dots.Length);
+						dotToUse = Random.Range(0, dots.Count);
 					}
 
 					maxIterations = 0;
@@ -388,6 +424,7 @@ public class Board : MonoBehaviour {
                     allDots[i, j] = piece;
                     piece.GetComponent<Dot>().row = j;
                     piece.GetComponent<Dot>().column = i;
+					piece.SetActive(true);
 
                 }
             }

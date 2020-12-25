@@ -21,6 +21,7 @@ public class ProblemManager : InboxGameobject
     //data
     public SceneDataScript SceneData;
     public GraphData graphdata;
+    public AllpicID Allpic;
     //quiz
     public GameObject quiz;
     //prefab
@@ -28,26 +29,19 @@ public class ProblemManager : InboxGameobject
     //general variable
     public GameObject input_group;
     public GameObject InboxManager;
+    public GameObject DotsPrefab;
     private int nowsub;
     private float value;
     private int IDmission;
     public bool Copy = false;
     
-    /*Start(){
-        
-        Board.GetComponent<Board>().dots.clear();
-        for(i= 0;i<problem.FoundElement.Count;i++){
-            Board.GetComponent<Board>().dots.Add();
-        }
-
-    }
-    private void CreateDot(int _id){
-
-    }*/
     public void ManualStart(){
         //link problem
         IDmission = SceneData.SendIdMission();
         problem = ProList.Plist[IDmission];
+
+        //Load Data
+        backpack.Load();
         
         //set up problem
         Copy = SceneData.CopyProblem;
@@ -129,9 +123,13 @@ public class ProblemManager : InboxGameobject
                     //
                     //Popup.SetActive(true);
                     SceneData.PreIdMission = IDmission;
-                    graphdata.Finish(IDmission);
+                    if(!graphdata.CanPlay[graphdata.PoMision(IDmission)].finish){
+                        graphdata.Finish(IDmission);
+                    }
                     quiz.GetComponent<QuizPlay>().StartQuiz();
                     Time.timeScale=0;
+                    backpack.Save();
+                    graphdata.Save();
                 }
             }
         }
