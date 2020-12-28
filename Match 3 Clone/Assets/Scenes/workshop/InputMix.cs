@@ -20,10 +20,13 @@ public class InputMix : MonoBehaviour
     public float Itemsize;
     public float stx_pic;
     public float size;
+    public Sprite InputImage;
     private GameObject CreateItem(int _id){
         Vector2 po = new Vector2(0,0);
         GameObject ret = Instantiate(prefab,po,Quaternion.identity,parent.transform) as GameObject;
         ret.GetComponent<ScibeamData>().id = _id;
+        //change image
+        ret.GetComponent<Image>().sprite = InputImage;
         //add image
         var pic = ret.GetComponent<ItemWorkshopScript>().image;
         pic.GetComponent<Image>().sprite = Allpic.ID[_id];

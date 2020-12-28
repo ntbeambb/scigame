@@ -12,4 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc62e283fba56d4e9969552c5550ecc, type: 3}
   m_Name: MainBackpack
   m_EditorClassIdentifier: 
-  container: []
+  container:
+  - id: 1
+    name: 
+    amount: 8
+  - id: 2
+    name: 
+    amount: 2
+  - id: 3
+    name: 
+    amount: 5
+  - id: 4
+    name: 
+    amount: 10
