@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CanPlay:
   - id_mission: 0
-    Goal: "\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E15\u0E49\u0E19\u0E44\u0E21\u0E49\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E2D\u0E22\u0E39\u0E48\u0E23\u0E2D\u0E14"
+    Goal: "\u0E40\u0E15\u0E34\u0E21\u0E25\u0E21\u0E25\u0E39\u0E01\u0E42\u0E1B\u0E48\u0E07"
     finish: 1
     unlock: 01000000
   - id_mission: 1
-    Goal: 
+    Goal: "\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E15\u0E49\u0E19\u0E44\u0E21\u0E49\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E2D\u0E22\u0E39\u0E48\u0E23\u0E2D\u0E14"
     finish: 1
     unlock: 0200000003000000
   - id_mission: 2
@@ -29,7 +29,7 @@ MonoBehaviour:
     Goal: 
     finish: 0
     unlock: 06000000
-  Pass: 0000000000000000010000000000000001000000
+  Pass: 0000000001000000
   All:
   - id_mission: 0
     Goal: "\u0E40\u0E15\u0E34\u0E21\u0E25\u0E21\u0E25\u0E39\u0E01\u0E42\u0E1B\u0E48\u0E07"
@@ -52,6 +52,34 @@ MonoBehaviour:
     finish: 0
     unlock: 07000000
   - id_mission: 5
+    Goal: 
+    finish: 0
+    unlock: 
+  - id_mission: 6
+    Goal: 
+    finish: 0
+    unlock: 
+  - id_mission: 7
+    Goal: 
+    finish: 0
+    unlock: 
+  - id_mission: 6
+    Goal: 
+    finish: 0
+    unlock: 
+  - id_mission: 6
+    Goal: 
+    finish: 0
+    unlock: 
+  - id_mission: 6
+    Goal: 
+    finish: 0
+    unlock: 
+  - id_mission: 6
+    Goal: 
+    finish: 0
+    unlock: 
+  - id_mission: 6
     Goal: 
     finish: 0
     unlock: 

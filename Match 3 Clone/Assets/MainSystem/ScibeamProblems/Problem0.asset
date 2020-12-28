@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Problem0
   m_EditorClassIdentifier: 
   ProblemText: "\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E15\u0E49\u0E19\u0E44\u0E21\u0E49\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E2D\u0E22\u0E39\u0E48\u0E23\u0E2D\u0E14"
+  FoundElement: 01000000020000000300000004000000
   Background: {fileID: 21300000, guid: 9b4e78dae3de401498e4672bb7a4d525, type: 3}
   StartBackground: {x: 600, y: 250}
   InputObject:

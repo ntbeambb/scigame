@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ProgressData : ScriptableObject
 {   
-    string path = "/DataProgress.save";
+    private string path = "/DataProgress.save";
     [SerializeField] private float ProgressValue;
     public Subtask NowSub;
     private int level;

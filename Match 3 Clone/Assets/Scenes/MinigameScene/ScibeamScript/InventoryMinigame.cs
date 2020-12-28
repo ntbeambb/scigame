@@ -31,7 +31,7 @@ public class InventoryMinigame : MonoBehaviour
     private GameObject AddInventory(int po,int _id)
     {
         //set start position
-        Vector2 tilepo = new Vector2(transform.position.x + po*1.82f - StartX,transform.position.y);
+        Vector2 tilepo = new Vector2(transform.position.x + po*1.82f ,transform.position.y);
         //create gameobject
 		GameObject tile = Instantiate(gob,tilepo, Quaternion.identity,transform) as GameObject;
         //insert image
@@ -40,11 +40,11 @@ public class InventoryMinigame : MonoBehaviour
         tile.GetComponent<ScibeamData>().id = _id;
         //resize
         var sx = allpic.ID[_id].bounds.size.x * Itemsize;
-        var sy = allpic.ID[_id].bounds.size.y * Itemsize;
-        tile.GetComponent<RectTransform>().localScale = new Vector2(sx,sy);
+        //var sy = allpic.ID[_id].bounds.size.y * Itemsize;
+        tile.GetComponent<RectTransform>().localScale = new Vector2(sx,sx);
         //relocate
-        /*var temp = new Vector2(tile.transform.localPosition.x + sx/2,tile.transform.localPosition.y);
-        tile.transform.localPosition = temp;*/
+        var temp = new Vector2(tile.transform.localPosition.x + sx/2 + StartX ,tile.transform.localPosition.y);
+        tile.transform.localPosition = temp;
         //rename
         tile.name = "Inventory "+po;
         return tile;
@@ -64,6 +64,9 @@ public class InventoryMinigame : MonoBehaviour
             if(DisplaySlot[i]!=null)Destroy(DisplaySlot[i]);
             if(NumSlot[i]!=null)Destroy(NumSlot[i]);
         }
+        if(StartPo < 0){
+            StartPo = 0;
+            return;}
         for(int i=0; i < Slot && i+StartPo < count; i++){
             int num=backpack.container[i+StartPo].amount;
             DisplaySlot[i] = AddInventory(i,backpack.container[i+StartPo].id);
