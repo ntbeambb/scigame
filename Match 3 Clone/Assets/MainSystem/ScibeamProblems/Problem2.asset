@@ -12,14 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76edd4fe4a853f4ba3153889e600e20, type: 3}
   m_Name: Problem2
   m_EditorClassIdentifier: 
-  ProblemText: 
+  ProblemText: "\u0E15\u0E49\u0E19\u0E44\u0E21\u0E49\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E2D\u0E32\u0E2B\u0E32\u0E23"
+  FoundElement: 01000000020000000300000004000000
   Background: {fileID: 21300000, guid: 9b4e78dae3de401498e4672bb7a4d525, type: 3}
   StartBackground: {x: 0, y: 250}
-  InputObject: []
+  InputObject:
+  - LocalPosition: {x: 0, y: -50}
+    Object: {fileID: 21300000, guid: 9b325a4209718d7479dd58133cdd2ae3, type: 3}
+  - LocalPosition: {x: 50, y: -50}
+    Object: {fileID: 21300000, guid: 4a462b800415f2d439b664e59a54cf0e, type: 3}
   problem:
   - IDObject: 0
-    SubText: 
+    SubText: "\u0E15\u0E49\u0E19\u0E44\u0E21\u0E49\u0E43\u0E01\u0E25\u0E49\u0E15\u0E32\u0E22"
     Item:
-    - id: 4
-      name: N2
+    - id: 41
+      name: 
+      amount: 3
+    - id: 21
+      name: 
       amount: 2
+  - IDObject: 1
+    SubText: "\u0E15\u0E49\u0E19\u0E44\u0E21\u0E49\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E2D\u0E32\u0E2B\u0E32\u0E23"
+    Item:
+    - id: 21
+      name: 
+      amount: 2
+    - id: 22
+      name: 
+      amount: 4

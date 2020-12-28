@@ -13,8 +13,27 @@ MonoBehaviour:
   m_Name: Problem12
   m_EditorClassIdentifier: 
   ProblemText: 
+  FoundElement: 01000000020000000300000004000000
+  Background: {fileID: 0}
+  StartBackground: {x: 0, y: 0}
+  InputObject:
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 0}
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 0}
   problem:
-  - Item:
-    - id: 33
-      name: C7H5NaO2
-      amount: 1
+  - IDObject: 0
+    SubText: 
+    Item:
+    - id: 34
+      name: 
+      amount: 3
+  - IDObject: 1
+    SubText: 
+    Item:
+    - id: 21
+      name: 
+      amount: 2
+    - id: 40
+      name: 
+      amount: 2
