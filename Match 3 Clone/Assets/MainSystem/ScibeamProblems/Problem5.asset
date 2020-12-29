@@ -13,13 +13,16 @@ MonoBehaviour:
   m_Name: Problem5
   m_EditorClassIdentifier: 
   ProblemText: 
+  FoundElement: 01000000020000000300000004000000
   Background: {fileID: 0}
   StartBackground: {x: 0, y: 1.96}
-  InputObject: []
+  InputObject:
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 0}
   problem:
   - IDObject: 0
-    SubText: 
+    SubText: "\u0E43\u0E2B\u0E49\u0E2A\u0E31\u0E07\u0E40\u0E04\u0E23\u0E32\u0E30\u0E2B\u0E4C\u0E1E\u0E25\u0E32\u0E2A\u0E15\u0E34\u0E01"
     Item:
-    - id: 23
-      name: C12H22O11
-      amount: 1
+    - id: 25
+      name: 
+      amount: 2

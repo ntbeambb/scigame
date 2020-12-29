@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d76edd4fe4a853f4ba3153889e600e20, type: 3}
-  m_Name: Problem13
+  m_Name: Problem17
   m_EditorClassIdentifier: 
   ProblemText: 
-  FoundElement: 010000000200000003000000040000000c000000
+  FoundElement: 010000000200000003000000040000000a0000000b000000
   Background: {fileID: 0}
   StartBackground: {x: 0, y: 0}
   InputObject:
@@ -25,12 +25,9 @@ MonoBehaviour:
   - IDObject: 0
     SubText: 
     Item:
-    - id: 11
+    - id: 35
       name: 
-      amount: 20
-  - IDObject: 1
-    SubText: 
-    Item:
-    - id: 34
-      name: C5H8
-      amount: 3
+      amount: 10
+    - id: 42
+      name: 
+      amount: 10
