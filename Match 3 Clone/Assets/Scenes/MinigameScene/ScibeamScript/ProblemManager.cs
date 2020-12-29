@@ -71,30 +71,41 @@ public class ProblemManager : InboxGameobject
         TextMeshProUGUI textmesh = Problemtext.GetComponent<TextMeshProUGUI>();
         //Debug.Log("Start "+subtask.SubText);
         textmesh.text = subtask.SubText;
-
-        List<GameObject> temp = new List<GameObject>();
-        //generate GameInput
-        InputList = problem.InputObject;
-        for(int i = 0; i < InputList.Count;i++){
-            temp.Add(CreateInput(InputList[i],i));
-        }
-        //Send Data to inboxManager
-        InboxManager.GetComponent<InboxManager>().inbox = temp;
+        UpdateInput(0);
+       
 
         CheckUpdate(false);
 
         //Tutorial
-        /*if(!graphdata.TutorialStatus){
+        if(!graphdata.TutorialStatus){
             tutorial.SetActive(true);
-        }*/
+
+        }
+    }
+    private void UpdateInput(int SubID){
+        List<GameObject> temp = new List<GameObject>();
+        //generate GameInput
+        Subtask sub  = problem.GetSub(SubID);
+        InputList = sub.InputObject;
+        for(int i = 0; i < InputList.Count;i++){
+            temp.Add(CreateInput(InputList[i],i));
+        }
+        //Clear InputObject
+        for(int i = 0;i<InboxManager.GetComponent<InboxManager>().inbox.Count;i++){
+            if(InboxManager.GetComponent<InboxManager>().inbox[i] != null)Destroy(InboxManager.GetComponent<InboxManager>().inbox[i]);
+        }
+        InboxManager.GetComponent<InboxManager>().inbox.Clear();
+        //Send Data to inboxManager
+        InboxManager.GetComponent<InboxManager>().inbox = temp;
     }
     private GameObject CreateInput(QObject inp,int id){
         //create from prefab
         GameObject ret = Instantiate(InputPrefab,new Vector2(0f,0f), Quaternion.identity,input_group.transform) as GameObject;
         //change image
         ret.GetComponent<Image>().sprite = inp.Object;
-        //set position
-        ret.transform.localPosition = inp.LocalPosition;
+        //set RectTransform
+        ret.GetComponent<RectTransform>().localPosition = inp.localPosition;
+        ret.GetComponent<RectTransform>().sizeDelta = inp.sizeDelta;
         //set Data
         ret.GetComponent<InputObjectScript>().InputID = id;
         ret.GetComponent<InputObjectScript>().Manager = this.gameObject;
@@ -127,7 +138,10 @@ public class ProblemManager : InboxGameobject
                     if(invent.StartPo >= backpack.container.Count)invent.StartPo = backpack.container.Count-1;
                     inventory.GetComponent<InventoryMinigame>().display();
                 }
-                data.SendSub(subtask);
+                int ck = data.SendSub(subtask);
+                if(ck == 0 && data.level < problem.SubNum()){
+                    UpdateInput(data.level);
+                }
                 var pro = data.GetProgress();
                 progressbar.GetComponent<Slider>().value = pro;
                 //Debug.Log("Progress "+data.GetProgress());
@@ -151,6 +165,7 @@ public class ProblemManager : InboxGameobject
                     backpack.Save();
                     graphdata.Save();
                     CheckUpdate(true);
+                    //graphdata.TutorialStatus = true;//////////////////temp offline
                 }else{
                     CheckUpdate(false);
                 }
@@ -159,28 +174,34 @@ public class ProblemManager : InboxGameobject
     }
     public void CheckUpdate(bool ck){
         int level = data.level;
+        int i;
         if(ck)level--;
         Subtask Osub = problem.GetSub(level);
-        for(int i = 0;i<Osub.Item.Count; i++){
-            ItemChecker[i].SetActive(true);
-            if(!ck && Osub.Item[i].amount == 0){
-                ItemChecker[i].GetComponent<Image>().sprite = NoneImage;
-            }else if(!ck && data.NowSub.Item[i].amount == Osub.Item[i].amount){
+        for(i = 0;i<Osub.Item.Count; i++){
+            if(!ck && data.NowSub.Item[i].amount == Osub.Item[i].amount){
                 ItemChecker[i].GetComponent<Image>().sprite = UnknownImage;
+                ItemChecker[i].GetComponent<RectTransform>().sizeDelta = new Vector2(130,40);
             }else if(ck || data.NowSub.Item[i].amount == 0){
                 ItemChecker[i].GetComponent<Image>().sprite = CompleteImage;
+                ItemChecker[i].GetComponent<RectTransform>().sizeDelta = new Vector2(130,40);
             }else{
                 ItemChecker[i].GetComponent<Image>().sprite = Allpic.ID[Osub.Item[i].id];
+                ItemChecker[i].GetComponent<RectTransform>().sizeDelta = new Vector2(116.3f,29.4f);
             }
-        } 
+        }
+        for(;i<3;i++){
+            ItemChecker[i].GetComponent<Image>().sprite = NoneImage;
+            ItemChecker[i].GetComponent<RectTransform>().sizeDelta = new Vector2(130,40);
+        }
     }
     public void Tutorial2(){
         return;
     }
     public void SavePosition(){
-        int c = problem.InputObject.Count;
+        int c = problem.problem[data.level].InputObject.Count;
         for(int i=0;i<c;i++){
-            problem.InputObject[i].LocalPosition = InboxManager.GetComponent<InboxManager>().inbox[i].GetComponent<RectTransform>().localPosition;
+            problem.problem[data.level].InputObject[i].localPosition = InboxManager.GetComponent<InboxManager>().inbox[i].GetComponent<RectTransform>().localPosition;
+            problem.problem[data.level].InputObject[i].sizeDelta = InboxManager.GetComponent<InboxManager>().inbox[i].GetComponent<RectTransform>().sizeDelta;
         }
         problem.StartBackground = new Vector2(Background.GetComponent<RectTransform>().localPosition.x,250);
     }
