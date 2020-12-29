@@ -17,11 +17,11 @@ MonoBehaviour:
   Background: {fileID: 21300000, guid: 9b4e78dae3de401498e4672bb7a4d525, type: 3}
   StartBackground: {x: 0, y: 250}
   InputObject:
-  - LocalPosition: {x: 0, y: 0}
+  - LocalPosition: {x: -116.5, y: -68.8}
     Object: {fileID: 21300000, guid: e2fe800a80fa4174087b5abe53039322, type: 3}
-  - LocalPosition: {x: 0, y: 0}
+  - LocalPosition: {x: 157.5, y: -44.7}
     Object: {fileID: 21300000, guid: 8cd8ada4244e87746b7692d2c18dc9d9, type: 3}
-  - LocalPosition: {x: 0, y: 0}
+  - LocalPosition: {x: 12.5, y: -50}
     Object: {fileID: 21300000, guid: 21a5ed92aff28914ab05f54077f1e6ea, type: 3}
   problem:
   - IDObject: 1
@@ -42,7 +42,7 @@ MonoBehaviour:
     - id: 41
       name: 
       amount: 4
-  - IDObject: 1
+  - IDObject: 0
     SubText: "\u0E23\u0E16\u0E02\u0E31\u0E1A\u0E44\u0E21\u0E48\u0E44\u0E14\u0E49"
     Item:
     - id: 36

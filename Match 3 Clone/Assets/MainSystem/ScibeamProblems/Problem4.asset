@@ -20,9 +20,9 @@ MonoBehaviour:
   - LocalPosition: {x: 0, y: 0}
     Object: {fileID: 0}
   - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
+    Object: {fileID: 21300000, guid: 6445cea752daddc4cb68cd87f15cf7c5, type: 3}
   - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
+    Object: {fileID: 21300000, guid: 93472ff77cd737b438d3ac0ab155c01b, type: 3}
   problem:
   - IDObject: 0
     SubText: "\u0E2B\u0E32\u0E22\u0E43\u0E08\u0E44\u0E21\u0E48\u0E17\u0E31\u0E19"

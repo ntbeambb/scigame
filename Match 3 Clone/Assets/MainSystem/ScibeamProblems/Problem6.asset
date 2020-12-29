@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProblemText: 
   FoundElement: 0100000002000000030000000400000005000000
-  Background: {fileID: 0}
+  Background: {fileID: 21300000, guid: 942ec28a51424aa44a702bc188817f9d, type: 3}
   StartBackground: {x: 0, y: 0}
   InputObject:
   - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
+    Object: {fileID: 21300000, guid: 78520eaa0cfdf694b9b082bf42a9516e, type: 3}
   - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
+    Object: {fileID: 21300000, guid: f2359188664290f4fa6a566c29f5d76d, type: 3}
   - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
+    Object: {fileID: 21300000, guid: 4c5e9e8d5dea8694a933ac8160d11b94, type: 3}
   problem:
   - IDObject: 0
     SubText: "\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E41\u0E2A\u0E07\u0E2A\u0E27\u0E48\u0E32\u0E07"

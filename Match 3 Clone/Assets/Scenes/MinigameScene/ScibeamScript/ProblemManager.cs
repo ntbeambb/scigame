@@ -37,6 +37,7 @@ public class ProblemManager : InboxGameobject
     private float value;
     private int IDmission;
     public GameObject tutorial;
+    public GameObject Background;
     public bool Copy = false;
 
     [Header("Item Checker")]
@@ -56,6 +57,7 @@ public class ProblemManager : InboxGameobject
             }        
         //set up problem
         Copy = SceneData.CopyProblem;
+        Copy = true;/////////////////////////////////////////////////////////////////////
         SceneData.CopyProblem = false;
         if(Copy)data.Reset(problem);
         else{
@@ -82,9 +84,9 @@ public class ProblemManager : InboxGameobject
         CheckUpdate(false);
 
         //Tutorial
-        if(!graphdata.TutorialStatus){
+        /*if(!graphdata.TutorialStatus){
             tutorial.SetActive(true);
-        }
+        }*/
     }
     private GameObject CreateInput(QObject inp,int id){
         //create from prefab
@@ -174,5 +176,12 @@ public class ProblemManager : InboxGameobject
     }
     public void Tutorial2(){
         return;
+    }
+    public void SavePosition(){
+        int c = problem.InputObject.Count;
+        for(int i=0;i<c;i++){
+            problem.InputObject[i].LocalPosition = InboxManager.GetComponent<InboxManager>().inbox[i].GetComponent<RectTransform>().localPosition;
+        }
+        problem.StartBackground = new Vector2(Background.GetComponent<RectTransform>().localPosition.x,250);
     }
 }

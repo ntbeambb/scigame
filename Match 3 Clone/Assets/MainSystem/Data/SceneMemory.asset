@@ -15,6 +15,7 @@ MonoBehaviour:
   SceneStack:
   - mainmanu
   - TreeGraph
+  - TreeGraph
   - 
   - 
   - 
@@ -22,12 +23,11 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  NumScene: 2
-  IdMission: 0
-  PreIdMission: 0
-  Qprob: 0.3
-  SkipCo: 0
+  NumScene: 3
+  IdMission: 4
+  PreIdMission: 4
+  Qprob: 0.8055556
+  SkipCo: 3
   StartQuizProb: 0.3
   LockQ: 6
   CopyProblem: 0

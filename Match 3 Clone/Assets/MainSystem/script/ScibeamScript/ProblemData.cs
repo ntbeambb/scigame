@@ -6,8 +6,12 @@ public class ProblemData : ScriptableObject
 {   
     public string ProblemText;
     public List<int> FoundElement;
+
+    [Header("Background")]
     public Sprite Background;
     public Vector2 StartBackground;
+
+    [Header("Input & problem")]
     public List<QObject> InputObject = new List<QObject>();
     [SerializeField] private static int SubtaskAmount = 1;
     [SerializeField] private Subtask[] problem = new Subtask[SubtaskAmount];
