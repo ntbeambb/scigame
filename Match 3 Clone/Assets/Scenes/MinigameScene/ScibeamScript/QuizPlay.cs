@@ -11,6 +11,7 @@ public class QuizPlay : MonoBehaviour
     public GraphData Gdata;
     public GameObject popup;
     public GameObject quiz;
+    public GameObject ProblemText;
     [SerializeField] private QuizProblem Qnow;
     public List<GameObject> Ctext = new List<GameObject>();
     public void StartQuiz(){
@@ -26,6 +27,8 @@ public class QuizPlay : MonoBehaviour
         mem.SkipCo=0;
         mem.Qprob = mem.StartQuizProb;
         Qnow = quizList.Qlist[Gdata.Pass[Random.Range(0,Gdata.Pass.Count)]];
+        TextMeshProUGUI temp = ProblemText.GetComponent<TextMeshProUGUI>();
+        temp.text = Qnow.text;
         for(var i=0;i<4;i++){
             TextMeshProUGUI textmesh = Ctext[i].GetComponent<TextMeshProUGUI>();
             //Debug.Log("Start "+subtask.SubText);

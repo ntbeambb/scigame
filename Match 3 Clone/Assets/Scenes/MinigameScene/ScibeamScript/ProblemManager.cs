@@ -27,19 +27,38 @@ public class ProblemManager : InboxGameobject
     public GameObject InputPrefab;
     //general variable
     public GameObject input_group;
+    public GameObject InboxManager;
     private int nowsub;
     private float value;
     private int IDmission;
-    public bool Copy;
+    public bool Copy = false;
     
-    void Start(){
+    /*Start(){
+        
+        Board.GetComponent<Board>().dots.clear();
+        for(i= 0;i<problem.FoundElement.Count;i++){
+            Board.GetComponent<Board>().dots.Add();
+        }
+
+    }
+    private void CreateDot(int _id){
+
+    }*/
+    public void ManualStart(){
         //link problem
         IDmission = SceneData.SendIdMission();
         problem = ProList.Plist[IDmission];
         
         //set up problem
-        Copy = true;
-        if(Copy)data.Copy(problem);
+        Copy = SceneData.CopyProblem;
+        SceneData.CopyProblem = false;
+        if(Copy)data.Reset(problem);
+        else{
+            data.Load();
+            data.Copy(problem);
+            backpack.Load();
+        }
+        data.mission_id = IDmission;
         subtask = data.GetSub();
         progressbar.GetComponent<Slider>().value = data.GetProgress();
         
@@ -47,11 +66,14 @@ public class ProblemManager : InboxGameobject
         //Debug.Log("Start "+subtask.SubText);
         textmesh.text = subtask.SubText;
 
+        List<GameObject> temp = new List<GameObject>();
         //generate GameInput
         InputList = problem.InputObject;
         for(int i = 0; i < InputList.Count;i++){
-            CreateInput(InputList[i],i);
+            temp.Add(CreateInput(InputList[i],i));
         }
+        //Send Data to inboxManager
+        InboxManager.GetComponent<InboxManager>().inbox = temp;
     }
     private GameObject CreateInput(QObject inp,int id){
         //create from prefab
@@ -59,7 +81,7 @@ public class ProblemManager : InboxGameobject
         //change image
         ret.GetComponent<Image>().sprite = inp.Object;
         //set position
-        ret.transform.localPosition = inp.LoPo;
+        ret.transform.localPosition = inp.LocalPosition;
         //set Data
         ret.GetComponent<InputObjectScript>().InputID = id;
         ret.GetComponent<InputObjectScript>().Manager = this.gameObject;
@@ -80,7 +102,7 @@ public class ProblemManager : InboxGameobject
     public void SendItem(int _id,int _amount,int ObjId){
         //check object ID
         if(ObjId != subtask.IDObject)return;
-
+        Debug.Log(_id.ToString()+" "+_amount.ToString()+" "+ObjId.ToString());
         int po = CheckItem(_id);
         if(po != -1 ){
             if(subtask.Item[po].amount>0){

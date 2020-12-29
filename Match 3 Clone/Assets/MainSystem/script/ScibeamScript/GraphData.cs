@@ -5,8 +5,8 @@ using UnityEngine;
 public class GraphData : ScriptableObject
 {
     public List<mission> CanPlay = new List<mission>();
-    public List<mission> All = new List<mission>();
     public List<int> Pass = new List<int>();
+    public List<mission> All = new List<mission>();
     public int PoMision(int id){
         int temp = CanPlay.Count;
         for(int i=0;i<temp;i++){
@@ -25,6 +25,12 @@ public class GraphData : ScriptableObject
         for(int i=0;i<l;i++ ){
             Unlock(CanPlay[po].unlock[i]);
         }
+    }
+    public void Save(){
+
+    }
+    public void Load(){
+        
     }
 }
 [System.Serializable]

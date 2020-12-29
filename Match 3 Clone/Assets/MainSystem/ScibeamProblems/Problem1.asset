@@ -15,17 +15,19 @@ MonoBehaviour:
   ProblemText: 
   Background: {fileID: 21300000, guid: 05104b014bd19fc4fbd3ff61fe93912f, type: 3}
   StartBackground: {x: 200, y: 250}
-  InputObject: []
+  InputObject:
+  - LocalPosition: {x: 0, y: -50}
+    Object: {fileID: 21300000, guid: 53831a555de637c4cbefd74749aeee42, type: 3}
   problem:
   - IDObject: 0
-    SubText: 
+    SubText: 2 H2
     Item:
-    - id: 2
+    - id: 37
       name: H2
       amount: 2
   - IDObject: 0
-    SubText: 
+    SubText: 2 O2
     Item:
-    - id: 3
+    - id: 41
       name: O2
       amount: 2

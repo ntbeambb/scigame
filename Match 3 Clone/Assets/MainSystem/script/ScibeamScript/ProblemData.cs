@@ -5,6 +5,7 @@ using UnityEngine;
 public class ProblemData : ScriptableObject
 {   
     public string ProblemText;
+    public List<int> FoundElement;
     public Sprite Background;
     public Vector2 StartBackground;
     public List<QObject> InputObject = new List<QObject>();
@@ -21,7 +22,6 @@ public class ProblemData : ScriptableObject
 }
 [System.Serializable]
 public class Subtask{
-    public static int ItemType;
     public int IDObject;
     [SerializeField] public string SubText;
     public List<slot> Item = new List<slot>();
@@ -30,6 +30,7 @@ public class Subtask{
         Subtask copy = new Subtask();
         //Debug.Log("Num of Slot "+copy.Item.Count);
         copy.SubText = this.SubText;
+        copy.IDObject = this.IDObject;
         for(int i=0; i<this.Item.Count; i++){
             copy.Item.Add(this.Item[i].Copy());
         }
@@ -38,6 +39,6 @@ public class Subtask{
 }
 [System.Serializable]
 public class QObject{
-    public Vector2 LoPo;
+    public Vector2 LocalPosition;
     public Sprite Object;
 }
