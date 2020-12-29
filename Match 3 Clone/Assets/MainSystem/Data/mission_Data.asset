@@ -75,3 +75,4 @@ MonoBehaviour:
     Goal: 
     finish: 0
     unlock: 
+  TutorialStatus: 0

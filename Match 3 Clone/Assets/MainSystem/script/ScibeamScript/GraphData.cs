@@ -8,6 +8,7 @@ public class GraphData : ScriptableObject
     public List<mission> CanPlay = new List<mission>();
     public List<int> Pass = new List<int>();
     public List<mission> All = new List<mission>();
+    public bool TutorialStatus;
     public int PoMision(int id){
         int temp = CanPlay.Count;
         for(int i=0;i<temp;i++){
@@ -29,6 +30,7 @@ public class GraphData : ScriptableObject
     }
     public void Save(){
         Basic_GraphData send = new Basic_GraphData();
+        send.TutorialStatus = TutorialStatus;
         //array
         int size = CanPlay.Count;
         send.size = size;
@@ -44,6 +46,7 @@ public class GraphData : ScriptableObject
     }
     public void Load(){
         Basic_GraphData rev = SaveSystem.LoadGraphData(path);
+        TutorialStatus = rev.TutorialStatus;
         CanPlay.Clear();
         int size = rev.size;
         for(int i=0;i<size;i++){
@@ -79,4 +82,5 @@ public class Basic_GraphData{
     public int size;
     public int[] CanPlay;
     public int[] CanPlay_finish;
+    public bool TutorialStatus;
 }

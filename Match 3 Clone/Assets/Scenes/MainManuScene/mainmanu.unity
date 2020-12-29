@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 51350607}
   - component: {fileID: 51350606}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285,6 +285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 192693971}
   - component: {fileID: 192693970}
+  - component: {fileID: 192693972}
   m_Layer: 0
   m_Name: manucontrol
   m_TagString: Untagged
@@ -319,6 +320,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &192693972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192693969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda96616f9f2c2942aeb64f3359667d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grahpdata: {fileID: 11400000, guid: d0dbb96e5264bab42aa9f6ff0fc11dcb, type: 2}
+  tutorial: {fileID: 51350604}
 --- !u!1 &444306546
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,8 +972,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: d0dbb96e5264bab42aa9f6ff0fc11dcb, type: 2}
-        m_MethodName: Load
+        m_MethodName: Save
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 51350604}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

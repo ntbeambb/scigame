@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.IO;
 
 public class ProblemManager : InboxGameobject
 {
-    //problem
+    [Header("Problem & Progress")]
     private ProblemData problem;
     public ProblemList ProList;
     public ProgressData data;
@@ -15,25 +16,34 @@ public class ProblemManager : InboxGameobject
     public GameObject Problemtext;
         //-input Object
         public List<QObject> InputList;
-    //inventory
+
+    [Header("Inventory")]
     public GameObject inventory;
     public InventorySystem backpack;
-    //data
+
+    [Header("General Data")]
     public SceneDataScript SceneData;
     public GraphData graphdata;
     public AllpicID Allpic;
-    //quiz
-    public GameObject quiz;
-    //prefab
+    
+    [Header("Prefab")]
     public GameObject InputPrefab;
-    //general variable
+
+    [Header("General Variable")]
     public GameObject input_group;
     public GameObject InboxManager;
-    public GameObject DotsPrefab;
+    public GameObject quiz;
     private int nowsub;
     private float value;
     private int IDmission;
+    public GameObject tutorial;
     public bool Copy = false;
+
+    [Header("Item Checker")]
+    public List<GameObject> ItemChecker;
+    public Sprite UnknownImage;
+    public Sprite CompleteImage;
+    public Sprite NoneImage;
     
     public void ManualStart(){
         //link problem
@@ -41,8 +51,9 @@ public class ProblemManager : InboxGameobject
         problem = ProList.Plist[IDmission];
 
         //Load Data
-        backpack.Load();
-        
+        if(File.Exists(Application.persistentDataPath + "/DataInventory.save")){
+            backpack.Load();
+            }        
         //set up problem
         Copy = SceneData.CopyProblem;
         SceneData.CopyProblem = false;
@@ -50,7 +61,6 @@ public class ProblemManager : InboxGameobject
         else{
             data.Load();
             data.Copy(problem);
-            backpack.Load();
         }
         data.mission_id = IDmission;
         subtask = data.GetSub();
@@ -68,6 +78,13 @@ public class ProblemManager : InboxGameobject
         }
         //Send Data to inboxManager
         InboxManager.GetComponent<InboxManager>().inbox = temp;
+
+        CheckUpdate(false);
+
+        //Tutorial
+        if(!graphdata.TutorialStatus){
+            tutorial.SetActive(true);
+        }
     }
     private GameObject CreateInput(QObject inp,int id){
         //create from prefab
@@ -117,6 +134,7 @@ public class ProblemManager : InboxGameobject
                 //update text
                 TextMeshProUGUI textmesh = Problemtext.GetComponent<TextMeshProUGUI>();
                 textmesh.text = subtask.SubText;
+                
                 //Debug.Log("GetItem "+subtask.SubText);
                 
                 if(pro == 1){
@@ -130,8 +148,31 @@ public class ProblemManager : InboxGameobject
                     Time.timeScale=0;
                     backpack.Save();
                     graphdata.Save();
+                    CheckUpdate(true);
+                }else{
+                    CheckUpdate(false);
                 }
             }
         }
+    }
+    public void CheckUpdate(bool ck){
+        int level = data.level;
+        if(ck)level--;
+        Subtask Osub = problem.GetSub(level);
+        for(int i = 0;i<Osub.Item.Count; i++){
+            ItemChecker[i].SetActive(true);
+            if(!ck && Osub.Item[i].amount == 0){
+                ItemChecker[i].GetComponent<Image>().sprite = NoneImage;
+            }else if(!ck && data.NowSub.Item[i].amount == Osub.Item[i].amount){
+                ItemChecker[i].GetComponent<Image>().sprite = UnknownImage;
+            }else if(ck || data.NowSub.Item[i].amount == 0){
+                ItemChecker[i].GetComponent<Image>().sprite = CompleteImage;
+            }else{
+                ItemChecker[i].GetComponent<Image>().sprite = Allpic.ID[Osub.Item[i].id];
+            }
+        } 
+    }
+    public void Tutorial2(){
+        return;
     }
 }

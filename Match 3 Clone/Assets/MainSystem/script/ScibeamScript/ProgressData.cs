@@ -8,7 +8,7 @@ public class ProgressData : ScriptableObject
     private string path = "/DataProgress.save";
     [SerializeField] private float ProgressValue;
     public Subtask NowSub;
-    private int level;
+    public int level{get;private set;}
     public int mission_id;
     [SerializeField] private ProblemData OriginProblem;
     private int mav;
@@ -52,21 +52,22 @@ public class ProgressData : ScriptableObject
     public float GetProgress(){
         return ProgressValue;
     }
-    public void SendSub(Subtask input){
+    public int SendSub(Subtask input){
         NowSub = input;
         int l = NowSub.Item.Count;
-        bool ck = true;
+        int ck = 0;
         int sum = 0;
         for(int i=0; i<l; i++){
-            if(NowSub.Item[i].amount > 0)ck =false;
+            if(NowSub.Item[i].amount > 0)ck += 1<<i;
             sum += NowSub.Item[i].amount;
         }
-        if(ck){
+        if(ck == 0){
             NextSub();
             sum = mav;
         }
         CalProgress(sum);
         //Debug.Log("Progress "+ProgressValue);
+        return ck;
     }
     public void Save(){
 
