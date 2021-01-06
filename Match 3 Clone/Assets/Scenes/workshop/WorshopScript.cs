@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WorshopScript : InboxGameobject
 {
+    public GraphData graphdata;
+    public GameObject tutorial;
     public List<int> inputID;
     public List<int> inputAmount;
     public ChemData chemdata;
@@ -19,7 +21,9 @@ public class WorshopScript : InboxGameobject
         inputID = new List<int>();
         inputAmount = new List<int>();
         numchem = chemdata.chemdata.Count;
-
+        if(!graphdata.TutorialStatus){
+            tutorial.SetActive(true);
+        }
       //  bug=0;
       //  up = numchem-1;
       //  down = 0;

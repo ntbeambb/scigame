@@ -795,7 +795,6 @@ RectTransform:
   - {fileID: 2003313673}
   - {fileID: 1687363876}
   - {fileID: 1711879603}
-  - {fileID: 924779417}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2414,12 +2413,12 @@ GameObject:
   - component: {fileID: 924779419}
   - component: {fileID: 924779418}
   m_Layer: 5
-  m_Name: Image
+  m_Name: tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &924779417
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2427,16 +2426,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924779416}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 180222186}
-  m_RootOrder: 4
+  m_Father: {fileID: 1299177761}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000026941, y: -249.24}
+  m_AnchoredPosition: {x: 0.000052372314, y: 0.81988525}
   m_SizeDelta: {x: 58.8, y: 58.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &924779418
@@ -2525,6 +2524,7 @@ MonoBehaviour:
   Graphdata: {fileID: 11400000, guid: d0dbb96e5264bab42aa9f6ff0fc11dcb, type: 2}
   Plist: {fileID: 11400000, guid: e91fb027e30abc04dbb472ad3b906458, type: 2}
   Allpic: {fileID: 11400000, guid: feafa3ac7735fd847ba1902779e6efd3, type: 2}
+  tutorial: {fileID: 924779416}
   StartWindow: {fileID: 1711879602}
   Goalwin: {fileID: 1955452422}
   Level: {fileID: 134719363}
@@ -2816,6 +2816,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 67833101}
+  - {fileID: 924779417}
   m_Father: {fileID: 1445164231}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

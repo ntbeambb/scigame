@@ -9,6 +9,7 @@ public class MissionManager : MonoBehaviour
     public GraphData Graphdata;
     public ProblemList Plist;
     public AllpicID Allpic;
+    public GameObject tutorial;
     public GameObject StartWindow;
     public GameObject Goalwin;
     public GameObject Level;
@@ -28,6 +29,9 @@ public class MissionManager : MonoBehaviour
                 point[po].GetComponent<Image>().sprite = blue;
             }
             
+        }
+        if(!Graphdata.TutorialStatus){
+            tutorial.SetActive(true);
         }
     }
     public void startwindow(int id){
