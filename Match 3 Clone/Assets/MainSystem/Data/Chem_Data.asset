@@ -302,3 +302,28 @@ MonoBehaviour:
     - id: 43
       name: CH3COOH
       amount: 1
+  - input:
+    - id: 4
+      name: N
+      amount: 2
+    output:
+    - id: 44
+      name: N2
+      amount: 1
+  - input:
+    - id: 10
+      name: Na
+      amount: 1
+    - id: 2
+      name: H
+      amount: 1
+    - id: 1
+      name: C
+      amount: 1
+    - id: 3
+      name: O
+      amount: 3
+    output:
+    - id: 45
+      name: NaHCO3
+      amount: 1
