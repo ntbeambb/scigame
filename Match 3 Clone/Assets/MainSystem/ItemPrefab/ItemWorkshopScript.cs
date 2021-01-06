@@ -16,7 +16,7 @@ public class ItemWorkshopScript : MonoBehaviour
         }else{
             GameObject inventory = GameObject.Find("Content");
             int id = GetComponent<ScibeamData>().ID();
-            inventory.GetComponent<InputMix>().RemoveItem(id,this.gameObject);
+            inventory.GetComponent<InputMix>().RemoveItem(id);
 
         }
 

@@ -25,7 +25,7 @@ public class InputMix : MonoBehaviour
         Vector2 po = new Vector2(0,0);
         GameObject ret = Instantiate(prefab,po,Quaternion.identity,parent.transform) as GameObject;
         ret.GetComponent<ScibeamData>().id = _id;
-        //change image
+        //change Backgorund
         ret.GetComponent<Image>().sprite = InputImage;
         //add image
         var pic = ret.GetComponent<ItemWorkshopScript>().image;
@@ -64,7 +64,7 @@ public class InputMix : MonoBehaviour
     }
     private GameObject mini(GameObject inp){
         var k = inp.GetComponent<RectTransform>().sizeDelta;
-        k.y = 50;
+        k.y = 65;
         inp.GetComponent<RectTransform>().sizeDelta = k;
 
         k = inp.GetComponent<ItemWorkshopScript>().text.GetComponent<RectTransform>().localPosition;
@@ -99,14 +99,23 @@ public class InputMix : MonoBehaviour
             ReNum(AllItem[i],workshop.GetComponent<WorshopScript>().inputAmount[i]);
         }
     }
-    public void RemoveItem(int _id,GameObject element){
+    public void RemoveItem(int _id){
         workshop.GetComponent<WorshopScript>().Remove(_id);
         inventory.GetComponent<inventoryScript>().AddItem(_id,1);
     }
     public void reset(){
         int c = AllItem.Count;
-        //Debug.Log(c);
+        Debug.Log("AllItem "+c);
+        Debug.Log("inputAmount "+ workshop.GetComponent<WorshopScript>().inputAmount.Count);
+        //restore
+        for(int i = 0;i<c;i++){
+            int _id = AllItem[i].GetComponent<ScibeamData>().id;
+            int _amount = workshop.GetComponent<WorshopScript>().inputAmount[i];
+            inventory.GetComponent<inventoryScript>().AddItem(_id,_amount);
+        }
+        //destroy
         for(int i=0;i<c;i++){
+            //RemoveItem(AllItem[i].GetComponent<ScibeamData>().id);
             Destroy(AllItem[0]);
             AllItem.Remove(AllItem[0]);
         }
