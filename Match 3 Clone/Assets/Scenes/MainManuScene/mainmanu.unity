@@ -334,6 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grahpdata: {fileID: 11400000, guid: d0dbb96e5264bab42aa9f6ff0fc11dcb, type: 2}
   tutorial: {fileID: 51350604}
+  play: {fileID: 1133072082}
 --- !u!1 &444306546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,7 +1038,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133072082}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4e5d87b18aa9d6c4682815e78672678c, type: 2}
   m_CullingMode: 0

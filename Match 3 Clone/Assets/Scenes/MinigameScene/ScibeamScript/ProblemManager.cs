@@ -77,10 +77,9 @@ public class ProblemManager : InboxGameobject
         CheckUpdate(false);
 
         //Tutorial
-        /*if(!graphdata.TutorialStatus){
+        if(!graphdata.TutorialStatus){
             tutorial.SetActive(true);
-
-        }*/
+        }
     }
     private void UpdateInput(int SubID){
         List<GameObject> temp = new List<GameObject>();
