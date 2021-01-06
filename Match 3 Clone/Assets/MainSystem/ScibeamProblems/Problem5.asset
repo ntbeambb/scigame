@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProblemText: 
   FoundElement: 01000000020000000300000004000000
-  Background: {fileID: 0}
-  StartBackground: {x: 0, y: 1.96}
-  InputObject:
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
+  Background: {fileID: 21300000, guid: 17b93ee8686a7ad4297d770737cb2f9e, type: 3}
+  StartBackground: {x: 681.7, y: 250}
   problem:
   - IDObject: 0
     SubText: "\u0E43\u0E2B\u0E49\u0E2A\u0E31\u0E07\u0E40\u0E04\u0E23\u0E32\u0E30\u0E2B\u0E4C\u0E1E\u0E25\u0E32\u0E2A\u0E15\u0E34\u0E01"
+    InputObject:
+    - localPosition: {x: 55.98, y: -5.98}
+      sizeDelta: {x: 88.05, y: 88.05}
+      Object: {fileID: 21300000, guid: 407ab7199158da04088b7f6d5fd0e01f, type: 3}
     Item:
     - id: 25
       name: 

@@ -15,15 +15,17 @@ MonoBehaviour:
   ProblemText: 
   FoundElement: 010000000200000003000000040000000500000006000000070000000800000009000000
   Background: {fileID: 21300000, guid: 17b93ee8686a7ad4297d770737cb2f9e, type: 3}
-  StartBackground: {x: 0, y: 0}
-  InputObject:
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 21300000, guid: 18f7871e2f20a9c44822af0922a141c8, type: 3}
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 21300000, guid: cdd5a9956c5772547b6208f6364d865b, type: 3}
+  StartBackground: {x: 225, y: 250}
   problem:
   - IDObject: 0
-    SubText: 
+    SubText: "\u0E0A\u0E07\u0E01\u0E32\u0E41\u0E1F"
+    InputObject:
+    - localPosition: {x: 64, y: 32.2}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 18f7871e2f20a9c44822af0922a141c8, type: 3}
+    - localPosition: {x: 149.2, y: 34.9}
+      sizeDelta: {x: 88.4, y: 88.4}
+      Object: {fileID: 21300000, guid: cdd5a9956c5772547b6208f6364d865b, type: 3}
     Item:
     - id: 23
       name: 
@@ -33,6 +35,13 @@ MonoBehaviour:
       amount: 2
   - IDObject: 1
     SubText: 
+    InputObject:
+    - localPosition: {x: 64, y: 32.2}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 18f7871e2f20a9c44822af0922a141c8, type: 3}
+    - localPosition: {x: 149.2, y: 34.9}
+      sizeDelta: {x: 88.4, y: 88.4}
+      Object: {fileID: 21300000, guid: cdd5a9956c5772547b6208f6364d865b, type: 3}
     Item:
     - id: 27
       name: 

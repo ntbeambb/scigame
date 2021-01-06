@@ -13,27 +13,27 @@ MonoBehaviour:
   m_Name: MainBackpack
   m_EditorClassIdentifier: 
   container:
-  - id: 3
+  - id: 37
     name: 
-    amount: 18
-  - id: 1
+    amount: 100
+  - id: 30
     name: 
-    amount: 13
+    amount: 100
   - id: 4
     name: 
-    amount: 21
+    amount: 100
   - id: 2
     name: 
-    amount: 8
+    amount: 100
   - id: 41
     name: 
-    amount: 94
+    amount: 100
   - id: 21
     name: 
     amount: 98
   - id: 37
     name: 
-    amount: 98
+    amount: 96
   - id: 44
     name: 
     amount: 96

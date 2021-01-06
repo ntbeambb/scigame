@@ -14,22 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProblemText: 
   FoundElement: 010000000200000003000000040000000a0000000b000000
-  Background: {fileID: 0}
+  Background: {fileID: 21300000, guid: 81c3781e038e9a3498ec00c2fdc9d2cb, type: 3}
   StartBackground: {x: 0, y: 0}
-  InputObject:
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
   problem:
   - IDObject: 0
     SubText: 
+    InputObject: []
     Item:
     - id: 38
       name: 
@@ -42,6 +32,7 @@ MonoBehaviour:
       amount: 1
   - IDObject: 1
     SubText: 
+    InputObject: []
     Item:
     - id: 30
       name: 
@@ -51,12 +42,14 @@ MonoBehaviour:
       amount: 1
   - IDObject: 2
     SubText: 
+    InputObject: []
     Item:
     - id: 33
       name: 
       amount: 1
   - IDObject: 3
     SubText: 
+    InputObject: []
     Item:
     - id: 41
       name: 
@@ -66,6 +59,7 @@ MonoBehaviour:
       amount: 1
   - IDObject: 4
     SubText: 
+    InputObject: []
     Item:
     - id: 21
       name: 

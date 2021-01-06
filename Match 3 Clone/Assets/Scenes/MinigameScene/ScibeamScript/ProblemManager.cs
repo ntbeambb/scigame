@@ -77,10 +77,10 @@ public class ProblemManager : InboxGameobject
         CheckUpdate(false);
 
         //Tutorial
-        if(!graphdata.TutorialStatus){
+        /*if(!graphdata.TutorialStatus){
             tutorial.SetActive(true);
 
-        }
+        }*/
     }
     private void UpdateInput(int SubID){
         List<GameObject> temp = new List<GameObject>();
@@ -109,6 +109,9 @@ public class ProblemManager : InboxGameobject
         //set Data
         ret.GetComponent<InputObjectScript>().InputID = id;
         ret.GetComponent<InputObjectScript>().Manager = this.gameObject;
+        //set border
+        ret.GetComponent<BoxCollider2D>().size = inp.sizeDelta;
+
         ret.name = "Input Object "+ id.ToString();
         
         return ret;
