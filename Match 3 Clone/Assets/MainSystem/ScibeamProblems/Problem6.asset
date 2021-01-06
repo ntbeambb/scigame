@@ -13,8 +13,38 @@ MonoBehaviour:
   m_Name: Problem6
   m_EditorClassIdentifier: 
   ProblemText: 
+  FoundElement: 0100000002000000030000000400000005000000
+  Background: {fileID: 21300000, guid: 942ec28a51424aa44a702bc188817f9d, type: 3}
+  StartBackground: {x: 0, y: 0}
+  InputObject:
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 21300000, guid: 78520eaa0cfdf694b9b082bf42a9516e, type: 3}
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 21300000, guid: f2359188664290f4fa6a566c29f5d76d, type: 3}
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 21300000, guid: 4c5e9e8d5dea8694a933ac8160d11b94, type: 3}
   problem:
-  - Item:
-    - id: 25
-      name: C3H6O6
-      amount: 1
+  - IDObject: 0
+    SubText: "\u0E40\u0E1E\u0E34\u0E48\u0E21\u0E41\u0E2A\u0E07\u0E2A\u0E27\u0E48\u0E32\u0E07"
+    Item:
+    - id: 37
+      name: 
+      amount: 5
+  - IDObject: 1
+    SubText: "\u0E2D\u0E32\u0E01\u0E32\u0E28\u0E44\u0E21\u0E48\u0E1E\u0E2D\u0E2B\u0E32\u0E22\u0E43\u0E08"
+    Item:
+    - id: 41
+      name: 
+      amount: 3
+  - IDObject: 2
+    SubText: "\u0E2A\u0E23\u0E49\u0E32\u0E07\u0E27\u0E31\u0E2A\u0E14\u0E38\u0E2B\u0E34\u0E19\u0E07\u0E2D\u0E01\u0E2B\u0E34\u0E19\u0E22\u0E49\u0E2D\u0E22"
+    Item:
+    - id: 26
+      name: 
+      amount: 3
+  - IDObject: 2
+    SubText: "\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E2B\u0E34\u0E19\u0E22\u0E49\u0E2D\u0E22\u0E25\u0E07\u0E21\u0E32"
+    Item:
+    - id: 38
+      name: 
+      amount: 2

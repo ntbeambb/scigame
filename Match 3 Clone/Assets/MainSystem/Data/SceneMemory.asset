@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneStack:
   - mainmanu
+  - TreeGraph
+  - TreeGraph
   - 
   - 
   - 
@@ -21,11 +23,9 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  NumScene: 1
-  IdMission: 0
-  PreIdMission: 0
+  NumScene: 3
+  IdMission: 1
+  PreIdMission: 1
   Qprob: 0.3
   SkipCo: 0
   StartQuizProb: 0.3

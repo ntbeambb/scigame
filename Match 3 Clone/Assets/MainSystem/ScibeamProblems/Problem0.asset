@@ -13,26 +13,33 @@ MonoBehaviour:
   m_Name: Problem0
   m_EditorClassIdentifier: 
   ProblemText: "\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E15\u0E49\u0E19\u0E44\u0E21\u0E49\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E2D\u0E22\u0E39\u0E48\u0E23\u0E2D\u0E14"
-  Background: {fileID: 21300000, guid: 9b4e78dae3de401498e4672bb7a4d525, type: 3}
-  StartBackground: {x: 600, y: 250}
-  InputObject:
-  - LocalPosition: {x: -50, y: -50}
-    Object: {fileID: 21300000, guid: e6b8c424401922f4db94c71884d01da3, type: 3}
-  - LocalPosition: {x: 50, y: -50}
-    Object: {fileID: 21300000, guid: 1a998d6cf3bd4a44ea499eb804b9c143, type: 3}
+  FoundElement: 01000000020000000300000004000000
+  Background: {fileID: 21300000, guid: 05104b014bd19fc4fbd3ff61fe93912f, type: 3}
+  StartBackground: {x: 681.7, y: 250}
   problem:
   - IDObject: 0
-    SubText: 2C
+    SubText: "\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E25\u0E39\u0E01\u0E42\u0E1B\u0E48\u0E07\u0E25\u0E2D\u0E22"
+    InputObject:
+    - localPosition: {x: -59.2, y: -47.41002}
+      sizeDelta: {x: 101.9, y: 94.82}
+      Object: {fileID: 21300000, guid: e6b8c424401922f4db94c71884d01da3, type: 3}
+    - localPosition: {x: 77.9, y: -45}
+      sizeDelta: {x: 100, y: 99.64}
+      Object: {fileID: 21300000, guid: 1a998d6cf3bd4a44ea499eb804b9c143, type: 3}
     Item:
-    - id: 1
+    - id: 37
       name: 
       amount: 2
   - IDObject: 1
-    SubText: 2H/2O
+    SubText: "\u0E15\u0E49\u0E19\u0E44\u0E21\u0E49\u0E2B\u0E32\u0E22\u0E43\u0E08\u0E44\u0E21\u0E48\u0E2D\u0E2D\u0E01"
+    InputObject:
+    - localPosition: {x: -59.2, y: -47.41002}
+      sizeDelta: {x: 101.9, y: 94.82}
+      Object: {fileID: 21300000, guid: e6b8c424401922f4db94c71884d01da3, type: 3}
+    - localPosition: {x: 77.9, y: -45}
+      sizeDelta: {x: 100, y: 99.64}
+      Object: {fileID: 21300000, guid: 1a998d6cf3bd4a44ea499eb804b9c143, type: 3}
     Item:
-    - id: 2
+    - id: 41
       name: 
-      amount: 2
-    - id: 3
-      name: 
-      amount: 2
+      amount: 3

@@ -75,6 +75,7 @@
      <Compile Include="Assets\Prefabs\AngleChecker.cs" />
      <Compile Include="Assets\Scenes\graph\MissionManager.cs" />
      <Compile Include="Assets\Scenes\graph\MissionScript.cs" />
+     <Compile Include="Assets\Scenes\MainManuScene\Tutorial1.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\ChangeBackground.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\InventoryDot.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\ScibeamScript\InventoryMinigame.cs" />

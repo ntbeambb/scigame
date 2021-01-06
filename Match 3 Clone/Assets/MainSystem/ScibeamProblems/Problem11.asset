@@ -13,8 +13,66 @@ MonoBehaviour:
   m_Name: Problem11
   m_EditorClassIdentifier: 
   ProblemText: 
+  FoundElement: 010000000200000003000000040000000a0000000b000000
+  Background: {fileID: 0}
+  StartBackground: {x: 0, y: 0}
+  InputObject:
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 0}
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 0}
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 0}
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 0}
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 0}
   problem:
-  - Item:
-    - id: 32
-      name: C8H9NO2
+  - IDObject: 0
+    SubText: 
+    Item:
+    - id: 38
+      name: 
+      amount: 1
+    - id: 23
+      name: 
+      amount: 1
+    - id: 21
+      name: 
+      amount: 1
+  - IDObject: 1
+    SubText: 
+    Item:
+    - id: 30
+      name: 
+      amount: 5
+    - id: 43
+      name: 
+      amount: 1
+  - IDObject: 2
+    SubText: 
+    Item:
+    - id: 33
+      name: 
+      amount: 1
+  - IDObject: 3
+    SubText: 
+    Item:
+    - id: 41
+      name: 
+      amount: 3
+    - id: 36
+      name: 
+      amount: 1
+  - IDObject: 4
+    SubText: 
+    Item:
+    - id: 21
+      name: 
+      amount: 2
+    - id: 45
+      name: 
+      amount: 2
+    - id: 23
+      name: 
       amount: 1

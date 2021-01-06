@@ -13,8 +13,33 @@ MonoBehaviour:
   m_Name: Problem7
   m_EditorClassIdentifier: 
   ProblemText: 
+  FoundElement: 010000000200000003000000040000000500000006000000070000000800000009000000
+  Background: {fileID: 21300000, guid: 17b93ee8686a7ad4297d770737cb2f9e, type: 3}
+  StartBackground: {x: 0, y: 0}
+  InputObject:
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 21300000, guid: 18f7871e2f20a9c44822af0922a141c8, type: 3}
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 21300000, guid: cdd5a9956c5772547b6208f6364d865b, type: 3}
   problem:
-  - Item:
-    - id: 26
-      name: CaCO3
+  - IDObject: 0
+    SubText: 
+    Item:
+    - id: 23
+      name: 
       amount: 1
+    - id: 21
+      name: 
+      amount: 2
+  - IDObject: 1
+    SubText: 
+    Item:
+    - id: 27
+      name: 
+      amount: 2
+    - id: 29
+      name: 
+      amount: 2
+    - id: 28
+      name: 
+      amount: 2

@@ -26,9 +26,11 @@ public class ChangeBackground : MonoBehaviour
         idnow = Scenedata.IdMission;
         preid = Scenedata.PreIdMission;
         sttime = Time.time;
-        /*if(idnow == preid){
-         return;   
-        }*/
+        if(idnow == preid){
+            GetComponent<Image>().sprite = Plist.Plist[idnow].Background;
+            StartCoroutine(BackLoad());
+            return;
+        }
         GetComponent<Image>().sprite = Plist.Plist[preid].Background;
             st = Plist.Plist[preid].StartBackground;
             fn = Plist.Plist[idnow].StartBackground;
@@ -84,6 +86,24 @@ public class ChangeBackground : MonoBehaviour
 
             yield return new WaitForSeconds(0.01f);
         }
+        End();
+    }
+    IEnumerator BackLoad(){
+        float per;
+        float Ctime = 0.5f;
+        while(Time.time < sttime + Ctime + 0.1f){
+            per = (Time.time-sttime)/Ctime;
+            dark = (per*per);
+            GetComponent<Image>().color = new UnityEngine.Color(dark, dark, dark, 1f);
+            if(per >= 1 ){
+                GetComponent<Image>().color = new Color32(255,255,255,255);
+            }
+            yield return new WaitForSeconds(0.01f);
+        }
+        End();
+    }
+    private void End(){
+        Scenedata.PreIdMission = idnow;
         //start lab/inventory button
         workshop.SetActive(true);
         inventory.SetActive(true);

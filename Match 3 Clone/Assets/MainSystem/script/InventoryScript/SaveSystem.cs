@@ -7,6 +7,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 public static class SaveSystem
 {
     public static void SaveInventory(InventorySystem _inventory){
+        Debug.Log("SaveInventory");
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/DataInventory.save";
         FileStream stream = new FileStream(path,FileMode.Create);
@@ -26,6 +27,7 @@ public static class SaveSystem
         stream.Close();
     }
     public static void LoadInventory(InventorySystem _inventory){
+        Debug.Log("LoadInventory");
         string path = Application.persistentDataPath + "/DataInventory.save";
         if(File.Exists(path)){
             BinaryFormatter formatter = new BinaryFormatter();
@@ -57,6 +59,28 @@ public static class SaveSystem
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path,FileMode.Open);
             Basic_ProgressData ret = formatter.Deserialize(stream) as  Basic_ProgressData;
+            stream.Close();
+            return ret;
+        }else{
+           Debug.LogError("Save file not found in " + path);
+           return null;
+        }
+    }
+    public static void SaveGraphData(Basic_GraphData _input,string pp){
+        Debug.Log("SaveGraphData");
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + pp;
+        FileStream stream = new FileStream(path,FileMode.Create);
+        formatter.Serialize(stream,_input);
+        stream.Close();
+    }
+    public static Basic_GraphData LoadGraphData(string pp){
+        Debug.Log("LoadGraphData");
+        string path = Application.persistentDataPath + pp;
+        if(File.Exists(path)){
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path,FileMode.Open);
+            Basic_GraphData ret = formatter.Deserialize(stream) as  Basic_GraphData;
             stream.Close();
             return ret;
         }else{

@@ -13,14 +13,52 @@ MonoBehaviour:
   m_Name: Problem10
   m_EditorClassIdentifier: 
   ProblemText: 
+  FoundElement: 010000000200000003000000040000000a0000000b000000
+  Background: {fileID: 21300000, guid: 4b5d474123644a64f941aab98edf26ce, type: 3}
+  StartBackground: {x: 0, y: 0}
+  InputObject:
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 21300000, guid: 804ccc741db43ff4780051a86209cbe4, type: 3}
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 21300000, guid: e7420bfae4120bc41b7cb0744e3a53a8, type: 3}
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 21300000, guid: dd05d3964f3c8c8498a9085b54710641, type: 3}
+  - LocalPosition: {x: 0, y: 0}
+    Object: {fileID: 0}
   problem:
-  - Item:
-    - id: 12
-      name: Cu
+  - IDObject: 0
+    SubText: 
+    Item:
+    - id: 41
+      name: 
+      amount: 3
+  - IDObject: 1
+    SubText: 
+    Item:
+    - id: 21
+      name: 
+      amount: 3
+  - IDObject: 2
+    SubText: 
+    Item:
+    - id: 32
+      name: 
       amount: 1
     - id: 13
       name: Au
       amount: 1
     - id: 31
       name: K(Au(CN)2)
+      amount: 1
+  - IDObject: 3
+    SubText: 
+    Item:
+    - id: 21
+      name: 
+      amount: 1
+    - id: 30
+      name: 
+      amount: 1
+    - id: 23
+      name: 
       amount: 1
