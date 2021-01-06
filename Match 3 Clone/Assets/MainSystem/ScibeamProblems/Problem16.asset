@@ -14,26 +14,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProblemText: 
   FoundElement: 0100000002000000030000000a0000000b0000000f000000
-  Background: {fileID: 0}
-  StartBackground: {x: 0, y: 0}
-  InputObject:
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
+  Background: {fileID: 21300000, guid: 942ec28a51424aa44a702bc188817f9d, type: 3}
+  StartBackground: {x: -231, y: 250}
   problem:
   - IDObject: 0
     SubText: 
+    InputObject:
+    - localPosition: {x: 4, y: -104.2}
+      sizeDelta: {x: 469.33, y: 469.33}
+      Object: {fileID: 21300000, guid: dfa8255086b45f44b94dcb311833fc3f, type: 3}
     Item:
     - id: 21
       name: 
       amount: 9
-  - IDObject: 1
+  - IDObject: 0
     SubText: 
+    InputObject:
+    - localPosition: {x: 4, y: -104.2}
+      sizeDelta: {x: 469.33, y: 469.33}
+      Object: {fileID: 21300000, guid: dfa8255086b45f44b94dcb311833fc3f, type: 3}
     Item:
     - id: 30
       name: 
       amount: 8
+  - IDObject: 1
+    SubText: 
+    InputObject:
+    - localPosition: {x: 4, y: -104.2}
+      sizeDelta: {x: 469.33, y: 100}
+      Object: {fileID: 21300000, guid: dfa8255086b45f44b94dcb311833fc3f, type: 3}
+    - localPosition: {x: 48.42, y: -67.2}
+      sizeDelta: {x: 353.16, y: 353.16}
+      Object: {fileID: 21300000, guid: 5989dda32e2b80a448c0fe2396e0981c, type: 3}
+    Item:
     - id: 39
       name: 
       amount: 9
