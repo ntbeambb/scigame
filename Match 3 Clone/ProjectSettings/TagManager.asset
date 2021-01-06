@@ -28,6 +28,8 @@ TagManager:
   - cu dot
   - au dot
   - k dot
+  - si dot
+  - ag dot
   layers:
   - Default
   - TransparentFX

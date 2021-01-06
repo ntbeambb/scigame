@@ -15,29 +15,34 @@ MonoBehaviour:
   ProblemText: 
   FoundElement: 01000000020000000300000004000000
   Background: {fileID: 21300000, guid: 9b4e78dae3de401498e4672bb7a4d525, type: 3}
-  StartBackground: {x: 0, y: 250}
-  InputObject:
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 21300000, guid: 6445cea752daddc4cb68cd87f15cf7c5, type: 3}
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 21300000, guid: 93472ff77cd737b438d3ac0ab155c01b, type: 3}
+  StartBackground: {x: -693.65, y: 250}
   problem:
   - IDObject: 0
     SubText: "\u0E2B\u0E32\u0E22\u0E43\u0E08\u0E44\u0E21\u0E48\u0E17\u0E31\u0E19"
+    InputObject:
+    - localPosition: {x: 87.7, y: -49}
+      sizeDelta: {x: 113.57, y: 113.57}
+      Object: {fileID: 21300000, guid: 6445cea752daddc4cb68cd87f15cf7c5, type: 3}
     Item:
     - id: 41
       name: 
       amount: 1
   - IDObject: 0
     SubText: "\u0E2A\u0E39\u0E0D\u0E40\u0E2A\u0E35\u0E22\u0E19\u0E49\u0E33\u0E21\u0E32\u0E01\u0E44\u0E1B"
+    InputObject:
+    - localPosition: {x: 87.7, y: -49}
+      sizeDelta: {x: 113.57, y: 113.57}
+      Object: {fileID: 21300000, guid: 6445cea752daddc4cb68cd87f15cf7c5, type: 3}
     Item:
     - id: 21
       name: 
       amount: 1
   - IDObject: 0
     SubText: "\u0E43\u0E2B\u0E49\u0E1E\u0E25\u0E31\u0E07\u0E07\u0E32\u0E19\u0E41\u0E01\u0E48\u0E01\u0E32\u0E23\u0E27\u0E34\u0E48\u0E07"
+    InputObject:
+    - localPosition: {x: 87.7, y: -49}
+      sizeDelta: {x: 113.57, y: 113.57}
+      Object: {fileID: 21300000, guid: 93472ff77cd737b438d3ac0ab155c01b, type: 3}
     Item:
     - id: 23
       name: 

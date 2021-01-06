@@ -26,15 +26,16 @@ public class ChangeBackground : MonoBehaviour
         idnow = Scenedata.IdMission;
         preid = Scenedata.PreIdMission;
         sttime = Time.time;
-        if(idnow == preid){
-            GetComponent<Image>().sprite = Plist.Plist[idnow].Background;
-            StartCoroutine(BackLoad());
-            return;
-        }
+        
         GetComponent<Image>().sprite = Plist.Plist[preid].Background;
             st = Plist.Plist[preid].StartBackground;
             fn = Plist.Plist[idnow].StartBackground;
-            
+        if(idnow == preid){
+            GetComponent<Image>().sprite = Plist.Plist[idnow].Background;
+            GetComponent<RectTransform>().anchoredPosition = fn;
+            StartCoroutine(BackLoad());
+            return;
+        }    
         if(Plist.Plist[idnow].Background == Plist.Plist[preid].Background){
             sp = 1;
         }
