@@ -14,21 +14,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProblemText: 
   FoundElement: 010000000200000003000000040000000c0000000d00000010000000
-  Background: {fileID: 0}
-  StartBackground: {x: 0, y: 0}
-  InputObject:
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
+  Background: {fileID: 21300000, guid: 4b5d474123644a64f941aab98edf26ce, type: 3}
+  StartBackground: {x: -448, y: 250}
   problem:
-  - IDObject: 0
+  - IDObject: 2
     SubText: 
+    InputObject:
+    - localPosition: {x: -8, y: 8}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 901ccb91526e79d40a744d412f150a0b, type: 3}
+    - localPosition: {x: -50, y: -11}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 2611625ec7be8164abe9775a3e81223f, type: 3}
+    - localPosition: {x: 50, y: -20}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: f0465fc3780f77845a7cee7d03e584cc, type: 3}
     Item:
     - id: 12
       name: 
       amount: 20
+  - IDObject: 1
+    SubText: 
+    InputObject:
+    - localPosition: {x: -8, y: 8}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 901ccb91526e79d40a744d412f150a0b, type: 3}
+    - localPosition: {x: -50, y: -11}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 2611625ec7be8164abe9775a3e81223f, type: 3}
+    - localPosition: {x: 50, y: -20}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: e71f49b704267a14499079296d29cb07, type: 3}
+    Item:
     - id: 13
       name: 
       amount: 20
+  - IDObject: 0
+    SubText: 
+    InputObject:
+    - localPosition: {x: -8, y: 8}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 901ccb91526e79d40a744d412f150a0b, type: 3}
+    - localPosition: {x: -50, y: -11}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 892224fbca0802840a4a20958d900756, type: 3}
+    - localPosition: {x: 50, y: -20}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: e71f49b704267a14499079296d29cb07, type: 3}
+    Item:
     - id: 16
       name: 
       amount: 20
+  - IDObject: 0
+    SubText: 
+    InputObject:
+    - localPosition: {x: 0, y: 0}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: d94139898c095d84cbc1a4b3eeadda22, type: 3}
+    - localPosition: {x: 0, y: 0}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 892224fbca0802840a4a20958d900756, type: 3}
+    - localPosition: {x: 0, y: 0}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: e71f49b704267a14499079296d29cb07, type: 3}
+    Item: []

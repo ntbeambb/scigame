@@ -13,13 +13,22 @@ MonoBehaviour:
   m_Name: Problem11
   m_EditorClassIdentifier: 
   ProblemText: 
-  FoundElement: 010000000200000003000000040000000a0000000b000000
+  FoundElement: 010000000200000003000000040000000a000000
   Background: {fileID: 21300000, guid: 81c3781e038e9a3498ec00c2fdc9d2cb, type: 3}
   StartBackground: {x: 0, y: 0}
   problem:
   - IDObject: 0
     SubText: 
-    InputObject: []
+    InputObject:
+    - localPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0}
+      Object: {fileID: 21300000, guid: 3efae2aacfcfdd0439ff1e9285aae8f5, type: 3}
+    - localPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0}
+      Object: {fileID: 21300000, guid: d37af0fdec078944685553ded2be1e2d, type: 3}
+    - localPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0}
+      Object: {fileID: 0}
     Item:
     - id: 38
       name: 
@@ -32,7 +41,16 @@ MonoBehaviour:
       amount: 1
   - IDObject: 1
     SubText: 
-    InputObject: []
+    InputObject:
+    - localPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0}
+      Object: {fileID: 0}
+    - localPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0}
+      Object: {fileID: 0}
+    - localPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0}
+      Object: {fileID: 0}
     Item:
     - id: 30
       name: 
@@ -45,28 +63,5 @@ MonoBehaviour:
     InputObject: []
     Item:
     - id: 33
-      name: 
-      amount: 1
-  - IDObject: 3
-    SubText: 
-    InputObject: []
-    Item:
-    - id: 41
-      name: 
-      amount: 3
-    - id: 36
-      name: 
-      amount: 1
-  - IDObject: 4
-    SubText: 
-    InputObject: []
-    Item:
-    - id: 21
-      name: 
-      amount: 2
-    - id: 45
-      name: 
-      amount: 2
-    - id: 23
       name: 
       amount: 1
