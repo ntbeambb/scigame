@@ -19,6 +19,6 @@ MonoBehaviour:
   - "\u0E16\u0E39\u0E01\u0E17\u0E31\u0E49\u0E07 1 \u0E41\u0E25\u0E30 2"
   - "\u0E1C\u0E34\u0E14\u0E17\u0E31\u0E49\u0E07 1 \u0E41\u0E25\u0E30 2"
   id: 1
-  correct: 0
+  correct: 1
   PrizeID: 0
   PrizeAmount: 0

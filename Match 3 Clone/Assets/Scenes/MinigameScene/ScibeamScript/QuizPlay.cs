@@ -55,11 +55,17 @@ public class QuizPlay : MonoBehaviour
         }else{
             Debug.Log("False");
         Choice[inp].GetComponent<Image>().sprite = wrong;
-        } 
-        StartCoroutine(End());
+        }
+        for(int i=0;i<4;i++){
+            Choice[i].GetComponent<Button>().interactable = false;
+        }
+        StartCoroutine(Wait());
     }
-    IEnumerator End(){
-        yield return new WaitForSeconds(2f);
+    IEnumerator Wait(){
+        yield return new WaitForSecondsRealtime(3.5f);
+        End();
+    }
+    private void End(){
         quiz.SetActive(false);
         popup.SetActive(true);
     }
