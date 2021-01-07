@@ -117,7 +117,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 448}
   m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 87
+  controlID: 32
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,7 +301,7 @@ MonoBehaviour:
     height: 441
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
-  m_Gizmos: 0
+  m_Gizmos: 1
   m_Stats: 0
   m_SelectedSizes: 06000000000000000000000005000000000000000000000000000000000000000000000000000000
   m_TargetDisplay: 0
@@ -386,9 +386,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 540.00006, y: 361.82394, z: 0}
+    m_Target: {x: 72.09552, y: 66.91279, z: 88.89931}
     speed: 2
-    m_Value: {x: 540.00006, y: 361.82394, z: 0}
+    m_Value: {x: 72.09552, y: 66.91279, z: 88.89931}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -420,9 +420,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 329.29688
+    m_Target: 232.30608
     speed: 2
-    m_Value: 329.29688
+    m_Value: 232.30608
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -529,7 +529,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: defbffff263000009e300000023100005a350000723700007e380000
+      m_ExpandedIDs: fcb9ffff5abaffffc8c6ffff54cfffffeaeeffff12efffff24efffffbaefffffdefbffff263000009e30000002310000104e0000184e0000044f0000905300006c54000000570000c4580000dc5a0000e85b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -591,34 +591,34 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MainSystem/Data
+    - Assets/MainSystem/script/ScibeamScript
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/MainSystem/Data
+  - Assets/MainSystem/script/ScibeamScript
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\pipomk\Documents\GitHub\scigame\Match 3 Clone
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 302e0000
-    m_LastClickedID: 11824
+    m_SelectedIDs: 602d0000
+    m_LastClickedID: 11616
     m_ExpandedIDs: 00000000122700003a2900003e290000fe290000022b0000202b0000002c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Combine
+      m_OriginalName: Combine
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 10732
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 

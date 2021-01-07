@@ -56,6 +56,9 @@ public class GraphData : ScriptableObject
             }
         }
     }
+    public void SetTutorial(bool inp){
+        TutorialStatus = inp;
+    }
 }
 [System.Serializable]
 public class mission{
