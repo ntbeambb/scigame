@@ -1627,9 +1627,18 @@ MonoBehaviour:
   quizList: {fileID: 11400000, guid: 165a287e0b0513644ab0f88544bd2109, type: 2}
   mem: {fileID: 11400000, guid: 38dccfb8906752047934ca24bec4c160, type: 2}
   Gdata: {fileID: 11400000, guid: d0dbb96e5264bab42aa9f6ff0fc11dcb, type: 2}
+  backpack: {fileID: 0}
   popup: {fileID: 1342739200}
   quiz: {fileID: 390836233}
   ProblemText: {fileID: 1897407614}
+  Choice:
+  - {fileID: 1614292601}
+  - {fileID: 780965210}
+  - {fileID: 1077324490}
+  - {fileID: 1398234089}
+  correct: {fileID: 0}
+  wrong: {fileID: 0}
+  normal: {fileID: 0}
   Qnow: {fileID: 0}
   Ctext:
   - {fileID: 972988998}
@@ -2616,7 +2625,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3028,7 +3037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &909915170
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3771,7 +3780,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5597,7 +5606,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6990,7 +6999,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

@@ -6,12 +6,21 @@ using TMPro;
 
 public class QuizPlay : MonoBehaviour
 {
+    [Header("Data")]
     public QiuzList quizList;
     public SceneDataScript mem;
     public GraphData Gdata;
+    public InventorySystem backpack;
+    [Header("Object")]
     public GameObject popup;
     public GameObject quiz;
     public GameObject ProblemText;
+    public List<GameObject> Choice;
+    [Header("Image")]
+    public Sprite correct;
+    public Sprite wrong;
+    public Sprite normal;
+
     [SerializeField] private QuizProblem Qnow;
     public List<GameObject> Ctext = new List<GameObject>();
     public void StartQuiz(){
@@ -39,13 +48,20 @@ public class QuizPlay : MonoBehaviour
 
     }
     public void Answer(int inp){
+        Choice[Qnow.correct].GetComponent<Image>().sprite = correct;
         if(inp==Qnow.correct){
             Debug.Log("correct");
-        }else Debug.Log("False");
-        End();
+            //backpack.AddItem(Qnow.PrizeID,"",Qnow.PrizeAmount);
+        }else{
+            Debug.Log("False");
+        Choice[inp].GetComponent<Image>().sprite = wrong;
+        } 
+        StartCoroutine(End());
     }
-    private void End(){
+    IEnumerator End(){
+        yield return new WaitForSeconds(2f);
         quiz.SetActive(false);
         popup.SetActive(true);
     }
+
 }
