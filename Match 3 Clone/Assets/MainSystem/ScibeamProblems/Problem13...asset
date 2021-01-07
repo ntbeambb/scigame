@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76edd4fe4a853f4ba3153889e600e20, type: 3}
+  m_Name: Problem13..
+  m_EditorClassIdentifier: 
+  ProblemText: 
+  FoundElement: 010000000200000003000000040000000c000000
+  Background: {fileID: 21300000, guid: 17b93ee8686a7ad4297d770737cb2f9e, type: 3}
+  StartBackground: {x: 0, y: 0}
+  problem:
+  - IDObject: 0
+    SubText: 
+    InputObject:
+    - localPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0}
+      Object: {fileID: 0}
+    - localPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0}
+      Object: {fileID: 0}
+    Item:
+    - id: 11
+      name: 
+      amount: 20
+  - IDObject: 1
+    SubText: 
+    InputObject: []
+    Item:
+    - id: 34
+      name: C5H8
+      amount: 3

@@ -15,20 +15,20 @@ MonoBehaviour:
   ProblemText: 
   FoundElement: 010000000200000003000000040000000a000000
   Background: {fileID: 21300000, guid: 81c3781e038e9a3498ec00c2fdc9d2cb, type: 3}
-  StartBackground: {x: 0, y: 0}
+  StartBackground: {x: 0, y: 250}
   problem:
   - IDObject: 0
     SubText: 
     InputObject:
-    - localPosition: {x: 0, y: 0}
-      sizeDelta: {x: 0, y: 0}
+    - localPosition: {x: -89, y: 9}
+      sizeDelta: {x: 72.4, y: 72.4}
       Object: {fileID: 21300000, guid: 3efae2aacfcfdd0439ff1e9285aae8f5, type: 3}
-    - localPosition: {x: 0, y: 0}
-      sizeDelta: {x: 0, y: 0}
+    - localPosition: {x: -162, y: -7.2}
+      sizeDelta: {x: 63.6, y: 63.6}
       Object: {fileID: 21300000, guid: d37af0fdec078944685553ded2be1e2d, type: 3}
-    - localPosition: {x: 0, y: 0}
-      sizeDelta: {x: 0, y: 0}
-      Object: {fileID: 0}
+    - localPosition: {x: 141, y: -2.803}
+      sizeDelta: {x: 54.8, y: 54.806}
+      Object: {fileID: 21300000, guid: 30677f2252faa7e4f96258cbb30bda2a, type: 3}
     Item:
     - id: 38
       name: 
@@ -42,15 +42,15 @@ MonoBehaviour:
   - IDObject: 1
     SubText: 
     InputObject:
-    - localPosition: {x: 0, y: 0}
-      sizeDelta: {x: 0, y: 0}
-      Object: {fileID: 0}
-    - localPosition: {x: 0, y: 0}
-      sizeDelta: {x: 0, y: 0}
-      Object: {fileID: 0}
-    - localPosition: {x: 0, y: 0}
-      sizeDelta: {x: 0, y: 0}
-      Object: {fileID: 0}
+    - localPosition: {x: -89, y: 9}
+      sizeDelta: {x: 72.4, y: 72.4}
+      Object: {fileID: 21300000, guid: 3efae2aacfcfdd0439ff1e9285aae8f5, type: 3}
+    - localPosition: {x: -162, y: -7.2}
+      sizeDelta: {x: 63.6, y: 63.6}
+      Object: {fileID: 21300000, guid: d37af0fdec078944685553ded2be1e2d, type: 3}
+    - localPosition: {x: 141, y: -2.803}
+      sizeDelta: {x: 54.8, y: 54.806}
+      Object: {fileID: 21300000, guid: 30677f2252faa7e4f96258cbb30bda2a, type: 3}
     Item:
     - id: 30
       name: 
@@ -60,7 +60,16 @@ MonoBehaviour:
       amount: 1
   - IDObject: 2
     SubText: 
-    InputObject: []
+    InputObject:
+    - localPosition: {x: -89, y: 9}
+      sizeDelta: {x: 72.4, y: 72.4}
+      Object: {fileID: 21300000, guid: 3efae2aacfcfdd0439ff1e9285aae8f5, type: 3}
+    - localPosition: {x: -162, y: -7.2}
+      sizeDelta: {x: 63.6, y: 63.6}
+      Object: {fileID: 21300000, guid: d37af0fdec078944685553ded2be1e2d, type: 3}
+    - localPosition: {x: 141, y: -2.803}
+      sizeDelta: {x: 54.8, y: 54.806}
+      Object: {fileID: 21300000, guid: 30677f2252faa7e4f96258cbb30bda2a, type: 3}
     Item:
     - id: 33
       name: 

@@ -22,21 +22,6 @@ MonoBehaviour:
   - id: 3
     name: 
     amount: 3
-  - id: 12
-    name: 
-    amount: 80
-  - id: 13
-    name: 
-    amount: 100
-  - id: 4
-    name: 
-    amount: 10
-  - id: 16
-    name: 
-    amount: 100
-  - id: 4
-    name: 
-    amount: 10
   - id: 4
     name: 
     amount: 10
