@@ -5,10 +5,11 @@ using UnityEngine;
 public class GraphData : ScriptableObject
 {
     private string path = "/GraphData.save";
+    public bool TutorialStatus;
     public List<mission> CanPlay = new List<mission>();
     public List<int> Pass = new List<int>();
     public List<mission> All = new List<mission>();
-    public bool TutorialStatus;
+    
     public int PoMision(int id){
         int temp = CanPlay.Count;
         for(int i=0;i<temp;i++){

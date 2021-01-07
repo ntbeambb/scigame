@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 498}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -114,10 +114,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 913, y: 448}
-  m_MaxSize: {x: 22008, y: 10024}
+  m_MinSize: {x: 917, y: 448}
+  m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 120
+  controlID: 80
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 448}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 133
+  controlID: 14
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -215,8 +215,8 @@ MonoBehaviour:
     y: 0
     width: 209
     height: 947
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -386,9 +386,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 101.547356, y: 298.42526, z: 89.4375}
+    m_Target: {x: 82.04643, y: 192.9879, z: -2433.625}
     speed: 2
-    m_Value: {x: 101.547356, y: 298.42526, z: 89.4375}
+    m_Value: {x: 82.04643, y: 192.9879, z: -2433.625}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -420,9 +420,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 179.3272
+    m_Target: 299.64557
     speed: 2
-    m_Value: 179.3272
+    m_Value: 299.64557
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -526,24 +526,24 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 1106}
-      m_SelectedIDs: c0f6ffff
-      m_LastClickedID: -2368
-      m_ExpandedIDs: 82f8ffff62f9ffff80f9fffff2f9ffffccfaffff10fbffff36fbffff40fbffff60fbffff68fbffff98fbffffb0fbffff0230000020300000aa30000024310000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 5e2e0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 88abffffc0f0ffffcaf0ffffd4f0ffffdef0ffffeaf0fffffcf0ffffdefbffffc42f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Button
-        m_OriginalName: Button
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -2714
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -591,20 +591,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MainSystem/script/ScibeamScript
+    - Assets/MainSystem/Data
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/MainSystem/script/ScibeamScript
+  - Assets/MainSystem/Data
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\pipomk\Documents\GitHub\scigame\Match 3 Clone
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d22d0000
-    m_LastClickedID: 11730
-    m_ExpandedIDs: 0000000038280000262a00002a2a0000ce2a0000b62b0000d42b00009c2c000000ca9a3b
+    m_SelectedIDs: 3c2e0000
+    m_LastClickedID: 11836
+    m_ExpandedIDs: 00000000142700003e29000042290000042a00000c2b00002a2b00000a2c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -632,7 +632,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000038280000262a00002a2a0000ce2a0000b62b0000d42b00009c2c0000
+    m_ExpandedIDs: 00000000142700003e29000042290000042a00000c2b00002a2b00000a2c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

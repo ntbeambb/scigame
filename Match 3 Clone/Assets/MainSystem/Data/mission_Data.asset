@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c632d517099045f4c96a809d85521d56, type: 3}
   m_Name: mission_Data
   m_EditorClassIdentifier: 
+  TutorialStatus: 1
   CanPlay:
   - id_mission: 0
     Goal: "\u0E40\u0E15\u0E34\u0E21\u0E25\u0E21\u0E25\u0E39\u0E01\u0E42\u0E1B\u0E48\u0E07"
@@ -79,4 +80,3 @@ MonoBehaviour:
     Goal: 
     finish: 0
     unlock: 
-  TutorialStatus: 0
