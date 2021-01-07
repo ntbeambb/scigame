@@ -14,26 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProblemText: 
   FoundElement: 01000000020000000300000004000000
-  Background: {fileID: 0}
+  Background: {fileID: 21300000, guid: 81c3781e038e9a3498ec00c2fdc9d2cb, type: 3}
   StartBackground: {x: 0, y: 0}
-  InputObject:
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
-  - LocalPosition: {x: 0, y: 0}
-    Object: {fileID: 0}
   problem:
   - IDObject: 0
     SubText: 
-    Item:
-    - id: 34
-      name: 
-      amount: 3
-  - IDObject: 1
-    SubText: 
+    InputObject:
+    - localPosition: {x: 0, y: 0}
+      sizeDelta: {x: 0, y: 0}
+      Object: {fileID: 0}
     Item:
     - id: 21
       name: 
       amount: 2
-    - id: 40
+    - id: 46
       name: 
-      amount: 2
+      amount: 1
