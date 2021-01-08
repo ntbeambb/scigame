@@ -46,6 +46,10 @@ public class ProblemManager : InboxGameobject
     public Sprite CompleteImage;
     public Sprite NoneImage;
     
+    void Start(){
+        graphdata.Save();
+        graphdata.Load();
+    }
     public void ManualStart(){
         //link problem
         IDmission = SceneData.SendIdMission();
