@@ -52,27 +52,43 @@ MonoBehaviour:
     Goal: 
     finish: 0
     unlock: 
-  - id_mission: 6
+  - id_mission: 8
     Goal: 
     finish: 0
     unlock: 
-  - id_mission: 6
+  - id_mission: 9
     Goal: 
     finish: 0
     unlock: 
-  - id_mission: 6
+  - id_mission: 10
     Goal: 
     finish: 0
     unlock: 
-  - id_mission: 6
+  - id_mission: 11
     Goal: 
     finish: 0
     unlock: 
-  - id_mission: 6
+  - id_mission: 12
     Goal: 
     finish: 0
     unlock: 
-  - id_mission: 6
+  - id_mission: 13
+    Goal: 
+    finish: 0
+    unlock: 
+  - id_mission: 14
+    Goal: 
+    finish: 0
+    unlock: 
+  - id_mission: 15
+    Goal: 
+    finish: 0
+    unlock: 
+  - id_mission: 16
+    Goal: 
+    finish: 0
+    unlock: 
+  - id_mission: 17
     Goal: 
     finish: 0
     unlock: 
