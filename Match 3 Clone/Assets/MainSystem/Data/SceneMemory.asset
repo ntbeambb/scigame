@@ -24,8 +24,8 @@ MonoBehaviour:
   - 
   - 
   NumScene: 3
-  IdMission: 18
-  PreIdMission: 18
+  IdMission: 1
+  PreIdMission: 1
   Qprob: 0.3
   SkipCo: 0
   StartQuizProb: 0.3
