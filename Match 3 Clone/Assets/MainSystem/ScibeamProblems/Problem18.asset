@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76edd4fe4a853f4ba3153889e600e20, type: 3}
+  m_Name: Problem18
+  m_EditorClassIdentifier: 
+  ProblemText: 
+  FoundElement: 010000000200000003000000040000000a0000000b000000
+  Background: {fileID: 21300000, guid: 81c3781e038e9a3498ec00c2fdc9d2cb, type: 3}
+  StartBackground: {x: -46, y: 250}
+  problem:
+  - IDObject: 0
+    SubText: 
+    InputObject:
+    - localPosition: {x: -61, y: -58}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 57f2ab5b55309bb48a12b79e636c4be2, type: 3}
+    - localPosition: {x: 48.7, y: 4.7}
+      sizeDelta: {x: 81.1, y: 81.1}
+      Object: {fileID: 21300000, guid: ec13f9ffc3e9f944982e71f8a6b28032, type: 3}
+    Item:
+    - id: 41
+      name: 
+      amount: 3
+    - id: 36
+      name: 
+      amount: 1
+  - IDObject: 1
+    SubText: 
+    InputObject:
+    - localPosition: {x: -61, y: -58}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 08daecbfddc1db3468133d633df2b198, type: 3}
+    - localPosition: {x: 48.7, y: 4.7}
+      sizeDelta: {x: 81.1, y: 81.1}
+      Object: {fileID: 21300000, guid: 4bef010205360f147ba6f6fee60e6cf8, type: 3}
+    Item:
+    - id: 21
+      name: 
+      amount: 2
+    - id: 45
+      name: 
+      amount: 2
+  - IDObject: 1
+    SubText: 
+    InputObject:
+    - localPosition: {x: -61, y: -58}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 57f2ab5b55309bb48a12b79e636c4be2, type: 3}
+    - localPosition: {x: 58.9, y: -5.5}
+      sizeDelta: {x: 81.1, y: 81.1}
+      Object: {fileID: 21300000, guid: ec13f9ffc3e9f944982e71f8a6b28032, type: 3}
+    Item:
+    - id: 23
+      name: 
+      amount: 1
