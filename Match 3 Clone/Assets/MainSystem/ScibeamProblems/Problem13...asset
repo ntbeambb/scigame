@@ -15,25 +15,32 @@ MonoBehaviour:
   ProblemText: 
   FoundElement: 010000000200000003000000040000000c000000
   Background: {fileID: 21300000, guid: 17b93ee8686a7ad4297d770737cb2f9e, type: 3}
-  StartBackground: {x: 0, y: 0}
+  StartBackground: {x: -681.7, y: 250}
   problem:
   - IDObject: 0
     SubText: 
     InputObject:
-    - localPosition: {x: 0, y: 0}
-      sizeDelta: {x: 0, y: 0}
-      Object: {fileID: 0}
-    - localPosition: {x: 0, y: 0}
-      sizeDelta: {x: 0, y: 0}
-      Object: {fileID: 0}
+    - localPosition: {x: 0, y: 35.5}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: b039e5df1bb912445a335e655fd970b0, type: 3}
     Item:
     - id: 11
       name: 
       amount: 20
   - IDObject: 1
     SubText: 
-    InputObject: []
+    InputObject:
+    - localPosition: {x: 0, y: 35.5}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: 021aa7e890791f945922e8f191d8f584, type: 3}
     Item:
     - id: 34
       name: C5H8
       amount: 3
+  - IDObject: 1
+    SubText: 
+    InputObject:
+    - localPosition: {x: 0, y: 35.5}
+      sizeDelta: {x: 100, y: 100}
+      Object: {fileID: 21300000, guid: a7ed129ba3b354341b2875d1bb78ae15, type: 3}
+    Item: []
