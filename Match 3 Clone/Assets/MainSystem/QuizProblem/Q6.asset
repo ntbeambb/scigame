@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563a050e525167f4ea1bd9d66b8e7cae, type: 3}
   m_Name: Q6
   m_EditorClassIdentifier: 
-  text: 
-  choice: []
-  id: 0
-  correct: 0
+  text: "\u0E2B\u0E34\u0E19\u0E07\u0E2D\u0E01\u0E2B\u0E34\u0E19\u0E22\u0E49\u0E2D\u0E22\u0E40\u0E01\u0E34\u0E14\u0E08\u0E32\u0E01\u0E2A\u0E32\u0E23\u0E2D\u0E30\u0E44\u0E23"
+  choice:
+  - O2
+  - N2
+  - CaCO3
+  - C12H22O11
+  id: 6
+  correct: 2
+  PrizeID: 0
+  PrizeAmount: 0
