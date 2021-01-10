@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563a050e525167f4ea1bd9d66b8e7cae, type: 3}
   m_Name: Q18
   m_EditorClassIdentifier: 
-  text: "\u0E02\u0E49\u0E2D\u0E43\u0E14\u0E15\u0E48\u0E2D\u0E44\u0E1B\u0E19\u0E35\u0E49\u0E16\u0E39\u0E01\u0E15\u0E49\u0E2D\u0E07"
+  text: "\u0E43\u0E19\u0E01\u0E32\u0E23\u0E17\u0E33\u0E40\u0E04\u0E49\u0E01\u0E44\u0E21\u0E48\u0E43\u0E2A\u0E48\u0E2D\u0E30\u0E44\u0E23"
   choice:
-  - "NaOH \u0E44\u0E21\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E01\u0E23\u0E14"
-  - "NaOH \u0E44\u0E21\u0E48\u0E40\u0E1B\u0E47\u0E19\u0E01\u0E25\u0E32\u0E07"
-  - "NaOH \u0E40\u0E1B\u0E47\u0E19\u0E40\u0E1A\u0E2A"
-  - "\u0E16\u0E39\u0E01\u0E17\u0E38\u0E01\u0E02\u0E49\u0E2D"
-  id: 18
+  - NaHCO3
+  - C12H22O11
+  - H2O
+  - HCl
+  id: 12
   correct: 3
   PrizeID: 0
   PrizeAmount: 0

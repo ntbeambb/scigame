@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 using TMPro;
 using System.IO;
@@ -38,6 +39,8 @@ public class ProblemManager : InboxGameobject
     private int IDmission;
     public GameObject tutorial;
     public GameObject Background;
+    public GameObject SendEffect;
+    //public GameObject CorrectEffect;
     public bool Copy = false;
 
     [Header("Item Checker")]
@@ -46,6 +49,10 @@ public class ProblemManager : InboxGameobject
     public Sprite CompleteImage;
     public Sprite NoneImage;
     
+    void Start(){
+        graphdata.Save();
+        graphdata.Load();
+    }
     public void ManualStart(){
         //link problem
         IDmission = SceneData.SendIdMission();
@@ -57,7 +64,7 @@ public class ProblemManager : InboxGameobject
             }        
         //set up problem
         Copy = SceneData.CopyProblem;
-        Copy = true;/////////////////////////////////////////////////////////////////////
+        //Copy = true;/////////////////////////////////////////////////////////////////////
         SceneData.CopyProblem = false;
         if(Copy)data.Reset(problem);
         else{
@@ -126,6 +133,8 @@ public class ProblemManager : InboxGameobject
         return -1;
     }
     public void SendItem(int _id,int _amount,int ObjId){
+        //sound effect
+        SendEffect.GetComponent<AudioSource>().Play();
         //check object ID
         if(ObjId != subtask.IDObject)return;
         Debug.Log(_id.ToString()+" "+_amount.ToString()+" "+ObjId.ToString());
@@ -154,7 +163,9 @@ public class ProblemManager : InboxGameobject
                 textmesh.text = subtask.SubText;
                 
                 //Debug.Log("GetItem "+subtask.SubText);
-                
+                //correct sound
+                //CorrectEffect.GetComponent<AudioSource>().Play();
+
                 if(pro == 1){
                     //
                     //Popup.SetActive(true);

@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class WorshopScript : InboxGameobject
 {
     public GraphData graphdata;
+    public GameObject MixSound;
+    public GameObject NormalSound;
     public GameObject tutorial;
     public List<int> inputID;
     public List<int> inputAmount;
@@ -108,17 +111,26 @@ public class WorshopScript : InboxGameobject
         }
         return -1;
     }
+    public int Find2(){
+        if(inputID.Count == 0)return -1;
+        for(int i=0;i<numchem; i++){
+            if(Checkeq(i) == 0)return i;
+        }
+        return -1;
+    }
     public void Show(){
         preinp();
         chemdata.chemdata.Sort(sorteq);
         int index = -1;
-        index = Find();
+        index = Find2();
         //Debug.Log("eq "+bug+" : "+Find());
         //bug++;
         if(index==-1){
             Debug.Log("------");
+            NormalSound.GetComponent<AudioSource>().Play();
         }else{
             Debug.Log("ChemId "+index);
+            MixSound.GetComponent<AudioSource>().Play();
             product(index);
         }
         

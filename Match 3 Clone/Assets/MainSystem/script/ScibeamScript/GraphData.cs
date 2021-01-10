@@ -5,7 +5,12 @@ using UnityEngine;
 public class GraphData : ScriptableObject
 {
     private string path = "/GraphData.save";
+    [Header("Setting & tutorial")]
     public bool TutorialStatus;
+    public bool EffectOn;
+    public bool MusicOn;
+    public SoundScript setting;
+    [Header("GraphData")]
     public List<mission> CanPlay = new List<mission>();
     public List<int> Pass = new List<int>();
     public List<mission> All = new List<mission>();
@@ -32,6 +37,8 @@ public class GraphData : ScriptableObject
     public void Save(){
         Basic_GraphData send = new Basic_GraphData();
         send.TutorialStatus = TutorialStatus;
+        send.MusicOn = MusicOn;
+        send.EffectOn = EffectOn;
         //array
         int size = CanPlay.Count;
         send.size = size;
@@ -48,6 +55,8 @@ public class GraphData : ScriptableObject
     public void Load(){
         Basic_GraphData rev = SaveSystem.LoadGraphData(path);
         TutorialStatus = rev.TutorialStatus;
+        MusicOn = rev.MusicOn;
+        EffectOn = rev.EffectOn;
         CanPlay.Clear();
         int size = rev.size;
         for(int i=0;i<size;i++){
@@ -56,6 +65,8 @@ public class GraphData : ScriptableObject
                 CanPlay[i].finish = true;
             }
         }
+        setting.MusicSet(MusicOn);
+        setting.EffectSet(EffectOn);
     }
     public void SetTutorial(bool inp){
         TutorialStatus = inp;
@@ -87,4 +98,6 @@ public class Basic_GraphData{
     public int[] CanPlay;
     public int[] CanPlay_finish;
     public bool TutorialStatus;
+    public bool EffectOn;
+    public bool MusicOn;
 }
