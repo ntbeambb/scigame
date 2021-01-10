@@ -59,6 +59,7 @@
      <Compile Include="Assets\MainSystem\script\InventoryScript\SaveSystem.cs" />
      <Compile Include="Assets\MainSystem\script\SceneScript\SceneDataScript.cs" />
      <Compile Include="Assets\MainSystem\script\SceneScript\SceneManagerScript.cs" />
+     <Compile Include="Assets\MainSystem\script\SceneScript\SoundManage.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\AllpicID.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\ChemData.cs" />
      <Compile Include="Assets\MainSystem\script\ScibeamScript\GraphData.cs" />
@@ -95,10 +96,10 @@
      <Compile Include="Assets\Scenes\MinigameScene\Scripts\ScoreManager.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\Scripts\SoundManager.cs" />
      <Compile Include="Assets\Scenes\MinigameScene\Scripts\SwipeController.cs" />
-     <Compile Include="Assets\Scenes\SettingScene\SoundManagerScript.cs" />
      <Compile Include="Assets\Scenes\workshop\InputMix.cs" />
      <Compile Include="Assets\Scenes\workshop\InputWindowScript.cs" />
      <Compile Include="Assets\Scenes\workshop\inventoryScript.cs" />
+     <Compile Include="Assets\Scenes\workshop\SoundManagerScript.cs" />
      <Compile Include="Assets\Scenes\workshop\WorshopScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

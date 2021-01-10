@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 using TMPro;
 
@@ -15,6 +16,9 @@ public class QuizPlay : MonoBehaviour
     public GameObject popup;
     public GameObject quiz;
     public GameObject ProblemText;
+    public GameObject CorrectSound;
+    public GameObject WrongSound;
+    //public GameObject FinishSound;
     public List<GameObject> Choice;
     [Header("Image")]
     public Sprite correct;
@@ -50,9 +54,11 @@ public class QuizPlay : MonoBehaviour
     public void Answer(int inp){
         Choice[Qnow.correct].GetComponent<Image>().sprite = correct;
         if(inp==Qnow.correct){
+            CorrectSound.GetComponent<AudioSource>().Play();
             Debug.Log("correct");
             //backpack.AddItem(Qnow.PrizeID,"",Qnow.PrizeAmount);
         }else{
+            WrongSound.GetComponent<AudioSource>().Play();
             Debug.Log("False");
         Choice[inp].GetComponent<Image>().sprite = wrong;
         }
@@ -66,8 +72,10 @@ public class QuizPlay : MonoBehaviour
         End();
     }
     private void End(){
+
         quiz.SetActive(false);
         popup.SetActive(true);
+        //FinishSound.GetComponent<AudioSource>().Play();
     }
 
 }

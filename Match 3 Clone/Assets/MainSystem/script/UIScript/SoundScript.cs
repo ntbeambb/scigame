@@ -9,6 +9,7 @@ public class SoundScript : ScriptableObject
 {
     public AudioMixer mixer;
     public GraphData data;
+    public float MusicTime;
     public bool EffectSet(bool inp){
         if(!inp){
             mixer.SetFloat("EffectVol",0f);
