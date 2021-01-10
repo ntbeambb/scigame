@@ -108,11 +108,17 @@ public class WorshopScript : InboxGameobject
         }
         return -1;
     }
+    public int Find2(){
+        for(int i=0;i<numchem; i++){
+            if(Checkeq(i) == 0)return i;
+        }
+        return -1;
+    }
     public void Show(){
         preinp();
         chemdata.chemdata.Sort(sorteq);
         int index = -1;
-        index = Find();
+        index = Find2();
         //Debug.Log("eq "+bug+" : "+Find());
         //bug++;
         if(index==-1){

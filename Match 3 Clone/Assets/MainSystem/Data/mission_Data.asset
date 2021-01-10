@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: mission_Data
   m_EditorClassIdentifier: 
   TutorialStatus: 1
-  EffectOn: 1
+  EffectOn: 0
   MusicOn: 0
   setting: {fileID: 11400000, guid: 8ab1f1e9fc8a0134dbd5cb41fa97d793, type: 2}
   CanPlay:
