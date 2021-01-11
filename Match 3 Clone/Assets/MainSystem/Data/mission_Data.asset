@@ -12,20 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c632d517099045f4c96a809d85521d56, type: 3}
   m_Name: mission_Data
   m_EditorClassIdentifier: 
-  TutorialStatus: 1
+  TutorialStatus: 0
   EffectOn: 1
   MusicOn: 1
   setting: {fileID: 11400000, guid: 8ab1f1e9fc8a0134dbd5cb41fa97d793, type: 2}
   CanPlay:
   - id_mission: 0
     Goal: "\u0E40\u0E15\u0E34\u0E21\u0E25\u0E21\u0E25\u0E39\u0E01\u0E42\u0E1B\u0E48\u0E07"
-    finish: 1
-    unlock: 01000000
-  - id_mission: 1
-    Goal: "\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E15\u0E49\u0E19\u0E44\u0E21\u0E49\u0E01\u0E25\u0E31\u0E1A\u0E21\u0E32\u0E2D\u0E22\u0E39\u0E48\u0E23\u0E2D\u0E14"
     finish: 0
-    unlock: 0200000003000000
-  Pass: 00000000
+    unlock: 01000000
+  Pass: 
   All:
   - id_mission: 0
     Goal: "\u0E40\u0E15\u0E34\u0E21\u0E25\u0E21\u0E25\u0E39\u0E01\u0E42\u0E1B\u0E48\u0E07"

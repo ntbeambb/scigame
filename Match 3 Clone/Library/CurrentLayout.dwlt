@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 498}
+  m_MinSize: {x: 950, y: 474}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 498}
+  m_MinSize: {x: 950, y: 474}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -114,10 +114,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 911, y: 448}
-  m_MaxSize: {x: 22006, y: 10024}
+  m_MinSize: {x: 915, y: 424}
+  m_MaxSize: {x: 22010, y: 10024}
   vertical: 0
-  controlID: 5255
+  controlID: 6194
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,10 +139,10 @@ MonoBehaviour:
     y: 0
     width: 499
     height: 947
-  m_MinSize: {x: 202, y: 448}
-  m_MaxSize: {x: 4002, y: 8048}
+  m_MinSize: {x: 202, y: 424}
+  m_MaxSize: {x: 4002, y: 8024}
   vertical: 1
-  controlID: 5323
+  controlID: 6239
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,7 +300,7 @@ MonoBehaviour:
     width: 497
     height: 439
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_MaximizeOnPlay: 0
+  m_MaximizeOnPlay: 1
   m_Gizmos: 1
   m_Stats: 0
   m_SelectedSizes: 06000000000000000000000005000000000000000000000000000000000000000000000000000000
@@ -386,9 +386,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.010308036, y: -0.9852542, z: 92.768555}
+    m_Target: {x: 964.63916, y: 1814.5883, z: -3.31874}
     speed: 2
-    m_Value: {x: -0.010308036, y: -0.9852542, z: 92.768555}
+    m_Value: {x: 964.63916, y: 1814.5883, z: -3.31874}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -420,9 +420,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.3310485
+    m_Target: 657.9494
     speed: 2
-    m_Value: 7.3310485
+    m_Value: 657.9494
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -527,9 +527,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ceeeffff
-      m_LastClickedID: -4402
-      m_ExpandedIDs: d0eeffffe4eeffff1cefffffb0f3ffffecf4ffff94f6ffff9cf9ffff6cfaffff42fbffff243d00002c4a00004a4a0000
+      m_SelectedIDs: 5c2f0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 4c82ffff6c8effff828effffe897ffff14cefffff2cfffff48d6ffffc2e3ffff1cf2ffff52f3ffff34fbffffdefbffff12350000c4360000743a00009c3a0000ea5500001e5700003e5800008a65000024670000f86c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -591,20 +591,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MainSystem/SoundData
+    - Assets/Scenes/graph
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/MainSystem/SoundData
+  - Assets/Scenes/graph
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\pipomk\Documents\GitHub\scigame\Match 3 Clone
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fa2b0000
-    m_LastClickedID: 11258
-    m_ExpandedIDs: 000000004627000080290000882900005c2a0000742b0000942b0000822c000000ca9a3b
+    m_SelectedIDs: 782b0000
+    m_LastClickedID: 11128
+    m_ExpandedIDs: 0000000018270000562900005e290000362a0000522b0000722b0000602c0000782c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -632,7 +632,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004627000080290000882900005c2a0000742b0000942b0000822c000000ca9a3b
+    m_ExpandedIDs: 0000000018270000562900005e290000362a0000522b0000722b0000602c0000782c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -686,7 +686,7 @@ MonoBehaviour:
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
-  m_DirectoriesAreaWidth: 110
+  m_DirectoriesAreaWidth: 163
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52

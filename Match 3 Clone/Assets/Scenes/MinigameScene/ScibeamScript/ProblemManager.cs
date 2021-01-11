@@ -52,6 +52,7 @@ public class ProblemManager : InboxGameobject
     void Start(){
         graphdata.Save();
         graphdata.Load();
+        backpack.Save();
     }
     public void ManualStart(){
         //link problem
@@ -133,6 +134,13 @@ public class ProblemManager : InboxGameobject
         return -1;
     }
     public void SendItem(int _id,int _amount,int ObjId){
+        //remove Item
+        int c = backpack.RemoveItem(_id,1);
+        if(c==2){
+            var invent = inventory.GetComponent<InventoryMinigame>();
+            if(invent.StartPo >= backpack.container.Count)invent.StartPo = backpack.container.Count-1;
+            inventory.GetComponent<InventoryMinigame>().display();
+        }
         //sound effect
         SendEffect.GetComponent<AudioSource>().Play();
         //check object ID
@@ -142,13 +150,9 @@ public class ProblemManager : InboxGameobject
         if(po != -1 ){
             if(subtask.Item[po].amount>0){
                 //Debug.Log("Remove Item amount->"+subtask.Item[po].amount);
-                int c = backpack.RemoveItem(_id,1);
+                
                 subtask.Item[po].amount--;
-                if(c==2){
-                    var invent = inventory.GetComponent<InventoryMinigame>();
-                    if(invent.StartPo >= backpack.container.Count)invent.StartPo = backpack.container.Count-1;
-                    inventory.GetComponent<InventoryMinigame>().display();
-                }
+                
                 int ck = data.SendSub(subtask);
                 if(ck == 0 && data.level < problem.SubNum()){
                     UpdateInput(data.level);
