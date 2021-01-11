@@ -29,7 +29,7 @@ MonoBehaviour:
       amount: 4
     - id: 36
       name: 
-      amount: 4
+      amount: 6
   - IDObject: 0
     SubText: 
     InputObject:
@@ -39,7 +39,7 @@ MonoBehaviour:
     Item:
     - id: 39
       name: 
-      amount: 5
+      amount: 10
   - IDObject: 1
     SubText: 
     InputObject:
@@ -52,4 +52,4 @@ MonoBehaviour:
     Item:
     - id: 21
       name: 
-      amount: 2
+      amount: 10
