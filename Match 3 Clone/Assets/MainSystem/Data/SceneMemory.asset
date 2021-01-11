@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneStack:
   - 
-  - 
-  - 
-  - mainmanu
-  - 
+  - minigame
   - 
   - 
   - 
   - 
   - 
-  NumScene: 4
+  - 
+  - 
+  - 
+  NumScene: 2
   IdMission: 0
   PreIdMission: 0
   Qprob: 0.3
   SkipCo: 0
   StartQuizProb: 0.3
   LockQ: 6
-  CopyProblem: 1
+  CopyProblem: 0

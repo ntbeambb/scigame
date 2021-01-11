@@ -79,7 +79,7 @@ public class ProblemManager : InboxGameobject
         TextMeshProUGUI textmesh = Problemtext.GetComponent<TextMeshProUGUI>();
         //Debug.Log("Start "+subtask.SubText);
         textmesh.text = subtask.SubText;
-        UpdateInput(0);
+        UpdateInput(data.level);
        
 
         CheckUpdate(false);
@@ -190,10 +190,12 @@ public class ProblemManager : InboxGameobject
         }
     }
     public void CheckUpdate(bool ck){
+        
         int level = data.level;
         int i;
         if(ck)level--;
         Subtask Osub = problem.GetSub(level);
+        //Debug.Log("Level "+level);
         for(i = 0;i<Osub.Item.Count; i++){
             if(!ck && data.NowSub.Item[i].amount == Osub.Item[i].amount){
                 ItemChecker[i].GetComponent<Image>().sprite = UnknownImage;
