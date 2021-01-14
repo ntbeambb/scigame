@@ -24,6 +24,7 @@ public class ProgressData : ScriptableObject
     }
     private void NextSub(){
         level++;
+        if(level < OriginProblem.problem.Length && OriginProblem.problem[level].Item.Count == 0)level++;
         //Debug.Log("Level "+level);
         //Debug.Log("Original Problem num " + OriginProblem.SubNum());
         if(level == OriginProblem.SubNum()){

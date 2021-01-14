@@ -31,7 +31,7 @@ MonoBehaviour:
       name: 
       amount: 2
   - IDObject: 0
-    SubText: "\u0E15\u0E49\u0E19\u0E44\u0E21\u0E49\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E2D\u0E32\u0E2B\u0E32\u0E23"
+    SubText: "\u0E15\u0E49\u0E19\u0E44\u0E21\u0E49\u0E15\u0E49\u0E2D\u0E07\u0E01\u0E32\u0E23\u0E2A\u0E31\u0E07\u0E40\u0E04\u0E23\u0E32\u0E30\u0E2B\u0E4C\u0E14\u0E49\u0E27\u0E22\u0E41\u0E2A\u0E07"
     InputObject:
     - localPosition: {x: 47.1, y: -40.9}
       sizeDelta: {x: 136.65, y: 136.65}

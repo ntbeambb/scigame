@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Problem8
   m_EditorClassIdentifier: 
   ProblemText: 
-  FoundElement: 010000000200000003000000040000000a0000000b000000
+  FoundElement: 0b0000000200000003000000040000000a000000
   Background: {fileID: 21300000, guid: 81c3781e038e9a3498ec00c2fdc9d2cb, type: 3}
   StartBackground: {x: 374.1, y: 250}
   problem:
