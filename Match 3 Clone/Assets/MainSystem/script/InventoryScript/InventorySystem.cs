@@ -40,6 +40,16 @@ public class InventorySystem : ScriptableObject
     public void Load(){
         SaveSystem.LoadInventory(this);
     }
+    public void Divide(){
+        int i = 0;
+        for(i=0;i<container.Count;i++){
+            container[i].amount = container[i].amount/2;
+            if(container[i].amount == 0){
+                container.Remove(container[i]);
+                i--;
+            }
+        }
+    }
 
 }
 //Debug part
