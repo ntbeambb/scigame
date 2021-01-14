@@ -114,10 +114,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 911, y: 424}
-  m_MaxSize: {x: 22006, y: 10024}
+  m_MinSize: {x: 917, y: 424}
+  m_MaxSize: {x: 22012, y: 10024}
   vertical: 0
-  controlID: 5826
+  controlID: 5696
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 424}
   m_MaxSize: {x: 4002, y: 8024}
   vertical: 1
-  controlID: 5851
+  controlID: 5422
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -386,9 +386,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.9476926, y: 10.409114, z: 112.43457}
+    m_Target: {x: 575.43646, y: 1229.2856, z: 7608.657}
     speed: 2
-    m_Value: {x: 3.9476926, y: 10.409114, z: 112.43457}
+    m_Value: {x: 575.43646, y: 1229.2856, z: 7608.657}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -420,9 +420,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.1454086
+    m_Target: 604.1693
     speed: 2
-    m_Value: 5.1454086
+    m_Value: 604.1693
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -527,9 +527,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 782f0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: fe84ffff8abbffffaacbffff6ad2ffff30d7ffff68e7ffffeae8ffff52f0ffffdefbffff06490000a8570000d4580000f45900008c73000012740000aa740000d0740000ae750000b6750000d07c0000ec7c0000ea7e0000
+      m_SelectedIDs: 3c9c0000
+      m_LastClickedID: 39996
+      m_ExpandedIDs: 2e63ffffdc6dffff926fffff9e71ffff3cfbffffdefbffff2891000006940000fa95000020960000929a00003c9c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -591,19 +591,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/graph
+    - Assets/MainSystem/Data
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/graph
+  - Assets/MainSystem/Data
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\pipomk\Documents\GitHub\scigame\Match 3 Clone
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 38}
-    m_SelectedIDs: 822b0000
-    m_LastClickedID: 11138
+    m_SelectedIDs: c62e0000
+    m_LastClickedID: 11974
     m_ExpandedIDs: 0000000018270000262800005c290000642900003c2a00005a2b00007c2b0000702c0000882c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -659,7 +659,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
