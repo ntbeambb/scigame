@@ -7,7 +7,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 public static class SaveSystem
 {
     public static void SaveInventory(InventorySystem _inventory){
-        Debug.Log("SaveInventory");
+        //Debug.Log("SaveInventory");
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/DataInventory.save";
         FileStream stream = new FileStream(path,FileMode.Create);
@@ -27,7 +27,7 @@ public static class SaveSystem
         stream.Close();
     }
     public static void LoadInventory(InventorySystem _inventory){
-        Debug.Log("LoadInventory");
+        //Debug.Log("LoadInventory");
         string path = Application.persistentDataPath + "/DataInventory.save";
         if(File.Exists(path)){
             BinaryFormatter formatter = new BinaryFormatter();
