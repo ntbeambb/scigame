@@ -17,12 +17,12 @@ MonoBehaviour:
     - id: 1
       name: C
       amount: 1
-    - id: 3
-      name: O
-      amount: 2
+    - id: 2
+      name: H
+      amount: 4
     output:
-    - id: 22
-      name: CO2
+    - id: 36
+      name: CH4
       amount: 1
   - input:
     - id: 1
@@ -37,6 +37,31 @@ MonoBehaviour:
     output:
     - id: 24
       name: CH3OH
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 1
+    - id: 3
+      name: O
+      amount: 2
+    output:
+    - id: 22
+      name: CO2
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 2
+    - id: 3
+      name: H
+      amount: 4
+    - id: 2
+      name: O
+      amount: 2
+    output:
+    - id: 43
+      name: CH3COOH
       amount: 1
   - input:
     - id: 1
@@ -69,6 +94,17 @@ MonoBehaviour:
       amount: 7
     - id: 2
       name: H
+      amount: 1
+    output:
+    - id: 40
+      name: C7H
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 7
+    - id: 2
+      name: H
       amount: 5
     - id: 10
       name: Na
@@ -87,12 +123,12 @@ MonoBehaviour:
     - id: 2
       name: H
       amount: 9
-    - id: 4
-      name: N
-      amount: 1
     - id: 3
       name: O
       amount: 2
+    - id: 4
+      name: N
+      amount: 1
     output:
     - id: 32
       name: C8H9NO2
@@ -142,12 +178,34 @@ MonoBehaviour:
       name: H2O
       amount: 1
   - input:
+    - id: 1
+      name: C
+      amount: 1
+    - id: 2
+      name: H
+      amount: 3
+    - id: 3
+      name: O
+      amount: 3
+    output:
+    - id: 38
+      name: H3CO3
+      amount: 1
+  - input:
     - id: 3
       name: O
       amount: 2
     output:
     - id: 41
       name: O2
+      amount: 1
+  - input:
+    - id: 4
+      name: N
+      amount: 2
+    output:
+    - id: 44
+      name: N2
       amount: 1
   - input:
     - id: 5
@@ -164,40 +222,71 @@ MonoBehaviour:
       name: CaCO3
       amount: 1
   - input:
-    - id: 6
-      name: Ti
-      amount: 1
     - id: 3
       name: O
       amount: 2
+    - id: 6
+      name: Ti
+      amount: 1
     output:
     - id: 27
       name: TiO2
       amount: 1
   - input:
-    - id: 7
-      name: Cr
-      amount: 2
     - id: 3
       name: O
       amount: 3
+    - id: 7
+      name: Cr
+      amount: 2
     output:
     - id: 28
       name: Cr2O3
       amount: 1
   - input:
+    - id: 3
+      name: O
+      amount: 4
     - id: 8
       name: Cd
       amount: 1
     - id: 9
       name: S
       amount: 1
-    - id: 3
-      name: O
-      amount: 4
     output:
     - id: 29
       name: CdSO4
+      amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 1
+    - id: 2
+      name: H
+      amount: 1
+    - id: 3
+      name: O
+      amount: 3
+    - id: 10
+      name: Na
+      amount: 1
+    output:
+    - id: 45
+      name: NaHCO3
+      amount: 1
+  - input:
+    - id: 2
+      name: H
+      amount: 1
+    - id: 3
+      name: O
+      amount: 1
+    - id: 10
+      name: Na
+      amount: 1
+    output:
+    - id: 42
+      name: NaOH
       amount: 1
   - input:
     - id: 10
@@ -211,119 +300,30 @@ MonoBehaviour:
       name: NaCl
       amount: 1
   - input:
-    - id: 14
-      name: K
-      amount: 1
-    - id: 13
-      name: Au
-      amount: 1
     - id: 1
       name: C
       amount: 2
     - id: 4
       name: N
       amount: 2
+    - id: 13
+      name: Au
+      amount: 1
+    - id: 14
+      name: K
+      amount: 1
     output:
     - id: 31
       name: K(Au(CN)2)
       amount: 1
   - input:
-    - id: 1
-      name: C
-      amount: 1
-    - id: 2
-      name: H
-      amount: 4
-    output:
-    - id: 36
-      name: CH4
-      amount: 1
-  - input:
-    - id: 2
-      name: H
-      amount: 3
-    - id: 1
-      name: C
-      amount: 1
     - id: 3
       name: O
-      amount: 3
-    output:
-    - id: 38
-      name: H3CO3
-      amount: 1
-  - input:
+      amount: 2
     - id: 15
       name: Si
       amount: 1
-    - id: 3
-      name: O
-      amount: 2
     output:
     - id: 39
       name: SiO2
-      amount: 1
-  - input:
-    - id: 1
-      name: C
-      amount: 7
-    - id: 2
-      name: H
-      amount: 1
-    output:
-    - id: 40
-      name: C7H
-      amount: 1
-  - input:
-    - id: 10
-      name: Na
-      amount: 1
-    - id: 3
-      name: O
-      amount: 1
-    - id: 2
-      name: H
-      amount: 1
-    output:
-    - id: 42
-      name: NaOH
-      amount: 1
-  - input:
-    - id: 1
-      name: C
-      amount: 2
-    - id: 3
-      name: H
-      amount: 4
-    - id: 2
-      name: O
-      amount: 2
-    output:
-    - id: 43
-      name: CH3COOH
-      amount: 1
-  - input:
-    - id: 4
-      name: N
-      amount: 2
-    output:
-    - id: 44
-      name: N2
-      amount: 1
-  - input:
-    - id: 10
-      name: Na
-      amount: 1
-    - id: 2
-      name: H
-      amount: 1
-    - id: 1
-      name: C
-      amount: 1
-    - id: 3
-      name: O
-      amount: 3
-    output:
-    - id: 45
-      name: NaHCO3
       amount: 1

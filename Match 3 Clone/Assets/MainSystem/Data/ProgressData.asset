@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProgressValue: 1
   NowSub:
+    IDObject: 0
+    SubText: "\u0E43\u0E2B\u0E49\u0E1E\u0E25\u0E31\u0E07\u0E07\u0E32\u0E19\u0E41\u0E01\u0E48\u0E01\u0E32\u0E23\u0E27\u0E34\u0E48\u0E07"
+    InputObject:
+    - localPosition: {x: 87.7, y: -49}
+      sizeDelta: {x: 113.57, y: 113.57}
+      Object: {fileID: 21300000, guid: 93472ff77cd737b438d3ac0ab155c01b, type: 3}
     Item:
-    - id: 1
+    - id: 23
       name: 
       amount: 0
-    - id: 2
-      name: 
-      amount: 0
-    - id: 3
-      name: 
-      amount: 0
-  OriginProblem: {fileID: 11400000, guid: 8ed371c9b163a4c43a60f795ac9c06f7, type: 2}
+  mission_id: 4
+  OriginProblem: {fileID: 11400000, guid: 58231e95bc72274409a295826bb9aca2, type: 2}

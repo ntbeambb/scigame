@@ -35,7 +35,7 @@ MonoBehaviour:
     Item:
     - id: 41
       name: 
-      amount: 3
+      amount: 6
   - IDObject: 1
     SubText: 
     InputObject:
@@ -54,7 +54,7 @@ MonoBehaviour:
     Item:
     - id: 21
       name: 
-      amount: 3
+      amount: 6
   - IDObject: 2
     SubText: 
     InputObject:

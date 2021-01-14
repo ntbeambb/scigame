@@ -15,13 +15,16 @@ MonoBehaviour:
   container:
   - id: 1
     name: 
-    amount: 7
+    amount: 18
   - id: 3
     name: 
-    amount: 2
+    amount: 13
   - id: 4
     name: 
-    amount: 10
+    amount: 33
   - id: 2
     name: 
-    amount: 98
+    amount: 7
+  - id: 41
+    name: 
+    amount: 1

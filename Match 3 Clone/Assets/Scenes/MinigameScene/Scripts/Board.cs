@@ -227,7 +227,7 @@ public class Board : MonoBehaviour {
     }
 
     private void CheckToMakeBombs(){
-        if(findMatches.currentMatches.Count == 4 || findMatches.currentMatches.Count == 7){
+        /*if(findMatches.currentMatches.Count == 4 || findMatches.currentMatches.Count == 7){
             findMatches.CheckBombs();
         }
         if(findMatches.currentMatches.Count == 5 || findMatches.currentMatches.Count == 8){
@@ -282,7 +282,7 @@ public class Board : MonoBehaviour {
                     }
                 }
             }
-        }
+        }*/
     }
 
     private void DestroyMatchesAt(int column, int row){
