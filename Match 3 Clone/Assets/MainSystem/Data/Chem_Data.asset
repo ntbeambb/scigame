@@ -327,3 +327,20 @@ MonoBehaviour:
     - id: 39
       name: SiO2
       amount: 1
+  - input:
+    - id: 1
+      name: C
+      amount: 18
+    - id: 2
+      name: H
+      amount: 35
+    - id: 3
+      name: O
+      amount: 2
+    - id: 10
+      name: Na
+      amount: 1
+    output:
+    - id: 46
+      name: C18H35NaO2
+      amount: 1

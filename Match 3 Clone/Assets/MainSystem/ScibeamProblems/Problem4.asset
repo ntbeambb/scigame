@@ -20,9 +20,9 @@ MonoBehaviour:
   - IDObject: 0
     SubText: "\u0E2B\u0E32\u0E22\u0E43\u0E08\u0E44\u0E21\u0E48\u0E17\u0E31\u0E19"
     InputObject:
-    - localPosition: {x: 87.7, y: -49}
+    - localPosition: {x: 87.7, y: -56.785004}
       sizeDelta: {x: 113.57, y: 113.57}
-      Object: {fileID: 21300000, guid: 6445cea752daddc4cb68cd87f15cf7c5, type: 3}
+      Object: {fileID: 21300000, guid: c269d65b1756e894a8ec5ca3b5ab5643, type: 3}
     Item:
     - id: 41
       name: 

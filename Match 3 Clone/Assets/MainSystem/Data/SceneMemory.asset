@@ -15,19 +15,19 @@ MonoBehaviour:
   SceneStack:
   - 
   - minigame
+  - mainmanu
+  - TreeGraph
+  - TreeGraph
+  - minigame
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  NumScene: 2
-  IdMission: 0
-  PreIdMission: 0
-  Qprob: 0.3
-  SkipCo: 0
+  NumScene: 6
+  IdMission: 8
+  PreIdMission: 8
+  Qprob: 0.8055556
+  SkipCo: 3
   StartQuizProb: 0.3
   LockQ: 6
   CopyProblem: 0
