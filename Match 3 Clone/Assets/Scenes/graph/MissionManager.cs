@@ -19,6 +19,7 @@ public class MissionManager : MonoBehaviour
     public List<GameObject> ElementList;
     void Start()
     {
+        Graphdata.Load();
         int co = Graphdata.CanPlay.Count;
         for(int i=0;i<co;i++){
             int po = Graphdata.CanPlay[i].id_mission;

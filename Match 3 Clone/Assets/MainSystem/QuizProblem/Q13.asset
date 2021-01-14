@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563a050e525167f4ea1bd9d66b8e7cae, type: 3}
   m_Name: Q13
   m_EditorClassIdentifier: 
-  text: "Cu \u0E43\u0E0A\u0E49\u0E43\u0E19\u0E01\u0E32\u0E23\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23 "
+  text: "\u0E2A\u0E32\u0E23\u0E15\u0E48\u0E2D\u0E44\u0E1B\u0E19\u0E35\u0E49\u0E43\u0E0A\u0E49\u0E43\u0E19\u0E01\u0E32\u0E23\u0E17\u0E33\u0E2D\u0E30\u0E44\u0E23 "
   choice:
   - "\u0E40\u0E04\u0E49\u0E01"
   - "\u0E09\u0E19\u0E27\u0E19\u0E44\u0E1F\u0E1F\u0E49\u0E32"
@@ -20,5 +20,6 @@ MonoBehaviour:
   - "\u0E16\u0E39\u0E01\u0E17\u0E38\u0E01\u0E02\u0E49\u0E2D"
   id: 14
   correct: 2
+  image: {fileID: 21300000, guid: cd35c4f757ee16c47ad59377b084407a, type: 3}
   PrizeID: 0
   PrizeAmount: 0

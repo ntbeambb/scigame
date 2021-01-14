@@ -9,6 +9,7 @@ public class QuizProblem : ScriptableObject
     public List<string> choice;
     public int id;
     public int correct;
+    public Sprite image;
     [Header("Prize")]
     public int PrizeID;
     public int PrizeAmount;

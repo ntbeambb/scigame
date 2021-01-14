@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneStack:
   - 
-  - minigame
   - 
   - 
   - 
@@ -23,7 +22,8 @@ MonoBehaviour:
   - 
   - 
   - 
-  NumScene: 2
+  - 
+  NumScene: 1
   IdMission: 0
   PreIdMission: 0
   Qprob: 0.3

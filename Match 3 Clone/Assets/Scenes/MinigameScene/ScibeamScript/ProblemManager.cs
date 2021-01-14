@@ -173,6 +173,7 @@ public class ProblemManager : InboxGameobject
                 if(pro == 1){
                     //
                     //Popup.SetActive(true);
+                    backpack.Divide();
                     SceneData.PreIdMission = IDmission;
                     if(!graphdata.CanPlay[graphdata.PoMision(IDmission)].finish){
                         graphdata.Finish(IDmission);
