@@ -18,6 +18,8 @@ public class QuizPlay : MonoBehaviour
     public GameObject ProblemText;
     public GameObject CorrectSound;
     public GameObject WrongSound;
+    public GameObject Element;
+    public GameObject Tap;
     //public GameObject FinishSound;
     public List<GameObject> Choice;
     [Header("Image")]
@@ -47,6 +49,7 @@ public class QuizPlay : MonoBehaviour
             //Debug.Log("Start "+subtask.SubText);
             textmesh.text = Qnow.choice[i];
         }
+        if(Qnow.image != null)Element.GetComponent<Image>().sprite = Qnow.image;
         quiz.SetActive(true);
 
 
@@ -65,13 +68,13 @@ public class QuizPlay : MonoBehaviour
         for(int i=0;i<4;i++){
             Choice[i].GetComponent<Button>().interactable = false;
         }
-        StartCoroutine(Wait());
+        Tap.SetActive(true);
     }
     IEnumerator Wait(){
         yield return new WaitForSecondsRealtime(3.5f);
         End();
     }
-    private void End(){
+    public void End(){
 
         quiz.SetActive(false);
         popup.SetActive(true);

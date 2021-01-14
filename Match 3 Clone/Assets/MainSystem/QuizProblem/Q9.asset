@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563a050e525167f4ea1bd9d66b8e7cae, type: 3}
   m_Name: Q9
   m_EditorClassIdentifier: 
-  text: "SiO2 \u0E21\u0E31\u0E01\u0E16\u0E39\u0E01\u0E19\u0E33\u0E21\u0E32\u0E43\u0E0A\u0E49\u0E17\u0E33\u0E27\u0E31\u0E2A\u0E14\u0E38\u0E2D\u0E30\u0E44\u0E23"
+  text: "\u0E2A\u0E32\u0E23\u0E15\u0E48\u0E2D\u0E44\u0E1B\u0E19\u0E35\u0E49\u0E21\u0E31\u0E01\u0E16\u0E39\u0E01\u0E19\u0E33\u0E21\u0E32\u0E43\u0E0A\u0E49\u0E17\u0E33\u0E27\u0E31\u0E2A\u0E14\u0E38\u0E2D\u0E30\u0E44\u0E23"
   choice:
   - "\u0E44\u0E21\u0E49"
   - "\u0E41\u0E01\u0E49\u0E27"
@@ -20,5 +20,6 @@ MonoBehaviour:
   - "\u0E40\u0E2B\u0E25\u0E47\u0E01"
   id: 9
   correct: 1
+  image: {fileID: 21300000, guid: 97cd58a6e71829e4f87bd25a36ac4ac0, type: 3}
   PrizeID: 0
   PrizeAmount: 0
