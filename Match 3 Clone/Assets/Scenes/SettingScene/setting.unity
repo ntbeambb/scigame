@@ -915,7 +915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.8, y: 4.8}
+  m_AnchoredPosition: {x: 5.8, y: -13.5}
   m_SizeDelta: {x: 266.58, y: 68.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &612039173
@@ -1110,7 +1110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.8, y: -76.1}
+  m_AnchoredPosition: {x: 5.8, y: -124.6}
   m_SizeDelta: {x: 280.69, y: 72.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &736545643
@@ -1665,6 +1665,7 @@ GameObject:
   - component: {fileID: 1396526698}
   - component: {fileID: 1396526697}
   - component: {fileID: 1396526696}
+  - component: {fileID: 1396526699}
   m_Layer: 5
   m_Name: rate
   m_TagString: Untagged
@@ -1688,7 +1689,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000066757, y: -185.2}
+  m_AnchoredPosition: {x: -0.0000066757, y: -239.3}
   m_SizeDelta: {x: 324.28, y: 79.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1396526696
@@ -1742,6 +1743,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1396526699}
+        m_MethodName: OpenURL
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1396526697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1777,6 +1789,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1396526694}
   m_CullTransparentMesh: 0
+--- !u!114 &1396526699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396526694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c89190e4bfc3b840af5a78a77515750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1660522659
 GameObject:
   m_ObjectHideFlags: 0
