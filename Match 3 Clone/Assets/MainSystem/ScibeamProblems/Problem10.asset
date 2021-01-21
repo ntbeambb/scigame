@@ -18,7 +18,7 @@ MonoBehaviour:
   StartBackground: {x: 14, y: 250}
   problem:
   - IDObject: 0
-    SubText: 
+    SubText: "\u0E43\u0E2B\u0E49\u0E2D\u0E32\u0E01\u0E32\u0E28\u0E2B\u0E32\u0E22\u0E43\u0E08\u0E41\u0E01\u0E48\u0E1C\u0E39\u0E49\u0E1B\u0E48\u0E27\u0E22\u0E09\u0E38\u0E01\u0E40\u0E09\u0E34\u0E19"
     InputObject:
     - localPosition: {x: -100.13, y: -30.6}
       sizeDelta: {x: 200.25, y: 200.25}
@@ -37,7 +37,7 @@ MonoBehaviour:
       name: 
       amount: 6
   - IDObject: 1
-    SubText: 
+    SubText: "\u0E19\u0E33\u0E19\u0E49\u0E33\u0E44\u0E1B\u0E43\u0E2B\u0E49\u0E1C\u0E39\u0E49\u0E1B\u0E48\u0E27\u0E22\u0E23\u0E31\u0E1A\u0E1B\u0E23\u0E30\u0E17\u0E32\u0E19\u0E22\u0E32"
     InputObject:
     - localPosition: {x: -100.08, y: -26.82}
       sizeDelta: {x: 210.73, y: 210.73}
@@ -56,7 +56,7 @@ MonoBehaviour:
       name: 
       amount: 6
   - IDObject: 2
-    SubText: 
+    SubText: "\u0E19\u0E33\u0E22\u0E32\u0E44\u0E1B\u0E43\u0E2B\u0E49\u0E04\u0E19\u0E17\u0E35\u0E48\u0E21\u0E35\u0E2D\u0E32\u0E01\u0E32\u0E23\u0E1B\u0E48\u0E27\u0E14\u0E2B\u0E31\u0E27\u0E15\u0E31\u0E27\u0E23\u0E49\u0E2D\u0E19\u0E04\u0E25\u0E49\u0E32\u0E22\u0E08\u0E30\u0E40\u0E1B\u0E47\u0E19\u0E44\u0E02\u0E49"
     InputObject:
     - localPosition: {x: -100.08, y: -26.82}
       sizeDelta: {x: 210.73, y: 210.73}
@@ -74,14 +74,8 @@ MonoBehaviour:
     - id: 32
       name: 
       amount: 1
-    - id: 13
-      name: Au
-      amount: 1
-    - id: 31
-      name: K(Au(CN)2)
-      amount: 1
   - IDObject: 3
-    SubText: 
+    SubText: "\u0E19\u0E33\u0E19\u0E49\u0E33\u0E40\u0E01\u0E25\u0E37\u0E2D\u0E41\u0E23\u0E48\u0E41\u0E1A\u0E1A\u0E2B\u0E27\u0E32\u0E19\u0E44\u0E1B\u0E43\u0E2B\u0E49\u0E04\u0E19\u0E17\u0E49\u0E2D\u0E07\u0E40\u0E2A\u0E35\u0E22\u0E14\u0E37\u0E48\u0E21"
     InputObject:
     - localPosition: {x: -100.08, y: -26.82}
       sizeDelta: {x: 210.73, y: 210.73}

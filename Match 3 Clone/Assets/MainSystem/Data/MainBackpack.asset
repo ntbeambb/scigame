@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc62e283fba56d4e9969552c5550ecc, type: 3}
   m_Name: MainBackpack
   m_EditorClassIdentifier: 
-  container: []
+  container:
+  - id: 36
+    name: 
+    amount: 5

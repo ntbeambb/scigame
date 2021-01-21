@@ -45,6 +45,7 @@ public class ProblemManager : InboxGameobject
 
     [Header("Item Checker")]
     public List<GameObject> ItemChecker;
+    public List<GameObject> ElementChecker;
     public Sprite UnknownImage;
     public Sprite CompleteImage;
     public Sprite NoneImage;
@@ -198,6 +199,8 @@ public class ProblemManager : InboxGameobject
         Subtask Osub = problem.GetSub(level);
         //Debug.Log("Level "+level);
         for(i = 0;i<Osub.Item.Count; i++){
+            ItemChecker[i].SetActive(true);
+            ElementChecker[i].SetActive(false);
             if(!ck && data.NowSub.Item[i].amount == Osub.Item[i].amount){
                 ItemChecker[i].GetComponent<Image>().sprite = UnknownImage;
                 ItemChecker[i].GetComponent<RectTransform>().sizeDelta = new Vector2(130,40);
@@ -205,11 +208,14 @@ public class ProblemManager : InboxGameobject
                 ItemChecker[i].GetComponent<Image>().sprite = CompleteImage;
                 ItemChecker[i].GetComponent<RectTransform>().sizeDelta = new Vector2(130,40);
             }else{
-                ItemChecker[i].GetComponent<Image>().sprite = Allpic.ID[Osub.Item[i].id];
-                ItemChecker[i].GetComponent<RectTransform>().sizeDelta = new Vector2(116.3f,29.4f);
+                ElementChecker[i].SetActive(true);
+                ElementChecker[i].GetComponent<Image>().sprite = Allpic.ID[Osub.Item[i].id];
+                ElementChecker[i].GetComponent<RectTransform>().sizeDelta = new Vector2(116.3f,29.4f);
             }
         }
         for(;i<3;i++){
+            ItemChecker[i].SetActive(false);
+            ElementChecker[i].SetActive(false);
             ItemChecker[i].GetComponent<Image>().sprite = NoneImage;
             ItemChecker[i].GetComponent<RectTransform>().sizeDelta = new Vector2(130,40);
         }

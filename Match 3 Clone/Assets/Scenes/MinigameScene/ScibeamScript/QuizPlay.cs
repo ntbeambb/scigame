@@ -49,7 +49,10 @@ public class QuizPlay : MonoBehaviour
             //Debug.Log("Start "+subtask.SubText);
             textmesh.text = Qnow.choice[i];
         }
-        if(Qnow.image != null)Element.GetComponent<Image>().sprite = Qnow.image;
+        if(Qnow.image != null){
+            Element.SetActive(true);
+            Element.GetComponent<Image>().sprite = Qnow.image;
+            }
         quiz.SetActive(true);
 
 

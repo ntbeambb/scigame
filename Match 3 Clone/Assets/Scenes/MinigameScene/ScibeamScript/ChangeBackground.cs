@@ -17,6 +17,7 @@ public class ChangeBackground : MonoBehaviour
     private bool alc = true;
     private float dark;
 
+    public InventorySystem Backpack;
     public GameObject workshop;
     public GameObject inventory;
     public GameObject Manager;
@@ -26,6 +27,7 @@ public class ChangeBackground : MonoBehaviour
         idnow = Scenedata.IdMission;
         preid = Scenedata.PreIdMission;
         sttime = Time.time;
+        Backpack.Load();
         
         GetComponent<Image>().sprite = Plist.Plist[preid].Background;
             st = Plist.Plist[preid].StartBackground;
