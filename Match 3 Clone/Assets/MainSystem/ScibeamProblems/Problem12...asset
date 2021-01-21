@@ -15,14 +15,14 @@ MonoBehaviour:
   ProblemText: 
   FoundElement: 01000000020000000300000004000000
   Background: {fileID: 21300000, guid: 81c3781e038e9a3498ec00c2fdc9d2cb, type: 3}
-  StartBackground: {x: 0, y: 0}
+  StartBackground: {x: -307, y: 250}
   problem:
   - IDObject: 0
-    SubText: 
+    SubText: "\u0E25\u0E49\u0E32\u0E07\u0E21\u0E37\u0E2D\u0E43\u0E2B\u0E49\u0E2A\u0E30\u0E2D\u0E32\u0E14"
     InputObject:
-    - localPosition: {x: 0, y: 0}
-      sizeDelta: {x: 0, y: 0}
-      Object: {fileID: 0}
+    - localPosition: {x: -19.2, y: 4.4}
+      sizeDelta: {x: 63.58, y: 63.58}
+      Object: {fileID: 21300000, guid: 49f032aa3586eb141aae2f3069b290b1, type: 3}
     Item:
     - id: 21
       name: 

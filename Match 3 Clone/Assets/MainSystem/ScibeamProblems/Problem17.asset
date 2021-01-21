@@ -18,7 +18,7 @@ MonoBehaviour:
   StartBackground: {x: 681.7, y: 250}
   problem:
   - IDObject: 0
-    SubText: 
+    SubText: "\u0E1C\u0E2A\u0E21\u0E01\u0E23\u0E14\u0E41\u0E01\u0E48\u0E01\u0E31\u0E1A\u0E40\u0E1A\u0E2A\u0E41\u0E01\u0E48"
     InputObject:
     - localPosition: {x: 53.22, y: 5.5}
       sizeDelta: {x: 87.75, y: 87.75}

@@ -18,7 +18,7 @@ MonoBehaviour:
   StartBackground: {x: 469, y: 250}
   problem:
   - IDObject: 0
-    SubText: 
+    SubText: "\u0E08\u0E38\u0E14\u0E44\u0E1F\u0E40\u0E15\u0E32\u0E2B\u0E25\u0E2D\u0E21"
     InputObject:
     - localPosition: {x: -77.3, y: 21.2}
       sizeDelta: {x: 223.2, y: 223.2}
@@ -31,7 +31,7 @@ MonoBehaviour:
       name: 
       amount: 6
   - IDObject: 0
-    SubText: 
+    SubText: "\u0E19\u0E33\u0E2A\u0E32\u0E23\u0E21\u0E32\u0E2B\u0E25\u0E2D\u0E21\u0E40\u0E1B\u0E47\u0E19\u0E41\u0E01\u0E49\u0E27\u0E43\u0E19\u0E40\u0E15\u0E32\u0E2B\u0E25\u0E2D\u0E21"
     InputObject:
     - localPosition: {x: -77.3, y: 21.2}
       sizeDelta: {x: 223.2, y: 223.2}
@@ -41,7 +41,7 @@ MonoBehaviour:
       name: 
       amount: 10
   - IDObject: 1
-    SubText: 
+    SubText: "\u0E2B\u0E25\u0E48\u0E2D\u0E40\u0E22\u0E47\u0E19\u0E41\u0E01\u0E49\u0E27\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E41\u0E01\u0E49\u0E27\u0E40\u0E22\u0E47\u0E19\u0E15\u0E31\u0E27\u0E25\u0E07"
     InputObject:
     - localPosition: {x: -77.3, y: 21.2}
       sizeDelta: {x: 223.2, y: 223.2}

@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Problem14
   m_EditorClassIdentifier: 
   ProblemText: 
-  FoundElement: 010000000200000003000000040000000c0000000d00000010000000
+  FoundElement: 0100000002000000100000000d0000000c000000
   Background: {fileID: 21300000, guid: 4b5d474123644a64f941aab98edf26ce, type: 3}
   StartBackground: {x: -448, y: 250}
   problem:
   - IDObject: 2
-    SubText: 
+    SubText: "\u0E17\u0E33\u0E40\u0E2B\u0E23\u0E35\u0E22\u0E0D\u0E43\u0E2B\u0E49\u0E19\u0E31\u0E01\u0E01\u0E35\u0E2C\u0E32\u0E23\u0E2D\u0E07\u0E0A\u0E19\u0E30\u0E40\u0E25\u0E34\u0E28\u0E2D\u0E31\u0E19\u0E14\u0E31\u0E1A\u0E2A\u0E2D\u0E07"
     InputObject:
     - localPosition: {x: -8, y: 8}
       sizeDelta: {x: 100, y: 100}
@@ -34,7 +34,7 @@ MonoBehaviour:
       name: 
       amount: 52
   - IDObject: 1
-    SubText: 
+    SubText: "\u0E17\u0E33\u0E40\u0E2B\u0E23\u0E35\u0E22\u0E0D\u0E43\u0E2B\u0E49\u0E19\u0E31\u0E01\u0E01\u0E35\u0E2C\u0E32\u0E23\u0E2D\u0E07\u0E0A\u0E19\u0E30\u0E40\u0E25\u0E34\u0E28\u0E2D\u0E31\u0E19\u0E14\u0E31\u0E1A\u0E2B\u0E19\u0E36\u0E48\u0E07"
     InputObject:
     - localPosition: {x: -8, y: 8}
       sizeDelta: {x: 100, y: 100}
@@ -50,7 +50,7 @@ MonoBehaviour:
       name: 
       amount: 25
   - IDObject: 0
-    SubText: 
+    SubText: "\u0E17\u0E33\u0E40\u0E2B\u0E23\u0E35\u0E22\u0E0D\u0E43\u0E2B\u0E49\u0E19\u0E31\u0E01\u0E01\u0E35\u0E2C\u0E32\u0E0A\u0E19\u0E30\u0E40\u0E25\u0E34\u0E28"
     InputObject:
     - localPosition: {x: -8, y: 8}
       sizeDelta: {x: 100, y: 100}
@@ -66,7 +66,7 @@ MonoBehaviour:
       name: 
       amount: 16
   - IDObject: 0
-    SubText: 
+    SubText: "\u0E22\u0E34\u0E19\u0E14\u0E35\u0E14\u0E49\u0E27\u0E22\u0E04\u0E38\u0E13\u0E44\u0E14\u0E49\u0E1C\u0E48\u0E32\u0E19\u0E04\u0E27\u0E32\u0E21\u0E2B\u0E24\u0E42\u0E2B\u0E14\u0E02\u0E2D\u0E07\u0E40\u0E01\u0E21\u0E19\u0E35\u0E49\u0E21\u0E32\u0E41\u0E25\u0E49\u0E27"
     InputObject:
     - localPosition: {x: 0, y: 0}
       sizeDelta: {x: 100, y: 100}

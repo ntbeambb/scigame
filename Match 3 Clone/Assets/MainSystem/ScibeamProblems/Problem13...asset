@@ -18,7 +18,7 @@ MonoBehaviour:
   StartBackground: {x: -681.7, y: 250}
   problem:
   - IDObject: 0
-    SubText: 
+    SubText: "\u0E17\u0E33\u0E2A\u0E32\u0E22\u0E44\u0E1F\u0E1F\u0E49\u0E32"
     InputObject:
     - localPosition: {x: 0, y: 35.5}
       sizeDelta: {x: 100, y: 100}
@@ -28,7 +28,7 @@ MonoBehaviour:
       name: 
       amount: 20
   - IDObject: 1
-    SubText: 
+    SubText: "\u0E17\u0E33\u0E09\u0E19\u0E27\u0E19\u0E2B\u0E38\u0E49\u0E21\u0E43\u0E2B\u0E49\u0E01\u0E31\u0E1A\u0E2A\u0E32\u0E22\u0E44\u0E1F"
     InputObject:
     - localPosition: {x: 0, y: 35.5}
       sizeDelta: {x: 100, y: 100}
